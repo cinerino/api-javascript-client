@@ -1,0 +1,85 @@
+{
+  "name": "@cinerino/api-javascript-client",
+  "version": "1.0.0",
+  "description": "Cinerino API client library for JavaScript",
+  "main": "./lib/index.js",
+  "browser": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "doc/",
+    "example/",
+    "lib/"
+  ],
+  "directories": {
+    "doc": "./doc",
+    "lib": "./lib",
+    "example": "./example",
+    "test": "./test"
+  },
+  "scripts": {
+    "check": "npm run tslint && nsp check",
+    "clean": "rimraf ./lib \"npm-debug.log*\" ./doc ./coverage ./.nyc_output",
+    "build": "npm run build:node && npm run build:browser",
+    "build:node": "tsc",
+    "build:browser": "browserify ./browser.js -o ./lib/browser.js",
+    "build:watch": "tsc && concurrently \"tsc -w\" \"npm run watchify\"",
+    "watchify": "watchify ./browser.js -o ./lib/browser.js",
+    "nyc": "nyc mocha \"src/**/*.spec.ts\"",
+    "coverage": "npm run nyc | coveralls",
+    "test": "npm run check && npm run coverage",
+    "snyk": "snyk wizard",
+    "doc": "jsdoc -c jsdoc.json",
+    "example": "copyfiles ./lib/browser.js ./example/browser && http-server ./example/browser",
+    "tslint": "tslint --project tsconfig.json -c tslint.json --exclude \"**/*.spec.ts\" \"src/**/*.ts\"",
+    "preversion": "npm run clean && npm run build && npm test",
+    "version": "git add -A",
+    "postversion": "git push origin --tags",
+    "prepublishOnly": "npm run clean && npm run build && npm test && npm run doc"
+  },
+  "author": "Motionpicture co.,ltd.",
+  "contributors": [
+    {
+      "email": "yamazaki@motionpicture.jp",
+      "name": "Tetsu Yamazaki"
+    }
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@types/debug": "0.0.30",
+    "@types/http-status": "^0.2.30",
+    "@types/isomorphic-fetch": "0.0.34",
+    "@types/mocha": "^5.2.5",
+    "@types/qs": "^6.5.1",
+    "@types/sinon": "^2.3.7",
+    "browserify": "^14.5.0",
+    "concurrently": "^3.6.1",
+    "copyfiles": "^1.2.0",
+    "coveralls": "^2.13.3",
+    "http-server": "^0.10.0",
+    "ink-docstrap": "^1.3.2",
+    "jsdoc": "^3.5.5",
+    "mocha": "^5.2.0",
+    "nsp": "^3.2.1",
+    "nyc": "^13.0.1",
+    "rimraf": "^2.6.2",
+    "sinon": "^6.2.0",
+    "snyk": "^1.89.1",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-microsoft-contrib": "^5.2.1",
+    "typescript": "^3.0.3",
+    "watchify": "^3.11.0"
+  },
+  "dependencies": {
+    "@cinerino/api-abstract-client": "^1.0.0-alpha.16",
+    "debug": "^3.1.0",
+    "http-status": "^1.2.0",
+    "idtoken-verifier": "^1.2.0",
+    "isomorphic-fetch": "^2.2.1",
+    "qs": "^6.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cinerino/api-javascript-client.git"
+  }
+}
