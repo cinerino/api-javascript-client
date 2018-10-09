@@ -25,7 +25,7 @@
     "build:watch": "tsc && concurrently \"tsc -w\" \"npm run watchify\"",
     "watchify": "watchify ./browser.js -o ./lib/browser.js",
     "nyc": "nyc mocha \"src/**/*.spec.ts\"",
-    "coverage": "npm run nyc | coveralls",
+    "coverage": "npm run nyc && nyc report --reporter=text-lcov | coveralls",
     "test": "npm run check && npm run coverage",
     "snyk": "snyk wizard",
     "doc": "jsdoc -c jsdoc.json",
@@ -62,8 +62,8 @@
     "nsp": "^3.2.1",
     "nyc": "^13.0.1",
     "rimraf": "^2.6.2",
-    "sinon": "^6.3.4",
-    "snyk": "^1.100.0",
+    "sinon": "^6.3.5",
+    "snyk": "^1.102.0",
     "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
     "tslint-microsoft-contrib": "^5.2.1",
@@ -71,7 +71,7 @@
     "watchify": "^3.11.0"
   },
   "dependencies": {
-    "@cinerino/api-abstract-client": "^1.0.0-alpha.33",
+    "@cinerino/api-abstract-client": "^1.0.0-alpha.34",
     "debug": "^3.1.0",
     "http-status": "^1.2.0",
     "idtoken-verifier": "^1.2.0",
