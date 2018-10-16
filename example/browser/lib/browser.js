@@ -5166,9 +5166,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var PaymentMethodType;
 (function (PaymentMethodType) {
     /**
+     * 現金
+     */
+    PaymentMethodType["Cash"] = "Cash";
+    /**
      * 内部口座決済
      */
     PaymentMethodType["Account"] = "Account";
+    /**
+     * 電子マネー
+     */
+    PaymentMethodType["EMoney"] = "EMoney";
     /**
      * クレジットカード決済
      */
@@ -5177,6 +5185,10 @@ var PaymentMethodType;
      * Mocoin決済(外部仮想通貨)
      */
     PaymentMethodType["Mocoin"] = "Mocoin";
+    /**
+     * ムビチケ
+     */
+    PaymentMethodType["MovieTicket"] = "MovieTicket";
 })(PaymentMethodType || (PaymentMethodType = {}));
 exports.default = PaymentMethodType;
 
