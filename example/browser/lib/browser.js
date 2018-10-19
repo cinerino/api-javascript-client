@@ -5395,6 +5395,10 @@ var TaskName;
      */
     TaskName["ReturnPointAward"] = "returnPointAward";
     /**
+     * 口座支払
+     */
+    TaskName["PayAccount"] = "payAccount";
+    /**
      * クレジットカード支払
      */
     TaskName["PayCreditCard"] = "payCreditCard";
@@ -5403,9 +5407,9 @@ var TaskName;
      */
     TaskName["PayMocoin"] = "payMocoin";
     /**
-     * 口座支払
+     * ムビチケ支払
      */
-    TaskName["PayAccount"] = "payAccount";
+    TaskName["PayMovieTicket"] = "payMovieTicket";
     /**
      * 注文配送
      */
