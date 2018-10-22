@@ -71,7 +71,7 @@
     "watchify": "^3.11.0"
   },
   "dependencies": {
-    "@cinerino/api-abstract-client": "^1.0.0-alpha.47",
+    "@cinerino/api-abstract-client": "^1.0.0-alpha.48",
     "debug": "^3.2.6",
     "http-status": "^1.2.0",
     "idtoken-verifier": "^1.2.0",
