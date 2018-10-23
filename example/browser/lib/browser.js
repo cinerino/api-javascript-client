@@ -3226,6 +3226,52 @@ var PersonService = /** @class */ (function (_super) {
             });
         });
     };
+    /**
+     * 会員検索
+     */
+    PersonService.prototype.search = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: '/people',
+                        method: 'GET',
+                        qs: params,
+                        expectedStatusCodes: [http_status_1.OK]
+                    }).then(function (response) { return __awaiter(_this, void 0, void 0, function () {
+                        var _a;
+                        return __generator(this, function (_b) {
+                            switch (_b.label) {
+                                case 0:
+                                    _a = {
+                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                    };
+                                    return [4 /*yield*/, response.json()];
+                                case 1: return [2 /*return*/, (_a.data = _b.sent(),
+                                        _a)];
+                            }
+                        });
+                    }); })];
+            });
+        });
+    };
+    /**
+     * IDで検索
+     */
+    PersonService.prototype.findById = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/people/" + params.id,
+                        method: 'GET',
+                        expectedStatusCodes: [http_status_1.OK]
+                    }).then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
     return PersonService;
 }(service_1.Service));
 exports.PersonService = PersonService;
@@ -3388,28 +3434,6 @@ var PersonOwnershipInfoService = /** @class */ (function (_super) {
         });
     };
     /**
-     * 口座検索
-     */
-    // public async searchAccounts<T extends factory.accountType>(
-    //     params: factory.ownershipInfo.ISearchConditions<factory.ownershipInfo.AccountGoodType.Account> & {
-    //         /**
-    //          * person id(basically specify 'me' to retrieve contacts of login user)
-    //          */
-    //         personId: string;
-    //     }): Promise<ISearchResult<IAccountOwnershipInfo<T>[]>> {
-    //     return this.fetch({
-    //         uri: `/people/${params.personId}/ownershipInfos/accounts`,
-    //         method: 'GET',
-    //         qs: params,
-    //         expectedStatusCodes: [OK]
-    //     }).then(async (response) => {
-    //         return {
-    //             totalCount: Number(<string>response.headers.get('X-Total-Count')),
-    //             data: await response.json()
-    //         };
-    //     });
-    // }
-    /**
      * 口座取引履歴検索
      */
     PersonOwnershipInfoService.prototype.searchAccountMoneyTransferActions = function (params) {
@@ -3439,29 +3463,6 @@ var PersonOwnershipInfoService = /** @class */ (function (_super) {
             });
         });
     };
-    /**
-     * 上映イベント予約検索
-     */
-    // public async searchScreeningEventReservations(
-    //     params: factory.ownershipInfo.ISearchConditions<factory.chevre.reservationType.EventReservation> & {
-    //         /**
-    //          * person id(basically specify 'me' to retrieve contacts of login user)
-    //          */
-    //         personId: string;
-    //     }
-    // ): Promise<ISearchResult<IScreeningEventReservationOwnershipInfo[]>> {
-    //     return this.fetch({
-    //         uri: `/people/${params.personId}/ownershipInfos/reservations/eventReservation/screeningEvent`,
-    //         method: 'GET',
-    //         qs: params,
-    //         expectedStatusCodes: [OK]
-    //     }).then(async (response) => {
-    //         return {
-    //             totalCount: Number(<string>response.headers.get('X-Total-Count')),
-    //             data: await response.json()
-    //         };
-    //     });
-    // }
     /**
      * 所有権検索
      */
