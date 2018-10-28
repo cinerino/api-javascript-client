@@ -118,7 +118,7 @@ var IframeHandler = /** @class */ (function () {
 }());
 exports.default = IframeHandler;
 
-},{"debug":201}],5:[function(require,module,exports){
+},{"debug":203}],5:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -465,7 +465,7 @@ var ImplicitGrantClient = /** @class */ (function (_super) {
 }(oAuth2client_1.default));
 exports.ImplicitGrantClient = ImplicitGrantClient;
 
-},{"./error":3,"./oAuth2client":6,"./popupAuthenticationHandler":7,"./silentAuthenticationHandler":9,"./silentLogoutHandler":10,"debug":201,"idtoken-verifier":209,"qs":215}],6:[function(require,module,exports){
+},{"./error":3,"./oAuth2client":6,"./popupAuthenticationHandler":7,"./silentAuthenticationHandler":9,"./silentLogoutHandler":10,"debug":203,"idtoken-verifier":211,"qs":217}],6:[function(require,module,exports){
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -657,7 +657,7 @@ var OAuth2client = /** @class */ (function () {
 }());
 exports.default = OAuth2client;
 
-},{"../abstract":2,"debug":201,"http-status":203,"isomorphic-fetch":210}],7:[function(require,module,exports){
+},{"../abstract":2,"debug":203,"http-status":205,"isomorphic-fetch":212}],7:[function(require,module,exports){
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -842,7 +842,7 @@ var PopupHandler = /** @class */ (function () {
 }());
 exports.default = PopupHandler;
 
-},{"debug":201}],9:[function(require,module,exports){
+},{"debug":203}],9:[function(require,module,exports){
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -1205,7 +1205,7 @@ var AlreadyInUseError = /** @class */ (function (_super) {
 }(chevre_1.ChevreError));
 exports.default = AlreadyInUseError;
 
-},{"../errorCode":20,"./chevre":24,"setprototypeof":219}],22:[function(require,module,exports){
+},{"../errorCode":20,"./chevre":24,"setprototypeof":221}],22:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -1246,7 +1246,7 @@ var ArgumentError = /** @class */ (function (_super) {
 }(chevre_1.ChevreError));
 exports.default = ArgumentError;
 
-},{"../errorCode":20,"./chevre":24,"setprototypeof":219}],23:[function(require,module,exports){
+},{"../errorCode":20,"./chevre":24,"setprototypeof":221}],23:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -1287,7 +1287,7 @@ var ArgumentNullError = /** @class */ (function (_super) {
 }(chevre_1.ChevreError));
 exports.default = ArgumentNullError;
 
-},{"../errorCode":20,"./chevre":24,"setprototypeof":219}],24:[function(require,module,exports){
+},{"../errorCode":20,"./chevre":24,"setprototypeof":221}],24:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -1360,7 +1360,7 @@ var ForbiddenError = /** @class */ (function (_super) {
 }(chevre_1.ChevreError));
 exports.default = ForbiddenError;
 
-},{"../errorCode":20,"./chevre":24,"setprototypeof":219}],26:[function(require,module,exports){
+},{"../errorCode":20,"./chevre":24,"setprototypeof":221}],26:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -1401,7 +1401,7 @@ var NotFoundError = /** @class */ (function (_super) {
 }(chevre_1.ChevreError));
 exports.default = NotFoundError;
 
-},{"../errorCode":20,"./chevre":24,"setprototypeof":219}],27:[function(require,module,exports){
+},{"../errorCode":20,"./chevre":24,"setprototypeof":221}],27:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -1441,7 +1441,7 @@ var NotImplementedError = /** @class */ (function (_super) {
 }(chevre_1.ChevreError));
 exports.default = NotImplementedError;
 
-},{"../errorCode":20,"./chevre":24,"setprototypeof":219}],28:[function(require,module,exports){
+},{"../errorCode":20,"./chevre":24,"setprototypeof":221}],28:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -1481,7 +1481,7 @@ var RateLimitExceededError = /** @class */ (function (_super) {
 }(chevre_1.ChevreError));
 exports.default = RateLimitExceededError;
 
-},{"../errorCode":20,"./chevre":24,"setprototypeof":219}],29:[function(require,module,exports){
+},{"../errorCode":20,"./chevre":24,"setprototypeof":221}],29:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -1521,7 +1521,7 @@ var ServiceUnavailableError = /** @class */ (function (_super) {
 }(chevre_1.ChevreError));
 exports.default = ServiceUnavailableError;
 
-},{"../errorCode":20,"./chevre":24,"setprototypeof":219}],30:[function(require,module,exports){
+},{"../errorCode":20,"./chevre":24,"setprototypeof":221}],30:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -1561,7 +1561,7 @@ var UnauthorizedError = /** @class */ (function (_super) {
 }(chevre_1.ChevreError));
 exports.default = UnauthorizedError;
 
-},{"../errorCode":20,"./chevre":24,"setprototypeof":219}],31:[function(require,module,exports){
+},{"../errorCode":20,"./chevre":24,"setprototypeof":221}],31:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -2138,7 +2138,7 @@ var StubAuthClient = /** @class */ (function () {
 }());
 exports.StubAuthClient = StubAuthClient;
 
-},{"../transporters":80}],65:[function(require,module,exports){
+},{"../transporters":81}],65:[function(require,module,exports){
 "use strict";
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
@@ -2149,7 +2149,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 __export(require("@cinerino/factory"));
 
-},{"@cinerino/factory":146}],66:[function(require,module,exports){
+},{"@cinerino/factory":148}],66:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -2181,6 +2181,7 @@ var ownershipInfo_2 = require("./service/person/ownershipInfo");
 var reservation_1 = require("./service/reservation");
 var task_1 = require("./service/task");
 var placeOrder_1 = require("./service/transaction/placeOrder");
+var placeOrder2_1 = require("./service/transaction/placeOrder2");
 var returnOrder_1 = require("./service/transaction/returnOrder");
 var userPool_1 = require("./service/userPool");
 var transporters = require("./transporters");
@@ -2305,6 +2306,38 @@ var service;
         return Task;
     }(task_1.TaskService));
     service.Task = Task;
+    /**
+     * 取引サービス
+     */
+    var txn;
+    (function (txn) {
+        /**
+         * 注文取引サービス
+         */
+        var PlaceOrder = /** @class */ (function (_super) {
+            __extends(PlaceOrder, _super);
+            function PlaceOrder() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            return PlaceOrder;
+        }(placeOrder_1.PlaceOrderTransactionService));
+        txn.PlaceOrder = PlaceOrder;
+        /**
+         * 注文返品取引サービス
+         */
+        var ReturnOrder = /** @class */ (function (_super) {
+            __extends(ReturnOrder, _super);
+            function ReturnOrder() {
+                return _super !== null && _super.apply(this, arguments) || this;
+            }
+            return ReturnOrder;
+        }(returnOrder_1.ReturnOrderTransactionService));
+        txn.ReturnOrder = ReturnOrder;
+    })(txn = service.txn || (service.txn = {}));
+    /**
+     * 取引サービス
+     * @deprecated Use service.txn
+     */
     var transaction;
     (function (transaction) {
         /**
@@ -2316,19 +2349,8 @@ var service;
                 return _super !== null && _super.apply(this, arguments) || this;
             }
             return PlaceOrder;
-        }(placeOrder_1.PlaceOrderTransactionService));
+        }(placeOrder2_1.PlaceOrder2TransactionService));
         transaction.PlaceOrder = PlaceOrder;
-        /**
-         * 注文返品取引サービス
-         */
-        var ReturnOrder = /** @class */ (function (_super) {
-            __extends(ReturnOrder, _super);
-            function ReturnOrder() {
-                return _super !== null && _super.apply(this, arguments) || this;
-            }
-            return ReturnOrder;
-        }(returnOrder_1.ReturnOrderTransactionService));
-        transaction.ReturnOrder = ReturnOrder;
     })(transaction = service.transaction || (service.transaction = {}));
     /**
      * Cognitoユーザープールサービス
@@ -2343,7 +2365,7 @@ var service;
     service.UserPool = UserPool;
 })(service = exports.service || (exports.service = {}));
 
-},{"./auth/authClient":64,"./factory":65,"./service/event":68,"./service/order":69,"./service/organization":70,"./service/ownershipInfo":71,"./service/payment":72,"./service/person":73,"./service/person/ownershipInfo":74,"./service/reservation":75,"./service/task":76,"./service/transaction/placeOrder":77,"./service/transaction/returnOrder":78,"./service/userPool":79,"./transporters":80}],67:[function(require,module,exports){
+},{"./auth/authClient":64,"./factory":65,"./service/event":68,"./service/order":69,"./service/organization":70,"./service/ownershipInfo":71,"./service/payment":72,"./service/person":73,"./service/person/ownershipInfo":74,"./service/reservation":75,"./service/task":76,"./service/transaction/placeOrder":77,"./service/transaction/placeOrder2":78,"./service/transaction/returnOrder":79,"./service/userPool":80,"./transporters":81}],67:[function(require,module,exports){
 "use strict";
 var __assign = (this && this.__assign) || function () {
     __assign = Object.assign || function(t) {
@@ -2443,7 +2465,7 @@ var Service = /** @class */ (function () {
 }());
 exports.Service = Service;
 
-},{"./transporters":80,"qs":215}],68:[function(require,module,exports){
+},{"./transporters":81,"qs":217}],68:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -2534,7 +2556,7 @@ var EventService = /** @class */ (function (_super) {
         });
     };
     /**
-     * 上映イベント情報取得
+     * IDで上映イベント検索
      */
     EventService.prototype.findScreeningEventById = function (params) {
         return __awaiter(this, void 0, void 0, function () {
@@ -2551,24 +2573,7 @@ var EventService = /** @class */ (function (_super) {
         });
     };
     /**
-     * 上映イベントに対する券種検索
-     */
-    EventService.prototype.searchScreeningEventTicketOffers = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                return [2 /*return*/, this.fetch({
-                        uri: "/events/screeningEvent/" + params.eventId + "/offers/ticket",
-                        method: 'GET',
-                        expectedStatusCodes: [http_status_1.OK]
-                    }).then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
-                        return [2 /*return*/, response.json()];
-                    }); }); })];
-            });
-        });
-    };
-    /**
-     * 上映イベントに対するオファー検索
+     * 上映イベントに対する座席オファー検索
      */
     EventService.prototype.searchScreeningEventOffers = function (params) {
         return __awaiter(this, void 0, void 0, function () {
@@ -2584,11 +2589,29 @@ var EventService = /** @class */ (function (_super) {
             });
         });
     };
+    /**
+     * 上映イベントに対する券種オファー検索
+     */
+    EventService.prototype.searchScreeningEventTicketOffers = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/events/screeningEvent/" + params.event.id + "/offers/ticket",
+                        method: 'GET',
+                        expectedStatusCodes: [http_status_1.OK],
+                        qs: params
+                    }).then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
     return EventService;
 }(service_1.Service));
 exports.EventService = EventService;
 
-},{"../service":67,"http-status":203}],69:[function(require,module,exports){
+},{"../service":67,"http-status":205}],69:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -2737,7 +2760,7 @@ var OrderService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.OrderService = OrderService;
 
-},{"../service":67,"http-status":203}],70:[function(require,module,exports){
+},{"../service":67,"http-status":205}],70:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -2905,7 +2928,7 @@ var OrganizationService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.OrganizationService = OrganizationService;
 
-},{"../service":67,"http-status":203}],71:[function(require,module,exports){
+},{"../service":67,"http-status":205}],71:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -3016,7 +3039,7 @@ var OwnershipInfoService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.OwnershipInfoService = OwnershipInfoService;
 
-},{"../service":67,"http-status":203}],72:[function(require,module,exports){
+},{"../service":67,"http-status":205}],72:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -3099,7 +3122,7 @@ var PaymentService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.PaymentService = PaymentService;
 
-},{"../service":67,"http-status":203}],73:[function(require,module,exports){
+},{"../service":67,"http-status":205}],73:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -3276,7 +3299,7 @@ var PersonService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.PersonService = PersonService;
 
-},{"../service":67,"http-status":203}],74:[function(require,module,exports){
+},{"../service":67,"http-status":205}],74:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -3514,7 +3537,7 @@ var PersonOwnershipInfoService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.PersonOwnershipInfoService = PersonOwnershipInfoService;
 
-},{"../../service":67,"http-status":203}],75:[function(require,module,exports){
+},{"../../service":67,"http-status":205}],75:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -3626,7 +3649,7 @@ var ReservationService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.ReservationService = ReservationService;
 
-},{"../service":67,"http-status":203}],76:[function(require,module,exports){
+},{"../service":67,"http-status":205}],76:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -3755,7 +3778,399 @@ var TaskService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.TaskService = TaskService;
 
-},{"../service":67,"http-status":203}],77:[function(require,module,exports){
+},{"../service":67,"http-status":205}],77:[function(require,module,exports){
+"use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    }
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var http_status_1 = require("http-status");
+var factory = require("../../factory");
+var service_1 = require("../../service");
+/**
+ * 注文取引サービス
+ */
+var PlaceOrderTransactionService = /** @class */ (function (_super) {
+    __extends(PlaceOrderTransactionService, _super);
+    function PlaceOrderTransactionService() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.typeOf = factory.transactionType.PlaceOrder;
+        return _this;
+    }
+    /**
+     * 取引を開始する
+     */
+    PlaceOrderTransactionService.prototype.start = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/transactions/" + this.typeOf + "/start",
+                        method: 'POST',
+                        body: params,
+                        expectedStatusCodes: [http_status_1.OK]
+                    }).then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
+    /**
+     * 座席予約承認作成
+     */
+    PlaceOrderTransactionService.prototype.authorizeSeatReservation = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/transactions/" + this.typeOf + "/" + params.purpose.id + "/actions/authorize/offer/seatReservation",
+                        method: 'POST',
+                        expectedStatusCodes: [http_status_1.CREATED],
+                        body: params.object
+                    }).then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
+    /**
+     * 座席予約承認取消
+     */
+    PlaceOrderTransactionService.prototype.voidSeatReservation = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.fetch({
+                            uri: "/transactions/" + this.typeOf + "/" + params.purpose.id + "/actions/authorize/offer/seatReservation/" + params.id + "/cancel",
+                            method: 'PUT',
+                            expectedStatusCodes: [http_status_1.NO_CONTENT]
+                        })];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * 汎用決済承認
+     */
+    PlaceOrderTransactionService.prototype.authorizeAnyPayment = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/transactions/" + this.typeOf + "/" + params.purpose.id + "/actions/authorize/paymentMethod/any",
+                        method: 'POST',
+                        expectedStatusCodes: [http_status_1.CREATED],
+                        body: params.object
+                    }).then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
+    /**
+     * 汎用決済承認取消
+     */
+    PlaceOrderTransactionService.prototype.voidAnyPayment = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.fetch({
+                            uri: "/transactions/" + this.typeOf + "/" + params.purpose.id + "/actions/authorize/paymentMethod/any/" + params.id + "/cancel",
+                            method: 'PUT',
+                            expectedStatusCodes: [http_status_1.NO_CONTENT]
+                        })];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * クレジットカードのオーソリを取得する
+     */
+    PlaceOrderTransactionService.prototype.authorizeCreditCardPayment = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/transactions/" + this.typeOf + "/" + params.purpose.id + "/actions/authorize/paymentMethod/creditCard",
+                        method: 'POST',
+                        expectedStatusCodes: [http_status_1.CREATED],
+                        body: params.object
+                    }).then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
+    /**
+     * 口座決済のオーソリを取得する
+     */
+    PlaceOrderTransactionService.prototype.authorizeAccountPayment = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/transactions/" + this.typeOf + "/" + params.purpose.id + "/actions/authorize/paymentMethod/account",
+                        method: 'POST',
+                        expectedStatusCodes: [http_status_1.CREATED],
+                        body: params.object
+                    }).then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
+    /**
+     * ムビチケ承認
+     */
+    PlaceOrderTransactionService.prototype.authorizeMovieTicketPayment = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/transactions/" + this.typeOf + "/" + params.purpose.id + "/actions/authorize/paymentMethod/movieTicket",
+                        method: 'POST',
+                        expectedStatusCodes: [http_status_1.CREATED],
+                        body: params.object
+                    }).then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
+    /**
+     * 決済承認取消
+     */
+    PlaceOrderTransactionService.prototype.voidPayment = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.fetch({
+                            // tslint:disable-next-line:max-line-length
+                            uri: "/transactions/" + this.typeOf + "/" + params.purpose.id + "/actions/authorize/paymentMethod/" + params.object.typeOf + "/" + params.id + "/cancel",
+                            method: 'PUT',
+                            expectedStatusCodes: [http_status_1.NO_CONTENT]
+                        })];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * ポイントインセンティブのオーソリを取得する
+     */
+    PlaceOrderTransactionService.prototype.authorizePointAward = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/transactions/" + this.typeOf + "/" + params.purpose.id + "/actions/authorize/award/accounts/point",
+                        method: 'POST',
+                        expectedStatusCodes: [http_status_1.CREATED],
+                        body: params.object
+                    }).then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
+    /**
+     * ポイントインセンティブオーソリ取消
+     */
+    PlaceOrderTransactionService.prototype.voidPointAward = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.fetch({
+                            uri: "/transactions/" + this.typeOf + "/" + params.purpose.id + "/actions/authorize/award/accounts/point/" + params.id + "/cancel",
+                            method: 'PUT',
+                            expectedStatusCodes: [http_status_1.NO_CONTENT]
+                        })];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * 購入者連絡先登録
+     */
+    PlaceOrderTransactionService.prototype.setCustomerContact = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/transactions/" + this.typeOf + "/" + params.id + "/customerContact",
+                        method: 'PUT',
+                        expectedStatusCodes: [http_status_1.OK],
+                        body: params.object.customerContact
+                    }).then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
+    /**
+     * 取引確定
+     */
+    PlaceOrderTransactionService.prototype.confirm = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/transactions/" + this.typeOf + "/" + params.id + "/confirm",
+                        method: 'PUT',
+                        expectedStatusCodes: [http_status_1.OK],
+                        body: params.options
+                    }).then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
+    /**
+     * 明示的に取引を中止する
+     * 既に確定済、あるいは、期限切れの取引に対して実行するとArgumentエラーが返されます。
+     */
+    PlaceOrderTransactionService.prototype.cancel = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.fetch({
+                            uri: "/transactions/" + this.typeOf + "/" + params.id + "/cancel",
+                            method: 'PUT',
+                            expectedStatusCodes: [http_status_1.NO_CONTENT]
+                        })];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * 取引検索
+     */
+    PlaceOrderTransactionService.prototype.search = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/transactions/" + this.typeOf,
+                        method: 'GET',
+                        qs: params,
+                        expectedStatusCodes: [http_status_1.OK]
+                    }).then(function (response) { return __awaiter(_this, void 0, void 0, function () {
+                        var _a;
+                        return __generator(this, function (_b) {
+                            switch (_b.label) {
+                                case 0:
+                                    _a = {
+                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                    };
+                                    return [4 /*yield*/, response.json()];
+                                case 1: return [2 /*return*/, (_a.data = _b.sent(),
+                                        _a)];
+                            }
+                        });
+                    }); })];
+            });
+        });
+    };
+    /**
+     * 取引に対するアクションを検索する
+     */
+    PlaceOrderTransactionService.prototype.searchActionsByTransactionId = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/transactions/" + this.typeOf + "/" + params.id + "/actions",
+                        method: 'GET',
+                        qs: params,
+                        expectedStatusCodes: [http_status_1.OK]
+                    }).then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
+    /**
+     * レポートダウンロード
+     */
+    PlaceOrderTransactionService.prototype.downloadReport = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/transactions/" + this.typeOf + "/report",
+                        method: 'GET',
+                        qs: params,
+                        expectedStatusCodes: [http_status_1.OK]
+                    }).then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.body];
+                    }); }); })];
+            });
+        });
+    };
+    return PlaceOrderTransactionService;
+}(service_1.Service));
+exports.PlaceOrderTransactionService = PlaceOrderTransactionService;
+
+},{"../../factory":65,"../../service":67,"http-status":205}],78:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -3824,15 +4239,15 @@ var service_1 = require("../../service");
 /**
  * 注文取引サービス
  */
-var PlaceOrderTransactionService = /** @class */ (function (_super) {
-    __extends(PlaceOrderTransactionService, _super);
-    function PlaceOrderTransactionService() {
+var PlaceOrder2TransactionService = /** @class */ (function (_super) {
+    __extends(PlaceOrder2TransactionService, _super);
+    function PlaceOrder2TransactionService() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     /**
      * 取引を開始する
      */
-    PlaceOrderTransactionService.prototype.start = function (params) {
+    PlaceOrder2TransactionService.prototype.start = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
@@ -3850,7 +4265,7 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
     /**
      * 取引に座席予約を追加する
      */
-    PlaceOrderTransactionService.prototype.authorizeSeatReservation = function (params) {
+    PlaceOrder2TransactionService.prototype.authorizeSeatReservation = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
@@ -3868,7 +4283,7 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
     /**
      * 座席予約承認取消
      */
-    PlaceOrderTransactionService.prototype.voidSeatReservation = function (params) {
+    PlaceOrder2TransactionService.prototype.voidSeatReservation = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
@@ -3887,7 +4302,7 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
     /**
      * 汎用決済承認
      */
-    PlaceOrderTransactionService.prototype.authorizeAnyPayment = function (params) {
+    PlaceOrder2TransactionService.prototype.authorizeAnyPayment = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
@@ -3905,7 +4320,7 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
     /**
      * 汎用決済承認取消
      */
-    PlaceOrderTransactionService.prototype.voidAnyPayment = function (params) {
+    PlaceOrder2TransactionService.prototype.voidAnyPayment = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
@@ -3924,7 +4339,7 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
     /**
      * クレジットカードのオーソリを取得する
      */
-    PlaceOrderTransactionService.prototype.authorizeCreditCardPayment = function (params) {
+    PlaceOrder2TransactionService.prototype.authorizeCreditCardPayment = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
@@ -3942,7 +4357,7 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
     /**
      * クレジットカードオーソリ取消
      */
-    PlaceOrderTransactionService.prototype.voidCreditCardPayment = function (params) {
+    PlaceOrder2TransactionService.prototype.voidCreditCardPayment = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
@@ -3961,7 +4376,7 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
     /**
      * 口座決済のオーソリを取得する
      */
-    PlaceOrderTransactionService.prototype.authorizeAccountPayment = function (params) {
+    PlaceOrder2TransactionService.prototype.authorizeAccountPayment = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
@@ -3979,7 +4394,7 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
     /**
      * 口座決済オーソリ取消
      */
-    PlaceOrderTransactionService.prototype.voidAccountPayment = function (params) {
+    PlaceOrder2TransactionService.prototype.voidAccountPayment = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
@@ -3998,7 +4413,7 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
     /**
      * ムビチケ承認
      */
-    PlaceOrderTransactionService.prototype.authorizeMovieTicketPayment = function (params) {
+    PlaceOrder2TransactionService.prototype.authorizeMovieTicketPayment = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
@@ -4016,7 +4431,7 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
     /**
      * ムビチケ承認取消
      */
-    PlaceOrderTransactionService.prototype.voidMovieTicketPayment = function (params) {
+    PlaceOrder2TransactionService.prototype.voidMovieTicketPayment = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
@@ -4035,7 +4450,7 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
     /**
      * ポイントインセンティブのオーソリを取得する
      */
-    PlaceOrderTransactionService.prototype.authorizePointAward = function (params) {
+    PlaceOrder2TransactionService.prototype.authorizePointAward = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
@@ -4053,7 +4468,7 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
     /**
      * ポイントインセンティブオーソリ取消
      */
-    PlaceOrderTransactionService.prototype.voidPointAward = function (params) {
+    PlaceOrder2TransactionService.prototype.voidPointAward = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
@@ -4070,27 +4485,9 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
         });
     };
     /**
-     * Mocoin決済のオーソリを取得する
-     */
-    PlaceOrderTransactionService.prototype.authorizeMocoinPayment = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                return [2 /*return*/, this.fetch({
-                        uri: "/transactions/placeOrder/" + params.transactionId + "/actions/authorize/paymentMethod/mocoin",
-                        method: 'POST',
-                        expectedStatusCodes: [http_status_1.CREATED],
-                        body: params
-                    }).then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
-                        return [2 /*return*/, response.json()];
-                    }); }); })];
-            });
-        });
-    };
-    /**
      * 購入者連絡先登録
      */
-    PlaceOrderTransactionService.prototype.setCustomerContact = function (params) {
+    PlaceOrder2TransactionService.prototype.setCustomerContact = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
@@ -4108,7 +4505,7 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
     /**
      * 取引確定
      */
-    PlaceOrderTransactionService.prototype.confirm = function (params) {
+    PlaceOrder2TransactionService.prototype.confirm = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
@@ -4127,7 +4524,7 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
      * 明示的に取引を中止する
      * 既に確定済、あるいは、期限切れの取引に対して実行するとArgumentエラーが返されます。
      */
-    PlaceOrderTransactionService.prototype.cancel = function (params) {
+    PlaceOrder2TransactionService.prototype.cancel = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
@@ -4146,7 +4543,7 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
     /**
      * 取引検索
      */
-    PlaceOrderTransactionService.prototype.search = function (params) {
+    PlaceOrder2TransactionService.prototype.search = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
@@ -4175,7 +4572,7 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
     /**
      * 取引に対するアクションを検索する
      */
-    PlaceOrderTransactionService.prototype.searchActionsByTransactionId = function (params) {
+    PlaceOrder2TransactionService.prototype.searchActionsByTransactionId = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
@@ -4193,7 +4590,7 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
     /**
      * レポートダウンロード
      */
-    PlaceOrderTransactionService.prototype.downloadReport = function (params) {
+    PlaceOrder2TransactionService.prototype.downloadReport = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
@@ -4208,11 +4605,11 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
             });
         });
     };
-    return PlaceOrderTransactionService;
+    return PlaceOrder2TransactionService;
 }(service_1.Service));
-exports.PlaceOrderTransactionService = PlaceOrderTransactionService;
+exports.PlaceOrder2TransactionService = PlaceOrder2TransactionService;
 
-},{"../../service":67,"http-status":203}],78:[function(require,module,exports){
+},{"../../service":67,"http-status":205}],79:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -4264,6 +4661,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var http_status_1 = require("http-status");
+var factory = require("../../factory");
 var service_1 = require("../../service");
 /**
  * 注文返品取引サービス
@@ -4271,7 +4669,9 @@ var service_1 = require("../../service");
 var ReturnOrderTransactionService = /** @class */ (function (_super) {
     __extends(ReturnOrderTransactionService, _super);
     function ReturnOrderTransactionService() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.typeOf = factory.transactionType.ReturnOrder;
+        return _this;
     }
     /**
      * 取引を開始する
@@ -4281,7 +4681,7 @@ var ReturnOrderTransactionService = /** @class */ (function (_super) {
             var _this = this;
             return __generator(this, function (_a) {
                 return [2 /*return*/, this.fetch({
-                        uri: '/transactions/returnOrder/start',
+                        uri: "/transactions/" + this.typeOf + "/start",
                         method: 'POST',
                         body: params,
                         expectedStatusCodes: [http_status_1.OK]
@@ -4299,7 +4699,7 @@ var ReturnOrderTransactionService = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, this.fetch({
-                            uri: "/transactions/returnOrder/" + params.transactionId + "/confirm",
+                            uri: "/transactions/" + this.typeOf + "/" + params.id + "/confirm",
                             method: 'PUT',
                             expectedStatusCodes: [http_status_1.NO_CONTENT]
                         })];
@@ -4343,7 +4743,7 @@ var ReturnOrderTransactionService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.ReturnOrderTransactionService = ReturnOrderTransactionService;
 
-},{"../../service":67,"http-status":203}],79:[function(require,module,exports){
+},{"../../factory":65,"../../service":67,"http-status":205}],80:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -4471,7 +4871,7 @@ var UserPoolService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.UserPoolService = UserPoolService;
 
-},{"../service":67,"http-status":203}],80:[function(require,module,exports){
+},{"../service":67,"http-status":205}],81:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -4644,7 +5044,7 @@ var DefaultTransporter = /** @class */ (function () {
 }());
 exports.DefaultTransporter = DefaultTransporter;
 
-},{"debug":201,"isomorphic-fetch":210}],81:[function(require,module,exports){
+},{"debug":203,"isomorphic-fetch":212}],82:[function(require,module,exports){
 "use strict";
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
@@ -4655,9 +5055,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 __export(require("@chevre/factory"));
 
-},{"@chevre/factory":63}],82:[function(require,module,exports){
+},{"@chevre/factory":63}],83:[function(require,module,exports){
 arguments[4][14][0].apply(exports,arguments)
-},{"dup":14}],83:[function(require,module,exports){
+},{"dup":14}],84:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -4677,9 +5077,9 @@ var AccountType;
 })(AccountType || (AccountType = {}));
 exports.default = AccountType;
 
-},{}],84:[function(require,module,exports){
+},{}],85:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],85:[function(require,module,exports){
+},{"dup":12}],86:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -4703,7 +5103,7 @@ var ActionType;
 })(ActionType || (ActionType = {}));
 exports.default = ActionType;
 
-},{}],86:[function(require,module,exports){
+},{}],87:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var ObjectType;
@@ -4711,7 +5111,7 @@ var ObjectType;
     ObjectType["PointAward"] = "PointAward";
 })(ObjectType = exports.ObjectType || (exports.ObjectType = {}));
 
-},{}],87:[function(require,module,exports){
+},{}],88:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var ObjectType;
@@ -4719,9 +5119,7 @@ var ObjectType;
     ObjectType["SeatReservation"] = "SeatReservation";
 })(ObjectType = exports.ObjectType || (exports.ObjectType = {}));
 
-},{}],88:[function(require,module,exports){
-arguments[4][14][0].apply(exports,arguments)
-},{"dup":14}],89:[function(require,module,exports){
+},{}],89:[function(require,module,exports){
 arguments[4][14][0].apply(exports,arguments)
 },{"dup":14}],90:[function(require,module,exports){
 arguments[4][14][0].apply(exports,arguments)
@@ -4745,7 +5143,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var point_1 = require("../../authorize/award/point");
 exports.ObjectType = point_1.ObjectType;
 
-},{"../../authorize/award/point":86}],99:[function(require,module,exports){
+},{"../../authorize/award/point":87}],99:[function(require,module,exports){
 arguments[4][14][0].apply(exports,arguments)
 },{"dup":14}],100:[function(require,module,exports){
 arguments[4][14][0].apply(exports,arguments)
@@ -4846,7 +5244,7 @@ var AlreadyInUseError = /** @class */ (function (_super) {
 }(common_1.CinerinoError));
 exports.default = AlreadyInUseError;
 
-},{"../errorCode":108,"./common":112,"setprototypeof":219}],110:[function(require,module,exports){
+},{"../errorCode":108,"./common":112,"setprototypeof":221}],110:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -4887,7 +5285,7 @@ var ArgumentError = /** @class */ (function (_super) {
 }(common_1.CinerinoError));
 exports.default = ArgumentError;
 
-},{"../errorCode":108,"./common":112,"setprototypeof":219}],111:[function(require,module,exports){
+},{"../errorCode":108,"./common":112,"setprototypeof":221}],111:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -4928,7 +5326,7 @@ var ArgumentNullError = /** @class */ (function (_super) {
 }(common_1.CinerinoError));
 exports.default = ArgumentNullError;
 
-},{"../errorCode":108,"./common":112,"setprototypeof":219}],112:[function(require,module,exports){
+},{"../errorCode":108,"./common":112,"setprototypeof":221}],112:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -5001,7 +5399,7 @@ var ForbiddenError = /** @class */ (function (_super) {
 }(common_1.CinerinoError));
 exports.default = ForbiddenError;
 
-},{"../errorCode":108,"./common":112,"setprototypeof":219}],114:[function(require,module,exports){
+},{"../errorCode":108,"./common":112,"setprototypeof":221}],114:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -5042,7 +5440,7 @@ var NotFoundError = /** @class */ (function (_super) {
 }(common_1.CinerinoError));
 exports.default = NotFoundError;
 
-},{"../errorCode":108,"./common":112,"setprototypeof":219}],115:[function(require,module,exports){
+},{"../errorCode":108,"./common":112,"setprototypeof":221}],115:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -5082,7 +5480,7 @@ var NotImplementedError = /** @class */ (function (_super) {
 }(common_1.CinerinoError));
 exports.default = NotImplementedError;
 
-},{"../errorCode":108,"./common":112,"setprototypeof":219}],116:[function(require,module,exports){
+},{"../errorCode":108,"./common":112,"setprototypeof":221}],116:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -5122,7 +5520,7 @@ var RateLimitExceededError = /** @class */ (function (_super) {
 }(common_1.CinerinoError));
 exports.default = RateLimitExceededError;
 
-},{"../errorCode":108,"./common":112,"setprototypeof":219}],117:[function(require,module,exports){
+},{"../errorCode":108,"./common":112,"setprototypeof":221}],117:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -5162,7 +5560,7 @@ var ServiceUnavailableError = /** @class */ (function (_super) {
 }(common_1.CinerinoError));
 exports.default = ServiceUnavailableError;
 
-},{"../errorCode":108,"./common":112,"setprototypeof":219}],118:[function(require,module,exports){
+},{"../errorCode":108,"./common":112,"setprototypeof":221}],118:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -5202,7 +5600,7 @@ var UnauthorizedError = /** @class */ (function (_super) {
 }(common_1.CinerinoError));
 exports.default = UnauthorizedError;
 
-},{"../errorCode":108,"./common":112,"setprototypeof":219}],119:[function(require,module,exports){
+},{"../errorCode":108,"./common":112,"setprototypeof":221}],119:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -5306,10 +5704,6 @@ var PaymentMethodType;
      */
     PaymentMethodType["CreditCard"] = "CreditCard";
     /**
-     * Mocoin決済(外部仮想通貨)
-     */
-    PaymentMethodType["Mocoin"] = "Mocoin";
-    /**
      * ムビチケ
      */
     PaymentMethodType["MovieTicket"] = "MovieTicket";
@@ -5321,8 +5715,24 @@ arguments[4][14][0].apply(exports,arguments)
 },{"dup":14}],128:[function(require,module,exports){
 arguments[4][14][0].apply(exports,arguments)
 },{"dup":14}],129:[function(require,module,exports){
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * 決済ステータス
+ */
+var PaymentStatusType;
+(function (PaymentStatusType) {
+    PaymentStatusType["PaymentAutomaticallyApplied"] = "PaymentAutomaticallyApplied";
+    PaymentStatusType["PaymentComplete"] = "PaymentComplete";
+    PaymentStatusType["PaymentDeclined"] = "PaymentDeclined";
+    PaymentStatusType["PaymentDue"] = "PaymentDue";
+    PaymentStatusType["PaymentPastDue"] = "PaymentPastDue";
+})(PaymentStatusType || (PaymentStatusType = {}));
+exports.default = PaymentStatusType;
+
+},{}],130:[function(require,module,exports){
 arguments[4][14][0].apply(exports,arguments)
-},{"dup":14}],130:[function(require,module,exports){
+},{"dup":14}],131:[function(require,module,exports){
 "use strict";
 /**
  * 人物タイプ
@@ -5334,9 +5744,22 @@ var PersonType;
 })(PersonType || (PersonType = {}));
 exports.default = PersonType;
 
-},{}],131:[function(require,module,exports){
+},{}],132:[function(require,module,exports){
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * 場所タイプ
+ */
+var PlaceType;
+(function (PlaceType) {
+    PlaceType["Online"] = "Online";
+    PlaceType["Store"] = "Store";
+})(PlaceType || (PlaceType = {}));
+exports.default = PlaceType;
+
+},{}],133:[function(require,module,exports){
 arguments[4][40][0].apply(exports,arguments)
-},{"dup":40}],132:[function(require,module,exports){
+},{"dup":40}],134:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -5350,15 +5773,15 @@ var Award;
     Award["PointPayment"] = "PointPayment";
 })(Award = exports.Award || (exports.Award = {}));
 
-},{}],133:[function(require,module,exports){
+},{}],135:[function(require,module,exports){
 arguments[4][14][0].apply(exports,arguments)
-},{"dup":14}],134:[function(require,module,exports){
-arguments[4][14][0].apply(exports,arguments)
-},{"dup":14}],135:[function(require,module,exports){
-arguments[4][46][0].apply(exports,arguments)
-},{"dup":46}],136:[function(require,module,exports){
+},{"dup":14}],136:[function(require,module,exports){
 arguments[4][14][0].apply(exports,arguments)
 },{"dup":14}],137:[function(require,module,exports){
+arguments[4][46][0].apply(exports,arguments)
+},{"dup":46}],138:[function(require,module,exports){
+arguments[4][14][0].apply(exports,arguments)
+},{"dup":14}],139:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -5366,10 +5789,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 var TaskName;
 (function (TaskName) {
-    /**
-     * 注文取引分析
-     */
-    TaskName["AnalyzePlaceOrder"] = "analyzePlaceOrder";
     /**
      * 上映イベント在庫仕入れ
      */
@@ -5415,10 +5834,6 @@ var TaskName;
      */
     TaskName["PayCreditCard"] = "payCreditCard";
     /**
-     * Mocoin支払
-     */
-    TaskName["PayMocoin"] = "payMocoin";
-    /**
      * ムビチケ支払
      */
     TaskName["PayMovieTicket"] = "payMovieTicket";
@@ -5453,7 +5868,7 @@ var TaskName;
 })(TaskName || (TaskName = {}));
 exports.default = TaskName;
 
-},{}],138:[function(require,module,exports){
+},{}],140:[function(require,module,exports){
 "use strict";
 /**
  * タスクステータス
@@ -5480,11 +5895,11 @@ var TaskStatus;
 })(TaskStatus || (TaskStatus = {}));
 exports.default = TaskStatus;
 
-},{}],139:[function(require,module,exports){
+},{}],141:[function(require,module,exports){
 arguments[4][55][0].apply(exports,arguments)
-},{"dup":55}],140:[function(require,module,exports){
+},{"dup":55}],142:[function(require,module,exports){
 arguments[4][56][0].apply(exports,arguments)
-},{"dup":56}],141:[function(require,module,exports){
+},{"dup":56}],143:[function(require,module,exports){
 "use strict";
 /**
  * 取引タイプ
@@ -5503,9 +5918,9 @@ var TransactionType;
 })(TransactionType || (TransactionType = {}));
 exports.default = TransactionType;
 
-},{}],142:[function(require,module,exports){
+},{}],144:[function(require,module,exports){
 arguments[4][14][0].apply(exports,arguments)
-},{"dup":14}],143:[function(require,module,exports){
+},{"dup":14}],145:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -5523,7 +5938,7 @@ var Reason;
     Reason["Seller"] = "Seller";
 })(Reason = exports.Reason || (exports.Reason = {}));
 
-},{}],144:[function(require,module,exports){
+},{}],146:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -5537,9 +5952,9 @@ var UnitCode;
     UnitCode["Sec"] = "SEC";
 })(UnitCode = exports.UnitCode || (exports.UnitCode = {}));
 
-},{}],145:[function(require,module,exports){
+},{}],147:[function(require,module,exports){
 arguments[4][61][0].apply(exports,arguments)
-},{"dup":61}],146:[function(require,module,exports){
+},{"dup":61}],148:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -5554,7 +5969,6 @@ var SeatReservationOfferAuthorizeActionFactory = require("./factory/action/autho
 var AuthorizeAccountPaymentActionFactory = require("./factory/action/authorize/paymentMethod/account");
 var AuthorizeAnyPaymentActionFactory = require("./factory/action/authorize/paymentMethod/any");
 var AuthorizeCreditCardPaymentActionFactory = require("./factory/action/authorize/paymentMethod/creditCard");
-var AuthorizeMocoinPaymentActionFactory = require("./factory/action/authorize/paymentMethod/mocoin");
 var AuthorizeMovieTicketPaymentActionFactory = require("./factory/action/authorize/paymentMethod/movieTicket");
 var CheckMovieTicketActionFactory = require("./factory/action/check/paymentMethod/movieTicket");
 var CheckTokenActionFactory = require("./factory/action/check/token");
@@ -5583,8 +5997,10 @@ var OwnershipInfoFactory = require("./factory/ownershipInfo");
 var CreditCardFactory = require("./factory/paymentMethod/paymentCard/creditCard");
 var MovieTicketFactory = require("./factory/paymentMethod/paymentCard/movieTicket");
 var paymentMethodType_1 = require("./factory/paymentMethodType");
+var paymentStatusType_1 = require("./factory/paymentStatusType");
 var PersonFactory = require("./factory/person");
 var personType_1 = require("./factory/personType");
+var placeType_1 = require("./factory/placeType");
 var priceCurrency_1 = require("./factory/priceCurrency");
 var ProgramMembershipFactory = require("./factory/programMembership");
 var PropertyValueFactory = require("./factory/propertyValue");
@@ -5625,7 +6041,6 @@ var action;
             paymentMethod.account = AuthorizeAccountPaymentActionFactory;
             paymentMethod.any = AuthorizeAnyPaymentActionFactory;
             paymentMethod.creditCard = AuthorizeCreditCardPaymentActionFactory;
-            paymentMethod.mocoin = AuthorizeMocoinPaymentActionFactory;
             paymentMethod.movieTicket = AuthorizeMovieTicketPaymentActionFactory;
         })(paymentMethod = authorize.paymentMethod || (authorize.paymentMethod = {}));
         // tslint:disable-next-line:no-shadowed-variable
@@ -5725,8 +6140,10 @@ exports.organizationType = organizationType_1.default;
 exports.ownershipInfo = OwnershipInfoFactory;
 exports.priceCurrency = priceCurrency_1.default;
 exports.paymentMethodType = paymentMethodType_1.default;
+exports.paymentStatusType = paymentStatusType_1.default;
 exports.person = PersonFactory;
 exports.personType = personType_1.default;
+exports.placeType = placeType_1.default;
 exports.programMembership = ProgramMembershipFactory;
 exports.propertyValue = PropertyValueFactory;
 exports.quantitativeValue = QuantitativeValueFactory;
@@ -5745,7 +6162,7 @@ exports.transactionType = transactionType_1.default;
 exports.unitCode = unitCode_1.UnitCode;
 exports.url = URLFactory;
 
-},{"./chevre":81,"./cognito":82,"./factory/accountType":83,"./factory/action/authorize/award/point":86,"./factory/action/authorize/offer/seatReservation":87,"./factory/action/authorize/paymentMethod/account":88,"./factory/action/authorize/paymentMethod/any":89,"./factory/action/authorize/paymentMethod/creditCard":90,"./factory/action/authorize/paymentMethod/mocoin":91,"./factory/action/authorize/paymentMethod/movieTicket":92,"./factory/action/check/paymentMethod/movieTicket":93,"./factory/action/check/token":94,"./factory/action/trade/order":95,"./factory/action/trade/pay":96,"./factory/action/trade/refund":97,"./factory/action/transfer/give/pointAward":98,"./factory/action/transfer/print/ticket":99,"./factory/action/transfer/return/order":100,"./factory/action/transfer/return/pointAward":101,"./factory/action/transfer/send/message/email":102,"./factory/action/transfer/send/order":103,"./factory/actionStatusType":84,"./factory/actionType":85,"./factory/clientUser":104,"./factory/creativeWork/message/email":106,"./factory/creativeWorkType":105,"./factory/encodingFormat":107,"./factory/errorCode":108,"./factory/errors":119,"./factory/order":120,"./factory/orderStatus":121,"./factory/organization/corporation":123,"./factory/organization/movieTheater":124,"./factory/organizationType":122,"./factory/ownershipInfo":125,"./factory/paymentMethod/paymentCard/creditCard":127,"./factory/paymentMethod/paymentCard/movieTicket":128,"./factory/paymentMethodType":126,"./factory/person":129,"./factory/personType":130,"./factory/priceCurrency":131,"./factory/programMembership":132,"./factory/propertyValue":133,"./factory/quantitativeValue":134,"./factory/sortType":135,"./factory/taskExecutionResult":136,"./factory/taskName":137,"./factory/taskStatus":138,"./factory/transaction/placeOrder":142,"./factory/transaction/returnOrder":143,"./factory/transactionStatusType":139,"./factory/transactionTasksExportationStatus":140,"./factory/transactionType":141,"./factory/unitCode":144,"./factory/url":145,"@pecorino/factory":182,"@waiter/factory":194}],147:[function(require,module,exports){
+},{"./chevre":82,"./cognito":83,"./factory/accountType":84,"./factory/action/authorize/award/point":87,"./factory/action/authorize/offer/seatReservation":88,"./factory/action/authorize/paymentMethod/account":89,"./factory/action/authorize/paymentMethod/any":90,"./factory/action/authorize/paymentMethod/creditCard":91,"./factory/action/authorize/paymentMethod/movieTicket":92,"./factory/action/check/paymentMethod/movieTicket":93,"./factory/action/check/token":94,"./factory/action/trade/order":95,"./factory/action/trade/pay":96,"./factory/action/trade/refund":97,"./factory/action/transfer/give/pointAward":98,"./factory/action/transfer/print/ticket":99,"./factory/action/transfer/return/order":100,"./factory/action/transfer/return/pointAward":101,"./factory/action/transfer/send/message/email":102,"./factory/action/transfer/send/order":103,"./factory/actionStatusType":85,"./factory/actionType":86,"./factory/clientUser":104,"./factory/creativeWork/message/email":106,"./factory/creativeWorkType":105,"./factory/encodingFormat":107,"./factory/errorCode":108,"./factory/errors":119,"./factory/order":120,"./factory/orderStatus":121,"./factory/organization/corporation":123,"./factory/organization/movieTheater":124,"./factory/organizationType":122,"./factory/ownershipInfo":125,"./factory/paymentMethod/paymentCard/creditCard":127,"./factory/paymentMethod/paymentCard/movieTicket":128,"./factory/paymentMethodType":126,"./factory/paymentStatusType":129,"./factory/person":130,"./factory/personType":131,"./factory/placeType":132,"./factory/priceCurrency":133,"./factory/programMembership":134,"./factory/propertyValue":135,"./factory/quantitativeValue":136,"./factory/sortType":137,"./factory/taskExecutionResult":138,"./factory/taskName":139,"./factory/taskStatus":140,"./factory/transaction/placeOrder":144,"./factory/transaction/returnOrder":145,"./factory/transactionStatusType":141,"./factory/transactionTasksExportationStatus":142,"./factory/transactionType":143,"./factory/unitCode":146,"./factory/url":147,"@pecorino/factory":184,"@waiter/factory":196}],149:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -5759,7 +6176,7 @@ var TypeOf;
     TypeOf["Account"] = "Account";
 })(TypeOf = exports.TypeOf || (exports.TypeOf = {}));
 
-},{}],148:[function(require,module,exports){
+},{}],150:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -5778,9 +6195,9 @@ var AccountStatusType;
 })(AccountStatusType || (AccountStatusType = {}));
 exports.default = AccountStatusType;
 
-},{}],149:[function(require,module,exports){
+},{}],151:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],150:[function(require,module,exports){
+},{"dup":12}],152:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -5801,13 +6218,13 @@ var ActionType;
 })(ActionType || (ActionType = {}));
 exports.default = ActionType;
 
-},{}],151:[function(require,module,exports){
-arguments[4][14][0].apply(exports,arguments)
-},{"dup":14}],152:[function(require,module,exports){
-arguments[4][14][0].apply(exports,arguments)
-},{"dup":14}],153:[function(require,module,exports){
+},{}],153:[function(require,module,exports){
 arguments[4][14][0].apply(exports,arguments)
 },{"dup":14}],154:[function(require,module,exports){
+arguments[4][14][0].apply(exports,arguments)
+},{"dup":14}],155:[function(require,module,exports){
+arguments[4][14][0].apply(exports,arguments)
+},{"dup":14}],156:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -5819,9 +6236,9 @@ var CreativeWorkType;
 })(CreativeWorkType || (CreativeWorkType = {}));
 exports.default = CreativeWorkType;
 
-},{}],155:[function(require,module,exports){
+},{}],157:[function(require,module,exports){
 arguments[4][14][0].apply(exports,arguments)
-},{"dup":14}],156:[function(require,module,exports){
+},{"dup":14}],158:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -5841,7 +6258,7 @@ var ErrorCode;
 })(ErrorCode || (ErrorCode = {}));
 exports.default = ErrorCode;
 
-},{}],157:[function(require,module,exports){
+},{}],159:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -5883,7 +6300,7 @@ var AlreadyInUseError = /** @class */ (function (_super) {
 }(pecorino_1.PecorinoError));
 exports.default = AlreadyInUseError;
 
-},{"../errorCode":156,"./pecorino":163,"setprototypeof":219}],158:[function(require,module,exports){
+},{"../errorCode":158,"./pecorino":165,"setprototypeof":221}],160:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -5924,7 +6341,7 @@ var ArgumentError = /** @class */ (function (_super) {
 }(pecorino_1.PecorinoError));
 exports.default = ArgumentError;
 
-},{"../errorCode":156,"./pecorino":163,"setprototypeof":219}],159:[function(require,module,exports){
+},{"../errorCode":158,"./pecorino":165,"setprototypeof":221}],161:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -5965,7 +6382,7 @@ var ArgumentNullError = /** @class */ (function (_super) {
 }(pecorino_1.PecorinoError));
 exports.default = ArgumentNullError;
 
-},{"../errorCode":156,"./pecorino":163,"setprototypeof":219}],160:[function(require,module,exports){
+},{"../errorCode":158,"./pecorino":165,"setprototypeof":221}],162:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6005,7 +6422,7 @@ var ForbiddenError = /** @class */ (function (_super) {
 }(pecorino_1.PecorinoError));
 exports.default = ForbiddenError;
 
-},{"../errorCode":156,"./pecorino":163,"setprototypeof":219}],161:[function(require,module,exports){
+},{"../errorCode":158,"./pecorino":165,"setprototypeof":221}],163:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6046,7 +6463,7 @@ var NotFoundError = /** @class */ (function (_super) {
 }(pecorino_1.PecorinoError));
 exports.default = NotFoundError;
 
-},{"../errorCode":156,"./pecorino":163,"setprototypeof":219}],162:[function(require,module,exports){
+},{"../errorCode":158,"./pecorino":165,"setprototypeof":221}],164:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6086,7 +6503,7 @@ var NotImplementedError = /** @class */ (function (_super) {
 }(pecorino_1.PecorinoError));
 exports.default = NotImplementedError;
 
-},{"../errorCode":156,"./pecorino":163,"setprototypeof":219}],163:[function(require,module,exports){
+},{"../errorCode":158,"./pecorino":165,"setprototypeof":221}],165:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6120,7 +6537,7 @@ var PecorinoError = /** @class */ (function (_super) {
 }(Error));
 exports.PecorinoError = PecorinoError;
 
-},{}],164:[function(require,module,exports){
+},{}],166:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6160,7 +6577,7 @@ var RateLimitExceededError = /** @class */ (function (_super) {
 }(pecorino_1.PecorinoError));
 exports.default = RateLimitExceededError;
 
-},{"../errorCode":156,"./pecorino":163,"setprototypeof":219}],165:[function(require,module,exports){
+},{"../errorCode":158,"./pecorino":165,"setprototypeof":221}],167:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6200,7 +6617,7 @@ var ServiceUnavailableError = /** @class */ (function (_super) {
 }(pecorino_1.PecorinoError));
 exports.default = ServiceUnavailableError;
 
-},{"../errorCode":156,"./pecorino":163,"setprototypeof":219}],166:[function(require,module,exports){
+},{"../errorCode":158,"./pecorino":165,"setprototypeof":221}],168:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6240,7 +6657,7 @@ var UnauthorizedError = /** @class */ (function (_super) {
 }(pecorino_1.PecorinoError));
 exports.default = UnauthorizedError;
 
-},{"../errorCode":156,"./pecorino":163,"setprototypeof":219}],167:[function(require,module,exports){
+},{"../errorCode":158,"./pecorino":165,"setprototypeof":221}],169:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -6267,13 +6684,13 @@ exports.ServiceUnavailable = serviceUnavailable_1.default;
 var unauthorized_1 = require("./error/unauthorized");
 exports.Unauthorized = unauthorized_1.default;
 
-},{"./error/alreadyInUse":157,"./error/argument":158,"./error/argumentNull":159,"./error/forbidden":160,"./error/notFound":161,"./error/notImplemented":162,"./error/pecorino":163,"./error/rateLimitExceeded":164,"./error/serviceUnavailable":165,"./error/unauthorized":166}],168:[function(require,module,exports){
+},{"./error/alreadyInUse":159,"./error/argument":160,"./error/argumentNull":161,"./error/forbidden":162,"./error/notFound":163,"./error/notImplemented":164,"./error/pecorino":165,"./error/rateLimitExceeded":166,"./error/serviceUnavailable":167,"./error/unauthorized":168}],170:[function(require,module,exports){
 arguments[4][40][0].apply(exports,arguments)
-},{"dup":40}],169:[function(require,module,exports){
+},{"dup":40}],171:[function(require,module,exports){
 arguments[4][46][0].apply(exports,arguments)
-},{"dup":46}],170:[function(require,module,exports){
+},{"dup":46}],172:[function(require,module,exports){
 arguments[4][14][0].apply(exports,arguments)
-},{"dup":14}],171:[function(require,module,exports){
+},{"dup":14}],173:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -6292,13 +6709,13 @@ var TaskName;
 })(TaskName || (TaskName = {}));
 exports.default = TaskName;
 
-},{}],172:[function(require,module,exports){
+},{}],174:[function(require,module,exports){
 arguments[4][50][0].apply(exports,arguments)
-},{"dup":50}],173:[function(require,module,exports){
+},{"dup":50}],175:[function(require,module,exports){
 arguments[4][14][0].apply(exports,arguments)
-},{"dup":14}],174:[function(require,module,exports){
+},{"dup":14}],176:[function(require,module,exports){
 arguments[4][14][0].apply(exports,arguments)
-},{"dup":14}],175:[function(require,module,exports){
+},{"dup":14}],177:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -6313,7 +6730,7 @@ var TransactionStatusType;
 })(TransactionStatusType || (TransactionStatusType = {}));
 exports.default = TransactionStatusType;
 
-},{}],176:[function(require,module,exports){
+},{}],178:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -6336,7 +6753,7 @@ var TransactionTasksExportationStatus;
 })(TransactionTasksExportationStatus || (TransactionTasksExportationStatus = {}));
 exports.default = TransactionTasksExportationStatus;
 
-},{}],177:[function(require,module,exports){
+},{}],179:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -6359,15 +6776,15 @@ var TransactionType;
 })(TransactionType || (TransactionType = {}));
 exports.default = TransactionType;
 
-},{}],178:[function(require,module,exports){
-arguments[4][14][0].apply(exports,arguments)
-},{"dup":14}],179:[function(require,module,exports){
-arguments[4][14][0].apply(exports,arguments)
-},{"dup":14}],180:[function(require,module,exports){
+},{}],180:[function(require,module,exports){
 arguments[4][14][0].apply(exports,arguments)
 },{"dup":14}],181:[function(require,module,exports){
+arguments[4][14][0].apply(exports,arguments)
+},{"dup":14}],182:[function(require,module,exports){
+arguments[4][14][0].apply(exports,arguments)
+},{"dup":14}],183:[function(require,module,exports){
 arguments[4][61][0].apply(exports,arguments)
-},{"dup":61}],182:[function(require,module,exports){
+},{"dup":61}],184:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -6448,7 +6865,7 @@ exports.transactionTasksExportationStatus = transactionTasksExportationStatus_1.
 exports.transactionType = transactionType_1.default;
 exports.url = URLFactory;
 
-},{"./factory/account":147,"./factory/accountStatusType":148,"./factory/action/transfer/moneyTransfer":151,"./factory/action/transfer/send/message/email":152,"./factory/actionStatusType":149,"./factory/actionType":150,"./factory/clientUser":153,"./factory/creativeWork/message/email":155,"./factory/creativeWorkType":154,"./factory/errorCode":156,"./factory/errors":167,"./factory/priceCurrency":168,"./factory/sortType":169,"./factory/task/cancelMoneyTransfer":173,"./factory/task/moneyTransfer":174,"./factory/taskExecutionResult":170,"./factory/taskName":171,"./factory/taskStatus":172,"./factory/transaction/deposit":178,"./factory/transaction/transfer":179,"./factory/transaction/withdraw":180,"./factory/transactionStatusType":175,"./factory/transactionTasksExportationStatus":176,"./factory/transactionType":177,"./factory/url":181}],183:[function(require,module,exports){
+},{"./factory/account":149,"./factory/accountStatusType":150,"./factory/action/transfer/moneyTransfer":153,"./factory/action/transfer/send/message/email":154,"./factory/actionStatusType":151,"./factory/actionType":152,"./factory/clientUser":155,"./factory/creativeWork/message/email":157,"./factory/creativeWorkType":156,"./factory/errorCode":158,"./factory/errors":169,"./factory/priceCurrency":170,"./factory/sortType":171,"./factory/task/cancelMoneyTransfer":175,"./factory/task/moneyTransfer":176,"./factory/taskExecutionResult":172,"./factory/taskName":173,"./factory/taskStatus":174,"./factory/transaction/deposit":180,"./factory/transaction/transfer":181,"./factory/transaction/withdraw":182,"./factory/transactionStatusType":177,"./factory/transactionTasksExportationStatus":178,"./factory/transactionType":179,"./factory/url":183}],185:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -6467,7 +6884,7 @@ var ErrorCode;
 })(ErrorCode || (ErrorCode = {}));
 exports.default = ErrorCode;
 
-},{}],184:[function(require,module,exports){
+},{}],186:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6508,7 +6925,7 @@ var ArgumentError = /** @class */ (function (_super) {
 }(waiter_1.WaiterError));
 exports.default = ArgumentError;
 
-},{"../errorCode":183,"./waiter":190,"setprototypeof":219}],185:[function(require,module,exports){
+},{"../errorCode":185,"./waiter":192,"setprototypeof":221}],187:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6549,7 +6966,7 @@ var ArgumentNullError = /** @class */ (function (_super) {
 }(waiter_1.WaiterError));
 exports.default = ArgumentNullError;
 
-},{"../errorCode":183,"./waiter":190,"setprototypeof":219}],186:[function(require,module,exports){
+},{"../errorCode":185,"./waiter":192,"setprototypeof":221}],188:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6589,7 +7006,7 @@ var ForbiddenError = /** @class */ (function (_super) {
 }(waiter_1.WaiterError));
 exports.default = ForbiddenError;
 
-},{"../errorCode":183,"./waiter":190,"setprototypeof":219}],187:[function(require,module,exports){
+},{"../errorCode":185,"./waiter":192,"setprototypeof":221}],189:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6630,7 +7047,7 @@ var NotFoundError = /** @class */ (function (_super) {
 }(waiter_1.WaiterError));
 exports.default = NotFoundError;
 
-},{"../errorCode":183,"./waiter":190,"setprototypeof":219}],188:[function(require,module,exports){
+},{"../errorCode":185,"./waiter":192,"setprototypeof":221}],190:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6670,7 +7087,7 @@ var RateLimitExceededError = /** @class */ (function (_super) {
 }(waiter_1.WaiterError));
 exports.default = RateLimitExceededError;
 
-},{"../errorCode":183,"./waiter":190,"setprototypeof":219}],189:[function(require,module,exports){
+},{"../errorCode":185,"./waiter":192,"setprototypeof":221}],191:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6710,7 +7127,7 @@ var ServiceUnavailableError = /** @class */ (function (_super) {
 }(waiter_1.WaiterError));
 exports.default = ServiceUnavailableError;
 
-},{"../errorCode":183,"./waiter":190,"setprototypeof":219}],190:[function(require,module,exports){
+},{"../errorCode":185,"./waiter":192,"setprototypeof":221}],192:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6743,7 +7160,7 @@ var WaiterError = /** @class */ (function (_super) {
 }(Error));
 exports.WaiterError = WaiterError;
 
-},{}],191:[function(require,module,exports){
+},{}],193:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -6764,11 +7181,11 @@ exports.ServiceUnavailable = serviceUnavailable_1.default;
 var waiter_1 = require("./error/waiter");
 exports.Waiter = waiter_1.WaiterError;
 
-},{"./error/argument":184,"./error/argumentNull":185,"./error/forbidden":186,"./error/notFound":187,"./error/rateLimitExceeded":188,"./error/serviceUnavailable":189,"./error/waiter":190}],192:[function(require,module,exports){
+},{"./error/argument":186,"./error/argumentNull":187,"./error/forbidden":188,"./error/notFound":189,"./error/rateLimitExceeded":190,"./error/serviceUnavailable":191,"./error/waiter":192}],194:[function(require,module,exports){
 arguments[4][14][0].apply(exports,arguments)
-},{"dup":14}],193:[function(require,module,exports){
+},{"dup":14}],195:[function(require,module,exports){
 arguments[4][14][0].apply(exports,arguments)
-},{"dup":14}],194:[function(require,module,exports){
+},{"dup":14}],196:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -6783,7 +7200,7 @@ exports.errors = errors;
 exports.passport = passport;
 exports.rule = rule;
 
-},{"./factory/errorCode":183,"./factory/errors":191,"./factory/passport":192,"./factory/rule":193}],195:[function(require,module,exports){
+},{"./factory/errorCode":185,"./factory/errors":193,"./factory/passport":194,"./factory/rule":195}],197:[function(require,module,exports){
 'use strict'
 
 exports.byteLength = byteLength
@@ -6936,7 +7353,7 @@ function fromByteArray (uint8) {
   return parts.join('')
 }
 
-},{}],196:[function(require,module,exports){
+},{}],198:[function(require,module,exports){
 
 /**
  * Expose `Emitter`.
@@ -7101,7 +7518,7 @@ Emitter.prototype.hasListeners = function(event){
   return !! this.listeners(event).length;
 };
 
-},{}],197:[function(require,module,exports){
+},{}],199:[function(require,module,exports){
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -7862,7 +8279,7 @@ Emitter.prototype.hasListeners = function(event){
 	return CryptoJS;
 
 }));
-},{}],198:[function(require,module,exports){
+},{}],200:[function(require,module,exports){
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -7998,7 +8415,7 @@ Emitter.prototype.hasListeners = function(event){
 	return CryptoJS.enc.Base64;
 
 }));
-},{"./core":197}],199:[function(require,module,exports){
+},{"./core":199}],201:[function(require,module,exports){
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -8017,7 +8434,7 @@ Emitter.prototype.hasListeners = function(event){
 	return CryptoJS.enc.Hex;
 
 }));
-},{"./core":197}],200:[function(require,module,exports){
+},{"./core":199}],202:[function(require,module,exports){
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -8217,7 +8634,7 @@ Emitter.prototype.hasListeners = function(event){
 	return CryptoJS.SHA256;
 
 }));
-},{"./core":197}],201:[function(require,module,exports){
+},{"./core":199}],203:[function(require,module,exports){
 (function (process){
 "use strict";
 
@@ -8401,7 +8818,7 @@ formatters.j = function (v) {
 
 
 }).call(this,require('_process'))
-},{"./common":202,"_process":213}],202:[function(require,module,exports){
+},{"./common":204,"_process":215}],204:[function(require,module,exports){
 "use strict";
 
 /**
@@ -8652,7 +9069,7 @@ function setup(env) {
 module.exports = setup;
 
 
-},{"ms":212}],203:[function(require,module,exports){
+},{"ms":214}],205:[function(require,module,exports){
 // Generated by CoffeeScript 2.3.0
 // # node-http-status
 
@@ -9132,7 +9549,7 @@ module.exports = {
   }
 };
 
-},{}],204:[function(require,module,exports){
+},{}],206:[function(require,module,exports){
 var base64 = require('base64-js');
 
 function padding(str) {
@@ -9218,7 +9635,7 @@ module.exports = {
   base64ToBase64Url: base64ToBase64Url
 };
 
-},{"base64-js":195}],205:[function(require,module,exports){
+},{"base64-js":197}],207:[function(require,module,exports){
 function DummyCache() {}
 
 DummyCache.prototype.get = function () {
@@ -9234,7 +9651,7 @@ DummyCache.prototype.set = function () {
 
 module.exports = DummyCache;
 
-},{}],206:[function(require,module,exports){
+},{}],208:[function(require,module,exports){
 function ConfigurationError(message) {
   this.name = 'ConfigurationError';
   this.message = (message || '');
@@ -9252,7 +9669,7 @@ module.exports = {
   TokenValidationError: TokenValidationError
 };
 
-},{}],207:[function(require,module,exports){
+},{}],209:[function(require,module,exports){
 var urljoin = require('url-join');
 var base64 = require('./base64');
 var request = require('superagent');
@@ -9298,7 +9715,7 @@ module.exports = {
   getJWKS: getJWKS
 };
 
-},{"./base64":204,"superagent":221,"url-join":226}],208:[function(require,module,exports){
+},{"./base64":206,"superagent":223,"url-join":228}],210:[function(require,module,exports){
 /*
 Based on the work of Tom Wu
 http://www-cs-students.stanford.edu/~tjw/jsbn/
@@ -9377,7 +9794,7 @@ RSAVerifier.prototype.verify = function (msg, encsig) {
 
 module.exports = RSAVerifier;
 
-},{"crypto-js/sha256":200,"jsbn":211}],209:[function(require,module,exports){
+},{"crypto-js/sha256":202,"jsbn":213}],211:[function(require,module,exports){
 var sha256 = require('crypto-js/sha256');
 var cryptoBase64 = require('crypto-js/enc-base64');
 var cryptoHex = require('crypto-js/enc-hex');
@@ -9670,7 +10087,7 @@ IdTokenVerifier.prototype.validateAccessToken = function (accessToken, alg, atHa
 
 module.exports = IdTokenVerifier;
 
-},{"./helpers/base64":204,"./helpers/dummy-cache":205,"./helpers/error":206,"./helpers/jwks":207,"./helpers/rsa-verifier":208,"crypto-js/enc-base64":198,"crypto-js/enc-hex":199,"crypto-js/sha256":200}],210:[function(require,module,exports){
+},{"./helpers/base64":206,"./helpers/dummy-cache":207,"./helpers/error":208,"./helpers/jwks":209,"./helpers/rsa-verifier":210,"crypto-js/enc-base64":200,"crypto-js/enc-hex":201,"crypto-js/sha256":202}],212:[function(require,module,exports){
 // the whatwg-fetch polyfill installs the fetch() function
 // on the global object (window or self)
 //
@@ -9678,7 +10095,7 @@ module.exports = IdTokenVerifier;
 require('whatwg-fetch');
 module.exports = self.fetch.bind(self);
 
-},{"whatwg-fetch":227}],211:[function(require,module,exports){
+},{"whatwg-fetch":229}],213:[function(require,module,exports){
 (function(){
 
     // Copyright (c) 2005  Tom Wu
@@ -11037,7 +11454,7 @@ module.exports = self.fetch.bind(self);
 
 }).call(this);
 
-},{}],212:[function(require,module,exports){
+},{}],214:[function(require,module,exports){
 /**
  * Helpers.
  */
@@ -11201,7 +11618,7 @@ function plural(ms, msAbs, n, name) {
   return Math.round(ms / n) + ' ' + name + (isPlural ? 's' : '');
 }
 
-},{}],213:[function(require,module,exports){
+},{}],215:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -11387,7 +11804,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],214:[function(require,module,exports){
+},{}],216:[function(require,module,exports){
 'use strict';
 
 var replace = String.prototype.replace;
@@ -11407,7 +11824,7 @@ module.exports = {
     RFC3986: 'RFC3986'
 };
 
-},{}],215:[function(require,module,exports){
+},{}],217:[function(require,module,exports){
 'use strict';
 
 var stringify = require('./stringify');
@@ -11420,7 +11837,7 @@ module.exports = {
     stringify: stringify
 };
 
-},{"./formats":214,"./parse":216,"./stringify":217}],216:[function(require,module,exports){
+},{"./formats":216,"./parse":218,"./stringify":219}],218:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -11596,7 +12013,7 @@ module.exports = function (str, opts) {
     return utils.compact(obj);
 };
 
-},{"./utils":218}],217:[function(require,module,exports){
+},{"./utils":220}],219:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -11808,7 +12225,7 @@ module.exports = function (object, opts) {
     return joined.length > 0 ? prefix + joined : '';
 };
 
-},{"./formats":214,"./utils":218}],218:[function(require,module,exports){
+},{"./formats":216,"./utils":220}],220:[function(require,module,exports){
 'use strict';
 
 var has = Object.prototype.hasOwnProperty;
@@ -12023,7 +12440,7 @@ module.exports = {
     merge: merge
 };
 
-},{}],219:[function(require,module,exports){
+},{}],221:[function(require,module,exports){
 module.exports = Object.setPrototypeOf || ({__proto__:[]} instanceof Array ? setProtoOf : mixinProperties);
 
 function setProtoOf(obj, proto) {
@@ -12040,7 +12457,7 @@ function mixinProperties(obj, proto) {
 	return obj;
 }
 
-},{}],220:[function(require,module,exports){
+},{}],222:[function(require,module,exports){
 function Agent() {
   this._defaults = [];
 }
@@ -12062,7 +12479,7 @@ Agent.prototype._setDefaults = function(req) {
 
 module.exports = Agent;
 
-},{}],221:[function(require,module,exports){
+},{}],223:[function(require,module,exports){
 /**
  * Root reference for iframes.
  */
@@ -12984,7 +13401,7 @@ request.put = function(url, data, fn) {
   return req;
 };
 
-},{"./agent-base":220,"./is-object":222,"./request-base":223,"./response-base":224,"component-emitter":196}],222:[function(require,module,exports){
+},{"./agent-base":222,"./is-object":224,"./request-base":225,"./response-base":226,"component-emitter":198}],224:[function(require,module,exports){
 'use strict';
 
 /**
@@ -13001,7 +13418,7 @@ function isObject(obj) {
 
 module.exports = isObject;
 
-},{}],223:[function(require,module,exports){
+},{}],225:[function(require,module,exports){
 'use strict';
 
 /**
@@ -13697,7 +14114,7 @@ RequestBase.prototype._setTimeouts = function() {
   }
 };
 
-},{"./is-object":222}],224:[function(require,module,exports){
+},{"./is-object":224}],226:[function(require,module,exports){
 'use strict';
 
 /**
@@ -13835,7 +14252,7 @@ ResponseBase.prototype._setStatusProperties = function(status){
     this.unprocessableEntity = 422 == status;
 };
 
-},{"./utils":225}],225:[function(require,module,exports){
+},{"./utils":227}],227:[function(require,module,exports){
 'use strict';
 
 /**
@@ -13908,7 +14325,7 @@ exports.cleanHeader = function(header, changesOrigin){
   return header;
 };
 
-},{}],226:[function(require,module,exports){
+},{}],228:[function(require,module,exports){
 (function (name, context, definition) {
   if (typeof module !== 'undefined' && module.exports) module.exports = definition();
   else if (typeof define === 'function' && define.amd) define(definition);
@@ -13948,7 +14365,7 @@ exports.cleanHeader = function(header, changesOrigin){
 
 });
 
-},{}],227:[function(require,module,exports){
+},{}],229:[function(require,module,exports){
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
