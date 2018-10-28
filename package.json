@@ -1,6 +1,6 @@
 {
   "name": "@cinerino/api-javascript-client",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.17",
   "description": "Cinerino API client library for JavaScript",
   "main": "./lib/index.js",
   "browser": "./lib/index.js",
