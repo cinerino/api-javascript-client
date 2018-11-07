@@ -63,15 +63,15 @@
     "nyc": "^13.1.0",
     "rimraf": "^2.6.2",
     "sinon": "^6.3.5",
-    "snyk": "^1.105.0",
+    "snyk": "^1.108.0",
     "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
     "tslint-microsoft-contrib": "^5.2.1",
-    "typescript": "^3.1.4",
+    "typescript": "^3.1.6",
     "watchify": "^3.11.0"
   },
   "dependencies": {
-    "@cinerino/api-abstract-client": "^1.0.0-alpha.55",
+    "@cinerino/api-abstract-client": "^1.0.0-alpha.57",
     "debug": "^3.2.6",
     "http-status": "^1.2.0",
     "idtoken-verifier": "^1.2.0",
