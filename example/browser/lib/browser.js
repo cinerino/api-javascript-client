@@ -2284,12 +2284,12 @@ var event_1 = require("./service/event");
 var iam_1 = require("./service/iam");
 var invoice_1 = require("./service/invoice");
 var order_1 = require("./service/order");
-var organization_1 = require("./service/organization");
 var ownershipInfo_1 = require("./service/ownershipInfo");
 var payment_1 = require("./service/payment");
 var paymentMethod_1 = require("./service/paymentMethod");
 var person_1 = require("./service/person");
 var ownershipInfo_2 = require("./service/person/ownershipInfo");
+var project_1 = require("./service/project");
 var reservation_1 = require("./service/reservation");
 var seller_1 = require("./service/seller");
 var task_1 = require("./service/task");
@@ -2420,18 +2420,6 @@ var service;
     }(order_1.OrderService));
     service.Order = Order;
     /**
-     * 組織サービス
-     * @deprecated Use service.Seller. 販売者サービスを使用してください
-     */
-    var Organization = /** @class */ (function (_super) {
-        __extends(Organization, _super);
-        function Organization() {
-            return _super !== null && _super.apply(this, arguments) || this;
-        }
-        return Organization;
-    }(organization_1.OrganizationService));
-    service.Organization = Organization;
-    /**
      * 所有権サービス
      */
     var OwnershipInfo = /** @class */ (function (_super) {
@@ -2490,6 +2478,17 @@ var service;
         }(ownershipInfo_2.PersonOwnershipInfoService));
         person.OwnershipInfo = OwnershipInfo;
     })(person = service.person || (service.person = {}));
+    /**
+     * プロジェクトサービス
+     */
+    var Project = /** @class */ (function (_super) {
+        __extends(Project, _super);
+        function Project() {
+            return _super !== null && _super.apply(this, arguments) || this;
+        }
+        return Project;
+    }(project_1.ProjectService));
+    service.Project = Project;
     /**
      * 予約サービス
      */
@@ -2580,7 +2579,7 @@ var service;
     service.UserPool = UserPool;
 })(service = exports.service || (exports.service = {}));
 
-},{"./auth/authClient":76,"./factory":77,"./service":79,"./service/creativeWork":80,"./service/delivery":81,"./service/event":82,"./service/iam":83,"./service/invoice":84,"./service/order":85,"./service/organization":86,"./service/ownershipInfo":87,"./service/payment":88,"./service/paymentMethod":89,"./service/person":90,"./service/person/ownershipInfo":91,"./service/reservation":92,"./service/seller":93,"./service/task":94,"./service/transaction/moneyTransfer":95,"./service/transaction/placeOrder":96,"./service/transaction/returnOrder":97,"./service/userPool":98,"./transporters":99}],79:[function(require,module,exports){
+},{"./auth/authClient":76,"./factory":77,"./service":79,"./service/creativeWork":80,"./service/delivery":81,"./service/event":82,"./service/iam":83,"./service/invoice":84,"./service/order":85,"./service/ownershipInfo":86,"./service/payment":87,"./service/paymentMethod":88,"./service/person":89,"./service/person/ownershipInfo":90,"./service/project":91,"./service/reservation":92,"./service/seller":93,"./service/task":94,"./service/transaction/moneyTransfer":95,"./service/transaction/placeOrder":96,"./service/transaction/returnOrder":97,"./service/userPool":98,"./transporters":99}],79:[function(require,module,exports){
 "use strict";
 var __assign = (this && this.__assign) || function () {
     __assign = Object.assign || function(t) {
@@ -3443,122 +3442,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 /**
- * 組織サービス
- * @deprecated Use SellerService. 販売者サービスを使用してください
- */
-var OrganizationService = /** @class */ (function (_super) {
-    __extends(OrganizationService, _super);
-    function OrganizationService() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    /**
-     * 劇場組織取得
-     * @deprecated Use SellerService.findById()
-     */
-    OrganizationService.prototype.findMovieTheaterById = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                return [2 /*return*/, this.fetch({
-                        uri: "/organizations/movieTheater/" + params.id,
-                        method: 'GET',
-                        expectedStatusCodes: [http_status_1.OK]
-                    })
-                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
-                        return [2 /*return*/, response.json()];
-                    }); }); })];
-            });
-        });
-    };
-    /**
-     * 劇場組織検索
-     * @deprecated Use SellerService.search()
-     */
-    OrganizationService.prototype.searchMovieTheaters = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                return [2 /*return*/, this.fetch({
-                        uri: '/organizations/movieTheater',
-                        method: 'GET',
-                        qs: params,
-                        expectedStatusCodes: [http_status_1.OK]
-                    })
-                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () {
-                        var _a;
-                        return __generator(this, function (_b) {
-                            switch (_b.label) {
-                                case 0:
-                                    _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
-                                    };
-                                    return [4 /*yield*/, response.json()];
-                                case 1: return [2 /*return*/, (_a.data = _b.sent(),
-                                        _a)];
-                            }
-                        });
-                    }); })];
-            });
-        });
-    };
-    return OrganizationService;
-}(service_1.Service));
-exports.OrganizationService = OrganizationService;
-
-},{"../service":79,"http-status":235}],87:[function(require,module,exports){
-"use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var http_status_1 = require("http-status");
-var service_1 = require("../service");
-/**
  * 所有権サービス
  */
 var OwnershipInfoService = /** @class */ (function (_super) {
@@ -3623,7 +3506,7 @@ var OwnershipInfoService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.OwnershipInfoService = OwnershipInfoService;
 
-},{"../service":79,"http-status":235}],88:[function(require,module,exports){
+},{"../service":79,"http-status":235}],87:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -3823,7 +3706,7 @@ var PaymentService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.PaymentService = PaymentService;
 
-},{"../factory":77,"../service":79,"http-status":235}],89:[function(require,module,exports){
+},{"../factory":77,"../service":79,"http-status":235}],88:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -3918,7 +3801,7 @@ var PaymentMethodService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.PaymentMethodService = PaymentMethodService;
 
-},{"../service":79,"http-status":235}],90:[function(require,module,exports){
+},{"../service":79,"http-status":235}],89:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -3987,7 +3870,7 @@ var PersonService = /** @class */ (function (_super) {
             var id;
             var _this = this;
             return __generator(this, function (_a) {
-                id = (params.personId !== undefined) ? params.personId : (params.id !== undefined) ? params.id : 'me';
+                id = (params.id !== undefined) ? params.id : 'me';
                 return [2 /*return*/, this.fetch({
                         uri: "/people/" + id + "/profile",
                         method: 'GET',
@@ -4008,7 +3891,7 @@ var PersonService = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        id = (params.personId !== undefined) ? params.personId : (params.id !== undefined) ? params.id : 'me';
+                        id = (params.id !== undefined) ? params.id : 'me';
                         return [4 /*yield*/, this.fetch({
                                 uri: "/people/" + id + "/profile",
                                 method: 'PATCH',
@@ -4030,7 +3913,7 @@ var PersonService = /** @class */ (function (_super) {
             var id;
             var _this = this;
             return __generator(this, function (_a) {
-                id = (params.personId !== undefined) ? params.personId : (params.id !== undefined) ? params.id : 'me';
+                id = (params.id !== undefined) ? params.id : 'me';
                 return [2 /*return*/, this.fetch({
                         uri: "/people/" + id + "/orders",
                         method: 'GET',
@@ -4106,7 +3989,7 @@ var PersonService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.PersonService = PersonService;
 
-},{"../service":79,"http-status":235}],91:[function(require,module,exports){
+},{"../service":79,"http-status":235}],90:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -4175,7 +4058,7 @@ var PersonOwnershipInfoService = /** @class */ (function (_super) {
             var id;
             var _this = this;
             return __generator(this, function (_a) {
-                id = (params.personId !== undefined) ? params.personId : (params.id !== undefined) ? params.id : 'me';
+                id = (params.id !== undefined) ? params.id : 'me';
                 return [2 /*return*/, this.fetch({
                         uri: "/people/" + id + "/ownershipInfos/creditCards",
                         method: 'POST',
@@ -4196,7 +4079,7 @@ var PersonOwnershipInfoService = /** @class */ (function (_super) {
             var id;
             var _this = this;
             return __generator(this, function (_a) {
-                id = (params.personId !== undefined) ? params.personId : (params.id !== undefined) ? params.id : 'me';
+                id = (params.id !== undefined) ? params.id : 'me';
                 return [2 /*return*/, this.fetch({
                         uri: "/people/" + id + "/ownershipInfos/creditCards",
                         method: 'GET',
@@ -4218,7 +4101,7 @@ var PersonOwnershipInfoService = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        id = (params.personId !== undefined) ? params.personId : (params.id !== undefined) ? params.id : 'me';
+                        id = (params.id !== undefined) ? params.id : 'me';
                         return [4 /*yield*/, this.fetch({
                                 uri: "/people/" + id + "/ownershipInfos/creditCards/" + params.cardSeq,
                                 method: 'DELETE',
@@ -4239,7 +4122,7 @@ var PersonOwnershipInfoService = /** @class */ (function (_super) {
             var id;
             var _this = this;
             return __generator(this, function (_a) {
-                id = (params.personId !== undefined) ? params.personId : (params.id !== undefined) ? params.id : 'me';
+                id = (params.id !== undefined) ? params.id : 'me';
                 return [2 /*return*/, this.fetch({
                         uri: "/people/" + id + "/ownershipInfos/accounts/" + params.accountType,
                         method: 'POST',
@@ -4265,7 +4148,7 @@ var PersonOwnershipInfoService = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        id = (params.personId !== undefined) ? params.personId : (params.id !== undefined) ? params.id : 'me';
+                        id = (params.id !== undefined) ? params.id : 'me';
                         return [4 /*yield*/, this.fetch({
                                 uri: "/people/" + id + "/ownershipInfos/accounts/" + params.accountType + "/" + params.accountNumber + "/close",
                                 method: 'PUT',
@@ -4286,7 +4169,7 @@ var PersonOwnershipInfoService = /** @class */ (function (_super) {
             var id;
             var _this = this;
             return __generator(this, function (_a) {
-                id = (params.personId !== undefined) ? params.personId : (params.id !== undefined) ? params.id : 'me';
+                id = (params.id !== undefined) ? params.id : 'me';
                 return [2 /*return*/, this.fetch({
                         // tslint:disable-next-line:max-line-length
                         uri: "/people/" + id + "/ownershipInfos/accounts/actions/moneyTransfer",
@@ -4319,7 +4202,7 @@ var PersonOwnershipInfoService = /** @class */ (function (_super) {
             var id;
             var _this = this;
             return __generator(this, function (_a) {
-                id = (params.personId !== undefined) ? params.personId : (params.id !== undefined) ? params.id : 'me';
+                id = (params.id !== undefined) ? params.id : 'me';
                 return [2 /*return*/, this.fetch({
                         uri: "/people/" + id + "/ownershipInfos",
                         method: 'GET',
@@ -4351,7 +4234,7 @@ var PersonOwnershipInfoService = /** @class */ (function (_super) {
             var id;
             var _this = this;
             return __generator(this, function (_a) {
-                id = (params.personId !== undefined) ? params.personId : (params.id !== undefined) ? params.id : 'me';
+                id = (params.id !== undefined) ? params.id : 'me';
                 return [2 /*return*/, this.fetch({
                         uri: "/people/" + id + "/ownershipInfos/" + params.ownershipInfoId + "/authorize",
                         method: 'POST',
@@ -4368,7 +4251,120 @@ var PersonOwnershipInfoService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.PersonOwnershipInfoService = PersonOwnershipInfoService;
 
-},{"../../service":79,"http-status":235}],92:[function(require,module,exports){
+},{"../../service":79,"http-status":235}],91:[function(require,module,exports){
+"use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var http_status_1 = require("http-status");
+var service_1 = require("../service");
+/**
+ * プロジェクトサービス
+ */
+var ProjectService = /** @class */ (function (_super) {
+    __extends(ProjectService, _super);
+    function ProjectService() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    /**
+     * プロジェクト検索
+     */
+    ProjectService.prototype.search = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: '/projects',
+                        method: 'GET',
+                        qs: params,
+                        expectedStatusCodes: [http_status_1.OK]
+                    })
+                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () {
+                        var _a;
+                        return __generator(this, function (_b) {
+                            switch (_b.label) {
+                                case 0:
+                                    _a = {
+                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                    };
+                                    return [4 /*yield*/, response.json()];
+                                case 1: return [2 /*return*/, (_a.data = _b.sent(),
+                                        _a)];
+                            }
+                        });
+                    }); })];
+            });
+        });
+    };
+    /**
+     * プロジェクト取得
+     */
+    ProjectService.prototype.findById = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/projects/" + params.id,
+                        method: 'GET',
+                        expectedStatusCodes: [http_status_1.OK]
+                    })
+                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
+    return ProjectService;
+}(service_1.Service));
+exports.ProjectService = ProjectService;
+
+},{"../service":79,"http-status":235}],92:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -5072,127 +5068,6 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, this.fetch({
                             uri: "/transactions/" + this.typeOf + "/" + params.purpose.id + "/actions/authorize/offer/seatReservation/" + params.id + "/cancel",
-                            method: 'PUT',
-                            expectedStatusCodes: [http_status_1.NO_CONTENT]
-                        })];
-                    case 1:
-                        _a.sent();
-                        return [2 /*return*/];
-                }
-            });
-        });
-    };
-    /**
-     * 汎用決済承認
-     * @deprecated Use service.Payment
-     */
-    PlaceOrderTransactionService.prototype.authorizeAnyPayment = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                return [2 /*return*/, this.fetch({
-                        uri: "/transactions/" + this.typeOf + "/" + params.purpose.id + "/actions/authorize/paymentMethod/any",
-                        method: 'POST',
-                        expectedStatusCodes: [http_status_1.CREATED],
-                        body: params.object
-                    })
-                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
-                        return [2 /*return*/, response.json()];
-                    }); }); })];
-            });
-        });
-    };
-    /**
-     * 汎用決済承認取消
-     * @deprecated Use service.Payment
-     */
-    PlaceOrderTransactionService.prototype.voidAnyPayment = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.fetch({
-                            uri: "/transactions/" + this.typeOf + "/" + params.purpose.id + "/actions/authorize/paymentMethod/any/" + params.id + "/cancel",
-                            method: 'PUT',
-                            expectedStatusCodes: [http_status_1.NO_CONTENT]
-                        })];
-                    case 1:
-                        _a.sent();
-                        return [2 /*return*/];
-                }
-            });
-        });
-    };
-    /**
-     * クレジットカードのオーソリを取得する
-     * @deprecated Use service.Payment
-     */
-    PlaceOrderTransactionService.prototype.authorizeCreditCardPayment = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                return [2 /*return*/, this.fetch({
-                        uri: "/transactions/" + this.typeOf + "/" + params.purpose.id + "/actions/authorize/paymentMethod/creditCard",
-                        method: 'POST',
-                        expectedStatusCodes: [http_status_1.CREATED],
-                        body: params.object
-                    })
-                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
-                        return [2 /*return*/, response.json()];
-                    }); }); })];
-            });
-        });
-    };
-    /**
-     * 口座決済のオーソリを取得する
-     * @deprecated Use service.Payment
-     */
-    PlaceOrderTransactionService.prototype.authorizeAccountPayment = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                return [2 /*return*/, this.fetch({
-                        uri: "/transactions/" + this.typeOf + "/" + params.purpose.id + "/actions/authorize/paymentMethod/account",
-                        method: 'POST',
-                        expectedStatusCodes: [http_status_1.CREATED],
-                        body: params.object
-                    })
-                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
-                        return [2 /*return*/, response.json()];
-                    }); }); })];
-            });
-        });
-    };
-    /**
-     * ムビチケ承認
-     * @deprecated Use service.Payment
-     */
-    PlaceOrderTransactionService.prototype.authorizeMovieTicketPayment = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                return [2 /*return*/, this.fetch({
-                        uri: "/transactions/" + this.typeOf + "/" + params.purpose.id + "/actions/authorize/paymentMethod/movieTicket",
-                        method: 'POST',
-                        expectedStatusCodes: [http_status_1.CREATED],
-                        body: params.object
-                    })
-                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
-                        return [2 /*return*/, response.json()];
-                    }); }); })];
-            });
-        });
-    };
-    /**
-     * 決済承認取消
-     * @deprecated Use service.Payment
-     */
-    PlaceOrderTransactionService.prototype.voidPayment = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.fetch({
-                            // tslint:disable-next-line:max-line-length
-                            uri: "/transactions/" + this.typeOf + "/" + params.purpose.id + "/actions/authorize/paymentMethod/" + params.object.typeOf + "/" + params.id + "/cancel",
                             method: 'PUT',
                             expectedStatusCodes: [http_status_1.NO_CONTENT]
                         })];
