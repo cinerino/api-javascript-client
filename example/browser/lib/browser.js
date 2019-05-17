@@ -1689,8 +1689,11 @@ var PaymentMethodType;
      * ムビチケ
      */
     PaymentMethodType["MovieTicket"] = "MovieTicket";
-})(PaymentMethodType || (PaymentMethodType = {}));
-exports.default = PaymentMethodType;
+    /**
+     * その他
+     */
+    PaymentMethodType["Others"] = "Others";
+})(PaymentMethodType = exports.PaymentMethodType || (exports.PaymentMethodType = {}));
 
 },{}],43:[function(require,module,exports){
 "use strict";
@@ -2113,7 +2116,7 @@ var offer;
     offer.product = ProductOfferFactory;
 })(offer = exports.offer || (exports.offer = {}));
 exports.organizationType = organizationType_1.default;
-exports.paymentMethodType = paymentMethodType_1.default;
+exports.paymentMethodType = paymentMethodType_1.PaymentMethodType;
 exports.priceCurrency = priceCurrency_1.default;
 var place;
 (function (place) {
