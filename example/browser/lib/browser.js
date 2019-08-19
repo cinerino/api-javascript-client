@@ -4322,6 +4322,25 @@ var PersonService = /** @class */ (function (_super) {
             });
         });
     };
+    /**
+     * ユーザー削除
+     */
+    PersonService.prototype.deletById = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.fetch({
+                            uri: "/people/" + params.id,
+                            method: 'DELETE',
+                            expectedStatusCodes: [http_status_1.NO_CONTENT]
+                        })];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
     return PersonService;
 }(service_1.Service));
 exports.PersonService = PersonService;
