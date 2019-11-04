@@ -6045,7 +6045,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var http_status_1 = require("http-status");
-var factory = require("../../factory");
 var placeOrder_1 = require("./placeOrder");
 /**
  * 注文取引サービス(sskts専用)
@@ -6053,9 +6052,7 @@ var placeOrder_1 = require("./placeOrder");
 var PlaceOrderTransaction4ssktsService = /** @class */ (function (_super) {
     __extends(PlaceOrderTransaction4ssktsService, _super);
     function PlaceOrderTransaction4ssktsService(options) {
-        var _this = _super.call(this, options) /* istanbul ignore next */ || this;
-        _this.typeOf = factory.transactionType.PlaceOrder;
-        return _this;
+        return _super.call(this, options) || this; /* istanbul ignore next */
     }
     /**
      * 座席予約オファー承認
@@ -6224,7 +6221,7 @@ var PlaceOrderTransaction4ssktsService = /** @class */ (function (_super) {
 }(placeOrder_1.PlaceOrderTransactionService));
 exports.PlaceOrderTransaction4ssktsService = PlaceOrderTransaction4ssktsService;
 
-},{"../../factory":78,"./placeOrder":101,"http-status":246}],103:[function(require,module,exports){
+},{"./placeOrder":101,"http-status":246}],103:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6287,40 +6284,16 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-/**
- * 注文取引サービス
- */
-var factory = require("@cinerino/factory");
 var http_status_1 = require("http-status");
-var service_1 = require("../../service");
+var placeOrder_1 = require("./placeOrder");
 /**
- * 注文取引サービス
+ * 注文取引サービス(ttts専用)
  */
 var PlaceOrderTransaction4tttsService = /** @class */ (function (_super) {
     __extends(PlaceOrderTransaction4tttsService, _super);
-    function PlaceOrderTransaction4tttsService() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function PlaceOrderTransaction4tttsService(options) {
+        return _super.call(this, options) || this; /* istanbul ignore next */
     }
-    /**
-     * 取引を開始する
-     * 開始できない場合(混雑中など)、nullが返されます。
-     */
-    PlaceOrderTransaction4tttsService.prototype.start = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                return [2 /*return*/, this.fetch({
-                        uri: "/ttts/transactions/" + factory.transactionType.PlaceOrder + "/start",
-                        method: 'POST',
-                        body: __assign(__assign({}, params), { seller_identifier: params.sellerIdentifier }),
-                        expectedStatusCodes: [http_status_1.CREATED]
-                    })
-                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
-                        return [2 /*return*/, response.json()];
-                    }); }); })];
-            });
-        });
-    };
     /**
      * 取引に座席予約を追加する
      */
@@ -6329,7 +6302,7 @@ var PlaceOrderTransaction4tttsService = /** @class */ (function (_super) {
             var _this = this;
             return __generator(this, function (_a) {
                 return [2 /*return*/, this.fetch({
-                        uri: "/ttts/transactions/" + factory.transactionType.PlaceOrder + "/" + params.transactionId + "/actions/authorize/seatReservation",
+                        uri: "/ttts/transactions/" + this.typeOf + "/" + params.transactionId + "/actions/authorize/seatReservation",
                         method: 'POST',
                         expectedStatusCodes: [http_status_1.CREATED],
                         body: {
@@ -6351,7 +6324,7 @@ var PlaceOrderTransaction4tttsService = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, this.fetch({
-                            uri: "/ttts/transactions/" + factory.transactionType.PlaceOrder + "/" + params.transactionId + "/actions/authorize/seatReservation/" + params.actionId,
+                            uri: "/ttts/transactions/" + this.typeOf + "/" + params.transactionId + "/actions/authorize/seatReservation/" + params.actionId,
                             method: 'DELETE',
                             expectedStatusCodes: [http_status_1.NO_CONTENT]
                         })];
@@ -6363,25 +6336,6 @@ var PlaceOrderTransaction4tttsService = /** @class */ (function (_super) {
         });
     };
     /**
-     * register a customer contact
-     */
-    PlaceOrderTransaction4tttsService.prototype.setCustomerContact = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                return [2 /*return*/, this.fetch({
-                        uri: "/ttts/transactions/" + factory.transactionType.PlaceOrder + "/" + params.transactionId + "/customerContact",
-                        method: 'PUT',
-                        expectedStatusCodes: [http_status_1.CREATED],
-                        body: params.contact
-                    })
-                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
-                        return [2 /*return*/, response.json()];
-                    }); }); })];
-            });
-        });
-    };
-    /**
      * 取引確定
      */
     PlaceOrderTransaction4tttsService.prototype.confirm = function (params) {
@@ -6389,7 +6343,7 @@ var PlaceOrderTransaction4tttsService = /** @class */ (function (_super) {
             var _this = this;
             return __generator(this, function (_a) {
                 return [2 /*return*/, this.fetch({
-                        uri: "/ttts/transactions/" + factory.transactionType.PlaceOrder + "/" + params.transactionId + "/confirm",
+                        uri: "/ttts/transactions/" + this.typeOf + "/" + params.id + "/confirm",
                         method: 'POST',
                         expectedStatusCodes: [http_status_1.CREATED],
                         body: __assign(__assign({}, params), { payment_method: params.paymentMethod })
@@ -6408,7 +6362,7 @@ var PlaceOrderTransaction4tttsService = /** @class */ (function (_super) {
             var _this = this;
             return __generator(this, function (_a) {
                 return [2 /*return*/, this.fetch({
-                        uri: "/ttts/transactions/" + factory.transactionType.PlaceOrder + "/" + params.transactionId + "/tasks/sendEmailNotification",
+                        uri: "/ttts/transactions/" + this.typeOf + "/" + params.transactionId + "/tasks/sendEmailNotification",
                         method: 'POST',
                         expectedStatusCodes: [http_status_1.CREATED],
                         body: params.emailMessageAttributes
@@ -6420,10 +6374,10 @@ var PlaceOrderTransaction4tttsService = /** @class */ (function (_super) {
         });
     };
     return PlaceOrderTransaction4tttsService;
-}(service_1.Service));
+}(placeOrder_1.PlaceOrderTransactionService));
 exports.PlaceOrderTransaction4tttsService = PlaceOrderTransaction4tttsService;
 
-},{"../../service":80,"@cinerino/factory":195,"http-status":246}],104:[function(require,module,exports){
+},{"./placeOrder":101,"http-status":246}],104:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6646,7 +6600,7 @@ var ReturnOrderTransaction4tttsService = /** @class */ (function (_super) {
                         uri: "/ttts/transactions/" + factory.transactionType.ReturnOrder + "/confirm",
                         method: 'POST',
                         expectedStatusCodes: [http_status_1.CREATED],
-                        body: __assign(__assign({}, params), { performance_day: params.performanceDay, payment_no: params.paymentNo, cancellation_fee: params.cancellationFee, reason: params.reason })
+                        body: __assign(__assign({}, params), { performance_day: params.performanceDay, payment_no: params.paymentNo })
                     })
                         .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
                         return [2 /*return*/, response.json()];
