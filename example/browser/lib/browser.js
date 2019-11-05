@@ -2867,12 +2867,28 @@ var AccountService = /** @class */ (function (_super) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.fetch({
-                            uri: '/accounts/transactions/deposit',
-                            method: 'POST',
-                            body: params,
-                            expectedStatusCodes: [http_status_1.NO_CONTENT]
-                        })];
+                    case 0:
+                        if (params.object === undefined || params.object === null) {
+                            params.object = {};
+                        }
+                        if (typeof params.amount === 'number') {
+                            params.object.amount = params.amount;
+                        }
+                        if (typeof params.notes === 'string') {
+                            params.object.description = params.notes;
+                        }
+                        if (typeof params.toAccountNumber === 'string') {
+                            if (params.object.toLocation === undefined || params.object.toLocation === null) {
+                                params.object.toLocation = {};
+                            }
+                            params.object.toLocation.accountNumber = params.toAccountNumber;
+                        }
+                        return [4 /*yield*/, this.fetch({
+                                uri: '/accounts/transactions/deposit',
+                                method: 'POST',
+                                body: params,
+                                expectedStatusCodes: [http_status_1.NO_CONTENT]
+                            })];
                     case 1:
                         _a.sent();
                         return [2 /*return*/];
