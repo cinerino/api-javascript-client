@@ -3774,26 +3774,6 @@ var OrderService = /** @class */ (function (_super) {
         });
     };
     /**
-     * 注文照会(ttts専用)
-     * @deprecated
-     */
-    OrderService.prototype.findByOrderInquiryKey4ttts = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                return [2 /*return*/, this.fetch({
-                        uri: '/ttts/orders/findByOrderInquiryKey',
-                        method: 'POST',
-                        body: params,
-                        expectedStatusCodes: [http_status_1.OK]
-                    })
-                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
-                        return [2 /*return*/, response.json()];
-                    }); }); })];
-            });
-        });
-    };
-    /**
      * 予約番号と電話番号で注文情報を取得する(sskts専用)
      */
     OrderService.prototype.findByOrderInquiryKey4sskts = function (params) {
@@ -6240,17 +6220,6 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -6299,7 +6268,7 @@ var PlaceOrderTransaction4tttsService = /** @class */ (function (_super) {
         return _super.call(this, options) || this; /* istanbul ignore next */
     }
     /**
-     * 取引に座席予約を追加する
+     * 座席予約承認
      */
     PlaceOrderTransaction4tttsService.prototype.createSeatReservationAuthorization = function (params) {
         return __awaiter(this, void 0, void 0, function () {
@@ -6321,7 +6290,7 @@ var PlaceOrderTransaction4tttsService = /** @class */ (function (_super) {
         });
     };
     /**
-     * 座席予約取消
+     * 座席予約承認取消
      */
     PlaceOrderTransaction4tttsService.prototype.cancelSeatReservationAuthorization = function (params) {
         return __awaiter(this, void 0, void 0, function () {
@@ -6336,44 +6305,6 @@ var PlaceOrderTransaction4tttsService = /** @class */ (function (_super) {
                         _a.sent();
                         return [2 /*return*/];
                 }
-            });
-        });
-    };
-    /**
-     * 取引確定
-     */
-    PlaceOrderTransaction4tttsService.prototype.confirm = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                return [2 /*return*/, this.fetch({
-                        uri: "/ttts/transactions/" + this.typeOf + "/" + params.id + "/confirm",
-                        method: 'POST',
-                        expectedStatusCodes: [http_status_1.CREATED],
-                        body: __assign(__assign({}, params), { payment_method: params.paymentMethod })
-                    })
-                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
-                        return [2 /*return*/, response.json()];
-                    }); }); })];
-            });
-        });
-    };
-    /**
-     * 確定した取引に関して、購入者にメール通知を送信する
-     */
-    PlaceOrderTransaction4tttsService.prototype.sendEmailNotification = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                return [2 /*return*/, this.fetch({
-                        uri: "/ttts/transactions/" + this.typeOf + "/" + params.transactionId + "/tasks/sendEmailNotification",
-                        method: 'POST',
-                        expectedStatusCodes: [http_status_1.CREATED],
-                        body: params.emailMessageAttributes
-                    })
-                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
-                        return [2 /*return*/, response.json()];
-                    }); }); })];
             });
         });
     };
@@ -6512,25 +6443,6 @@ var ReturnOrderTransactionService = /** @class */ (function (_super) {
                             }
                         });
                     }); })];
-            });
-        });
-    };
-    /**
-     * 確定取引に関してメールを送信する(ttts専用)
-     */
-    ReturnOrderTransactionService.prototype.sendEmailNotification4ttts = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                return [2 /*return*/, this.fetch({
-                        uri: "/ttts/transactions/" + factory.transactionType.ReturnOrder + "/" + params.transactionId + "/tasks/sendEmailNotification",
-                        method: 'POST',
-                        expectedStatusCodes: [http_status_1.CREATED],
-                        body: params.emailMessageAttributes
-                    })
-                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
-                        return [2 /*return*/, response.json()];
-                    }); }); })];
             });
         });
     };
@@ -6911,6 +6823,7 @@ module.exports = {
 var utils = require('./utils');
 
 var has = Object.prototype.hasOwnProperty;
+var isArray = Array.isArray;
 
 var defaults = {
     allowDots: false,
@@ -6991,8 +6904,12 @@ var parseValues = function parseQueryStringValues(str, options) {
             val = interpretNumericEntities(val);
         }
 
-        if (val && options.comma && val.indexOf(',') > -1) {
+        if (val && typeof val === 'string' && options.comma && val.indexOf(',') > -1) {
             val = val.split(',');
+        }
+
+        if (part.indexOf('[]=') > -1) {
+            val = isArray(val) ? [val] : val;
         }
 
         if (has.call(obj, key)) {
@@ -7477,6 +7394,7 @@ var arrayToObject = function arrayToObject(source, options) {
 };
 
 var merge = function merge(target, source, options) {
+    /* eslint no-param-reassign: 0 */
     if (!source) {
         return target;
     }
