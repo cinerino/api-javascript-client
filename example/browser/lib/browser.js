@@ -3831,6 +3831,24 @@ var OrderService = /** @class */ (function (_super) {
         });
     };
     /**
+     * 注文取得
+     */
+    OrderService.prototype.findByOrderNumber = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/orders/" + params.orderNumber,
+                        method: 'GET',
+                        expectedStatusCodes: [http_status_1.OK]
+                    })
+                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
+    /**
      * 注文を検索する
      */
     OrderService.prototype.search = function (params) {
@@ -6137,67 +6155,6 @@ var PlaceOrderTransaction4ssktsService = /** @class */ (function (_super) {
                         _a.sent();
                         return [2 /*return*/];
                 }
-            });
-        });
-    };
-    /**
-     * ポイントインセンティブ承認
-     */
-    PlaceOrderTransaction4ssktsService.prototype.createPecorinoAwardAuthorization = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                return [2 /*return*/, this.fetch({
-                        uri: "/transactions/" + this.typeOf + "/" + params.purpose.id + "/actions/authorize/award/pecorino",
-                        method: 'POST',
-                        expectedStatusCodes: [http_status_1.CREATED],
-                        body: {
-                            amount: params.object.amount,
-                            toAccountNumber: params.object.toAccountNumber,
-                            notes: params.object.notes
-                        }
-                    })
-                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
-                        return [2 /*return*/, response.json()];
-                    }); }); })];
-            });
-        });
-    };
-    /**
-     * ポイントインセンティブ承認取消
-     */
-    PlaceOrderTransaction4ssktsService.prototype.cancelPecorinoAwardAuthorization = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.fetch({
-                            uri: "/transactions/" + this.typeOf + "/" + params.purpose.id + "/actions/authorize/award/pecorino/" + params.id,
-                            method: 'DELETE',
-                            expectedStatusCodes: [http_status_1.NO_CONTENT]
-                        })];
-                    case 1:
-                        _a.sent();
-                        return [2 /*return*/];
-                }
-            });
-        });
-    };
-    /**
-     * 取引確定
-     */
-    PlaceOrderTransaction4ssktsService.prototype.confirm = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                return [2 /*return*/, this.fetch({
-                        uri: "/transactions/" + this.typeOf + "/" + params.id + "/confirm",
-                        method: 'POST',
-                        expectedStatusCodes: [http_status_1.CREATED],
-                        body: params
-                    })
-                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
-                        return [2 /*return*/, response.json()];
-                    }); }); })];
             });
         });
     };
