@@ -2732,6 +2732,9 @@ var Service = /** @class */ (function () {
                 // tslint:disable-next-line:no-parameter-reassignment
                 options = __assign(__assign({}, defaultOptions), options);
                 baseUrl = this.options.endpoint;
+                if (this.project !== undefined && typeof this.project.id === 'string' && this.project.id.length > 0) {
+                    baseUrl = baseUrl + "/projects/" + this.project.id;
+                }
                 url = "" + baseUrl + options.uri;
                 querystrings = qs.stringify(options.qs);
                 url += (querystrings.length > 0) ? "?" + querystrings : '';
@@ -2755,6 +2758,13 @@ var Service = /** @class */ (function () {
                 return [2 /*return*/];
             });
         });
+    };
+    /**
+     * リクエストプロジェクトを指定する
+     * サービスインスタンスのスコープにおいてプロジェクトが固定されます
+     */
+    Service.prototype.setProject = function (params) {
+        this.project = { id: params.id };
     };
     return Service;
 }());
@@ -3586,6 +3596,10 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
+var RoleType;
+(function (RoleType) {
+    RoleType["OrganizationRole"] = "OrganizationRole";
+})(RoleType = exports.RoleType || (exports.RoleType = {}));
 /**
  * IAMサービス
  */
@@ -3669,6 +3683,122 @@ var IAMService = /** @class */ (function (_super) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, this.fetch({
                             uri: "/iam/users/" + params.id + "/profile",
+                            method: 'PATCH',
+                            body: params,
+                            expectedStatusCodes: [http_status_1.NO_CONTENT]
+                        })];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * ロール検索
+     */
+    IAMService.prototype.searchRoles = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: '/iam/roles',
+                        method: 'GET',
+                        qs: params,
+                        expectedStatusCodes: [http_status_1.OK]
+                    })
+                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () {
+                        var _a;
+                        return __generator(this, function (_b) {
+                            switch (_b.label) {
+                                case 0:
+                                    _a = {
+                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                    };
+                                    return [4 /*yield*/, response.json()];
+                                case 1: return [2 /*return*/, (_a.data = _b.sent(),
+                                        _a)];
+                            }
+                        });
+                    }); })];
+            });
+        });
+    };
+    /**
+     * プロジェクトメンバー検索
+     */
+    IAMService.prototype.searchMembers = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: '/iam/members',
+                        method: 'GET',
+                        qs: params,
+                        expectedStatusCodes: [http_status_1.OK]
+                    })
+                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () {
+                        var _a;
+                        return __generator(this, function (_b) {
+                            switch (_b.label) {
+                                case 0:
+                                    _a = {
+                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                    };
+                                    return [4 /*yield*/, response.json()];
+                                case 1: return [2 /*return*/, (_a.data = _b.sent(),
+                                        _a)];
+                            }
+                        });
+                    }); })];
+            });
+        });
+    };
+    /**
+     * プロジェクトメンバー取得
+     */
+    IAMService.prototype.findMemberById = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/iam/members/" + params.id,
+                        method: 'GET',
+                        expectedStatusCodes: [http_status_1.OK]
+                    })
+                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
+    /**
+     * プロジェクトメンバープロフィール検索
+     */
+    IAMService.prototype.getMemberProfile = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/iam/members/" + params.id + "/profile",
+                        method: 'GET',
+                        expectedStatusCodes: [http_status_1.OK]
+                    })
+                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
+    /**
+     * プロジェクトメンバープロフィール更新
+     */
+    IAMService.prototype.updateMemberProfile = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.fetch({
+                            uri: "/iam/members/" + params.id + "/profile",
                             method: 'PATCH',
                             body: params,
                             expectedStatusCodes: [http_status_1.NO_CONTENT]
@@ -5330,6 +5460,24 @@ var ProjectService = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 return [2 /*return*/, this.fetch({
                         uri: "/projects/" + params.id,
+                        method: 'GET',
+                        expectedStatusCodes: [http_status_1.OK]
+                    })
+                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
+    /**
+     * プロジェクト設定取得
+     */
+    ProjectService.prototype.getSettings = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/projects/" + params.id + "/settings",
                         method: 'GET',
                         expectedStatusCodes: [http_status_1.OK]
                     })
@@ -7846,9 +7994,9 @@ module.exports = {
 },{}],113:[function(require,module,exports){
 module.exports={
   "_from": "@cinerino/api-abstract-client@next",
-  "_id": "@cinerino/api-abstract-client@1.0.0-alpha.145",
+  "_id": "@cinerino/api-abstract-client@1.0.0-alpha.147",
   "_inBundle": false,
-  "_integrity": "sha512-WlXeu7O1VAwkH3cF5/ngpGuMAztkGgYeXgGAxXO+XG4k0h7JEPWbjKQzqiA5TkyXMpgLfsvAadinVKyIBazhJA==",
+  "_integrity": "sha512-h0o4C3CfT8sR/UwrnxXe18TYHUktw3SmxGeAlUdPbY6FNKrh6NgEJWPVeuniUolOTsuY0kRP+WnrBj+jHS2iIg==",
   "_location": "/@cinerino/api-abstract-client",
   "_phantomChildren": {},
   "_requested": {
@@ -7866,8 +8014,8 @@ module.exports={
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@cinerino/api-abstract-client/-/api-abstract-client-1.0.0-alpha.145.tgz",
-  "_shasum": "e97e5cd51e742fe6013eb2482129a3584fc430de",
+  "_resolved": "https://registry.npmjs.org/@cinerino/api-abstract-client/-/api-abstract-client-1.0.0-alpha.147.tgz",
+  "_shasum": "19f811dc5bc6392e8f4a260337a3b4a471f75eb5",
   "_spec": "@cinerino/api-abstract-client@next",
   "_where": "C:\\projects\\cinerino-api-javascript-client",
   "author": {
@@ -7884,7 +8032,7 @@ module.exports={
     }
   ],
   "dependencies": {
-    "@cinerino/factory": "^1.0.0",
+    "@cinerino/factory": "^1.1.0",
     "debug": "^3.2.6",
     "http-status": "^1.3.2",
     "isomorphic-fetch": "^2.2.1",
@@ -7955,7 +8103,7 @@ module.exports={
     "version": "git add -A"
   },
   "types": "./lib/index.d.ts",
-  "version": "1.0.0-alpha.145"
+  "version": "1.0.0-alpha.147"
 }
 
 },{}],114:[function(require,module,exports){
@@ -8632,10 +8780,13 @@ var OrganizationType;
 (function (OrganizationType) {
     OrganizationType["Corporation"] = "Corporation";
     OrganizationType["MovieTheater"] = "MovieTheater";
+    OrganizationType["Project"] = "Project";
 })(OrganizationType || (OrganizationType = {}));
 exports.default = OrganizationType;
 
 },{}],174:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],175:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -8649,7 +8800,7 @@ var AccountGoodType;
     AccountGoodType["Account"] = "Account";
 })(AccountGoodType = exports.AccountGoodType || (exports.AccountGoodType = {}));
 
-},{}],175:[function(require,module,exports){
+},{}],176:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var chevre_1 = require("../chevre");
@@ -8658,11 +8809,11 @@ var chevre_1 = require("../chevre");
  */
 exports.default = chevre_1.paymentMethodType;
 
-},{"../chevre":114}],176:[function(require,module,exports){
-arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],177:[function(require,module,exports){
+},{"../chevre":114}],177:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],178:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],179:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -8678,9 +8829,9 @@ var PaymentStatusType;
 })(PaymentStatusType || (PaymentStatusType = {}));
 exports.default = PaymentStatusType;
 
-},{}],179:[function(require,module,exports){
+},{}],180:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],180:[function(require,module,exports){
+},{"dup":12}],181:[function(require,module,exports){
 "use strict";
 /**
  * 人物タイプ
@@ -8692,7 +8843,7 @@ var PersonType;
 })(PersonType || (PersonType = {}));
 exports.default = PersonType;
 
-},{}],181:[function(require,module,exports){
+},{}],182:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -8705,9 +8856,9 @@ var PlaceType;
 })(PlaceType || (PlaceType = {}));
 exports.default = PlaceType;
 
-},{}],182:[function(require,module,exports){
+},{}],183:[function(require,module,exports){
 arguments[4][46][0].apply(exports,arguments)
-},{"dup":46}],183:[function(require,module,exports){
+},{"dup":46}],184:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var ProgramMembershipType;
@@ -8715,9 +8866,7 @@ var ProgramMembershipType;
     ProgramMembershipType["ProgramMembership"] = "ProgramMembership";
 })(ProgramMembershipType = exports.ProgramMembershipType || (exports.ProgramMembershipType = {}));
 
-},{}],184:[function(require,module,exports){
-arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],185:[function(require,module,exports){
+},{}],185:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],186:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
@@ -8987,6 +9136,7 @@ var OfferFactory = require("./factory/offer");
 var OrderFactory = require("./factory/order");
 var orderStatus_1 = require("./factory/orderStatus");
 var OrganizationFactory = require("./factory/organization");
+var ProjectFactory = require("./factory/organization/project");
 var organizationType_1 = require("./factory/organizationType");
 var OwnershipInfoFactory = require("./factory/ownershipInfo");
 var CreditCardFactory = require("./factory/paymentMethod/paymentCard/creditCard");
@@ -8998,7 +9148,6 @@ var personType_1 = require("./factory/personType");
 var placeType_1 = require("./factory/placeType");
 var priceCurrency_1 = require("./factory/priceCurrency");
 var ProgramMembershipFactory = require("./factory/programMembership");
-var project = require("./factory/project");
 var PropertyValueFactory = require("./factory/propertyValue");
 var QuantitativeValueFactory = require("./factory/quantitativeValue");
 var WebAPIServiceFactory = require("./factory/service/webAPI");
@@ -9175,7 +9324,7 @@ exports.person = PersonFactory;
 exports.personType = personType_1.default;
 exports.placeType = placeType_1.default;
 exports.programMembership = ProgramMembershipFactory;
-exports.project = project;
+exports.project = ProjectFactory;
 exports.propertyValue = PropertyValueFactory;
 exports.quantitativeValue = QuantitativeValueFactory;
 var service;
@@ -9200,7 +9349,7 @@ exports.transactionTasksExportationStatus = transactionTasksExportationStatus_1.
 exports.transactionType = transactionType_1.default;
 exports.unitCode = unitCode_1.UnitCode;
 
-},{"./chevre":114,"./cognito":115,"./factory/accountType":116,"./factory/action/authorize/award/point":119,"./factory/action/authorize/discount/mvtk":120,"./factory/action/authorize/offer/monetaryAmount":121,"./factory/action/authorize/offer/programMembership":122,"./factory/action/authorize/offer/seatReservation":123,"./factory/action/authorize/paymentMethod/account":124,"./factory/action/authorize/paymentMethod/any":125,"./factory/action/authorize/paymentMethod/creditCard":126,"./factory/action/authorize/paymentMethod/movieTicket":127,"./factory/action/check/paymentMethod/movieTicket":128,"./factory/action/check/token":129,"./factory/action/interact/confirm/reservation":130,"./factory/action/interact/inform":131,"./factory/action/interact/register/programMembership":132,"./factory/action/interact/unRegister/programMembership":133,"./factory/action/organize/cancel":134,"./factory/action/trade/order":135,"./factory/action/trade/pay":136,"./factory/action/trade/refund":137,"./factory/action/transfer/give/pointAward":138,"./factory/action/transfer/moneyTransfer":139,"./factory/action/transfer/print/ticket":140,"./factory/action/transfer/return/order":141,"./factory/action/transfer/return/pointAward":142,"./factory/action/transfer/send/message/email":143,"./factory/action/transfer/send/order":144,"./factory/action/update/delete/member":145,"./factory/actionStatusType":117,"./factory/actionType":118,"./factory/authorization":146,"./factory/clientUser":147,"./factory/creativeWork/message/email":149,"./factory/creativeWork/softwareApplication/webApplication":150,"./factory/creativeWorkType":148,"./factory/encodingFormat":151,"./factory/errorCode":152,"./factory/errors":163,"./factory/event/screeningEvent":164,"./factory/event/screeningEventSeries":165,"./factory/invoice":166,"./factory/monetaryAmount":167,"./factory/offer":168,"./factory/order":170,"./factory/orderStatus":171,"./factory/organization":172,"./factory/organizationType":173,"./factory/ownershipInfo":174,"./factory/paymentMethod/paymentCard/creditCard":176,"./factory/paymentMethod/paymentCard/movieTicket":177,"./factory/paymentMethodType":175,"./factory/paymentStatusType":178,"./factory/person":179,"./factory/personType":180,"./factory/placeType":181,"./factory/priceCurrency":182,"./factory/programMembership":183,"./factory/project":184,"./factory/propertyValue":185,"./factory/quantitativeValue":186,"./factory/service/webAPI":187,"./factory/sortType":188,"./factory/taskName":189,"./factory/taskStatus":190,"./factory/transaction/moneyTransfer":194,"./factory/transaction/placeOrder":195,"./factory/transaction/returnOrder":196,"./factory/transactionStatusType":191,"./factory/transactionTasksExportationStatus":192,"./factory/transactionType":193,"./factory/unitCode":197,"@pecorino/factory":233,"@waiter/factory":247}],199:[function(require,module,exports){
+},{"./chevre":114,"./cognito":115,"./factory/accountType":116,"./factory/action/authorize/award/point":119,"./factory/action/authorize/discount/mvtk":120,"./factory/action/authorize/offer/monetaryAmount":121,"./factory/action/authorize/offer/programMembership":122,"./factory/action/authorize/offer/seatReservation":123,"./factory/action/authorize/paymentMethod/account":124,"./factory/action/authorize/paymentMethod/any":125,"./factory/action/authorize/paymentMethod/creditCard":126,"./factory/action/authorize/paymentMethod/movieTicket":127,"./factory/action/check/paymentMethod/movieTicket":128,"./factory/action/check/token":129,"./factory/action/interact/confirm/reservation":130,"./factory/action/interact/inform":131,"./factory/action/interact/register/programMembership":132,"./factory/action/interact/unRegister/programMembership":133,"./factory/action/organize/cancel":134,"./factory/action/trade/order":135,"./factory/action/trade/pay":136,"./factory/action/trade/refund":137,"./factory/action/transfer/give/pointAward":138,"./factory/action/transfer/moneyTransfer":139,"./factory/action/transfer/print/ticket":140,"./factory/action/transfer/return/order":141,"./factory/action/transfer/return/pointAward":142,"./factory/action/transfer/send/message/email":143,"./factory/action/transfer/send/order":144,"./factory/action/update/delete/member":145,"./factory/actionStatusType":117,"./factory/actionType":118,"./factory/authorization":146,"./factory/clientUser":147,"./factory/creativeWork/message/email":149,"./factory/creativeWork/softwareApplication/webApplication":150,"./factory/creativeWorkType":148,"./factory/encodingFormat":151,"./factory/errorCode":152,"./factory/errors":163,"./factory/event/screeningEvent":164,"./factory/event/screeningEventSeries":165,"./factory/invoice":166,"./factory/monetaryAmount":167,"./factory/offer":168,"./factory/order":170,"./factory/orderStatus":171,"./factory/organization":172,"./factory/organization/project":174,"./factory/organizationType":173,"./factory/ownershipInfo":175,"./factory/paymentMethod/paymentCard/creditCard":177,"./factory/paymentMethod/paymentCard/movieTicket":178,"./factory/paymentMethodType":176,"./factory/paymentStatusType":179,"./factory/person":180,"./factory/personType":181,"./factory/placeType":182,"./factory/priceCurrency":183,"./factory/programMembership":184,"./factory/propertyValue":185,"./factory/quantitativeValue":186,"./factory/service/webAPI":187,"./factory/sortType":188,"./factory/taskName":189,"./factory/taskStatus":190,"./factory/transaction/moneyTransfer":194,"./factory/transaction/placeOrder":195,"./factory/transaction/returnOrder":196,"./factory/transactionStatusType":191,"./factory/transactionTasksExportationStatus":192,"./factory/transactionType":193,"./factory/unitCode":197,"@pecorino/factory":233,"@waiter/factory":247}],199:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
