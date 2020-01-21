@@ -2732,8 +2732,11 @@ var Service = /** @class */ (function () {
                 // tslint:disable-next-line:no-parameter-reassignment
                 options = __assign(__assign({}, defaultOptions), options);
                 baseUrl = this.options.endpoint;
-                if (this.project !== undefined && typeof this.project.id === 'string' && this.project.id.length > 0) {
-                    baseUrl = baseUrl + "/projects/" + this.project.id;
+                if (this.options.project !== undefined
+                    && this.options.project !== null
+                    && typeof this.options.project.id === 'string'
+                    && this.options.project.id.length > 0) {
+                    baseUrl = baseUrl + "/projects/" + this.options.project.id;
                 }
                 url = "" + baseUrl + options.uri;
                 querystrings = qs.stringify(options.qs);
@@ -2758,13 +2761,6 @@ var Service = /** @class */ (function () {
                 return [2 /*return*/];
             });
         });
-    };
-    /**
-     * リクエストプロジェクトを指定する
-     * サービスインスタンスのスコープにおいてプロジェクトが固定されます
-     */
-    Service.prototype.setProject = function (params) {
-        this.project = { id: params.id };
     };
     return Service;
 }());
@@ -3538,6 +3534,25 @@ var EventService = /** @class */ (function (_super) {
             });
         });
     };
+    /**
+     * イベントに対する券種オファー検索(COA券種)
+     */
+    EventService.prototype.searchTicketOffers4COA = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: "/events/" + params.event.id + "/offers/ticket",
+                        method: 'GET',
+                        expectedStatusCodes: [http_status_1.OK],
+                        qs: params
+                    })
+                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
     return EventService;
 }(service_1.Service));
 exports.EventService = EventService;
@@ -3695,7 +3710,7 @@ var IAMService = /** @class */ (function (_super) {
         });
     };
     /**
-     * ロール検索
+     * IAMロール検索
      */
     IAMService.prototype.searchRoles = function (params) {
         return __awaiter(this, void 0, void 0, function () {
@@ -3725,7 +3740,26 @@ var IAMService = /** @class */ (function (_super) {
         });
     };
     /**
-     * プロジェクトメンバー検索
+     * IAMメンバー作成
+     */
+    IAMService.prototype.createMember = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: '/iam/members',
+                        method: 'POST',
+                        body: params,
+                        expectedStatusCodes: [http_status_1.CREATED]
+                    })
+                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
+    /**
+     * IAMメンバー検索
      */
     IAMService.prototype.searchMembers = function (params) {
         return __awaiter(this, void 0, void 0, function () {
@@ -3755,14 +3789,14 @@ var IAMService = /** @class */ (function (_super) {
         });
     };
     /**
-     * プロジェクトメンバー取得
+     * IAMメンバー取得
      */
     IAMService.prototype.findMemberById = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
                 return [2 /*return*/, this.fetch({
-                        uri: "/iam/members/" + params.id,
+                        uri: "/iam/members/" + params.member.id,
                         method: 'GET',
                         expectedStatusCodes: [http_status_1.OK]
                     })
@@ -3773,14 +3807,53 @@ var IAMService = /** @class */ (function (_super) {
         });
     };
     /**
-     * プロジェクトメンバープロフィール検索
+     * IAMメンバー更新
+     */
+    IAMService.prototype.updateMember = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.fetch({
+                            uri: "/iam/members/" + params.member.id,
+                            method: 'PUT',
+                            body: params,
+                            expectedStatusCodes: [http_status_1.NO_CONTENT]
+                        })];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * IAMメンバー削除
+     */
+    IAMService.prototype.deleteMember = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.fetch({
+                            uri: "/iam/members/" + params.member.id,
+                            method: 'DELETE',
+                            expectedStatusCodes: [http_status_1.NO_CONTENT]
+                        })];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * IAMメンバープロフィール検索
      */
     IAMService.prototype.getMemberProfile = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
                 return [2 /*return*/, this.fetch({
-                        uri: "/iam/members/" + params.id + "/profile",
+                        uri: "/iam/members/" + params.member.id + "/profile",
                         method: 'GET',
                         expectedStatusCodes: [http_status_1.OK]
                     })
@@ -3791,16 +3864,16 @@ var IAMService = /** @class */ (function (_super) {
         });
     };
     /**
-     * プロジェクトメンバープロフィール更新
+     * IAMメンバープロフィール更新
      */
     IAMService.prototype.updateMemberProfile = function (params) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, this.fetch({
-                            uri: "/iam/members/" + params.id + "/profile",
+                            uri: "/iam/members/" + params.member.id + "/profile",
                             method: 'PATCH',
-                            body: params,
+                            body: params.member,
                             expectedStatusCodes: [http_status_1.NO_CONTENT]
                         })];
                     case 1:
@@ -4210,6 +4283,36 @@ var OrderService = /** @class */ (function (_super) {
                         .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
                         return [2 /*return*/, response.json()];
                     }); }); })];
+            });
+        });
+    };
+    /**
+     * 識別子で注文検索
+     */
+    OrderService.prototype.findByIdentifier = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: '/orders/findByIdentifier',
+                        method: 'GET',
+                        qs: params,
+                        expectedStatusCodes: [http_status_1.OK]
+                    })
+                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () {
+                        var _a;
+                        return __generator(this, function (_b) {
+                            switch (_b.label) {
+                                case 0:
+                                    _a = {
+                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                    };
+                                    return [4 /*yield*/, response.json()];
+                                case 1: return [2 /*return*/, (_a.data = _b.sent(),
+                                        _a)];
+                            }
+                        });
+                    }); })];
             });
         });
     };
@@ -5478,6 +5581,55 @@ var ProjectService = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 return [2 /*return*/, this.fetch({
                         uri: "/projects/" + params.id + "/settings",
+                        method: 'GET',
+                        expectedStatusCodes: [http_status_1.OK]
+                    })
+                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                        return [2 /*return*/, response.json()];
+                    }); }); })];
+            });
+        });
+    };
+    /**
+     * ヘルスチェック
+     */
+    ProjectService.prototype.getHealth = function (_) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: '/health',
+                        method: 'GET',
+                        expectedStatusCodes: [http_status_1.OK]
+                    })
+                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () {
+                        var version, _a;
+                        return __generator(this, function (_b) {
+                            switch (_b.label) {
+                                case 0:
+                                    version = response.headers.get('X-API-Version');
+                                    _a = {
+                                        version: (typeof version === 'string') ? version : undefined,
+                                        status: response.status
+                                    };
+                                    return [4 /*yield*/, response.text()];
+                                case 1: return [2 /*return*/, (_a.message = _b.sent(),
+                                        _a)];
+                            }
+                        });
+                    }); })];
+            });
+        });
+    };
+    /**
+     * DB統計取得
+     */
+    ProjectService.prototype.getDBStats = function (_) {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.fetch({
+                        uri: '/stats/dbStats',
                         method: 'GET',
                         expectedStatusCodes: [http_status_1.OK]
                     })
@@ -7994,9 +8146,9 @@ module.exports = {
 },{}],113:[function(require,module,exports){
 module.exports={
   "_from": "@cinerino/api-abstract-client@next",
-  "_id": "@cinerino/api-abstract-client@1.0.0-alpha.147",
+  "_id": "@cinerino/api-abstract-client@1.0.0-alpha.152",
   "_inBundle": false,
-  "_integrity": "sha512-h0o4C3CfT8sR/UwrnxXe18TYHUktw3SmxGeAlUdPbY6FNKrh6NgEJWPVeuniUolOTsuY0kRP+WnrBj+jHS2iIg==",
+  "_integrity": "sha512-p3DiMSqxTmy9cx7f9cCTt9U4iVvsyJrahfo/N9PB3drliinl/Hm8t9iwJIGSuH0LQkvHQr4VEoFau1cDhR4ZKw==",
   "_location": "/@cinerino/api-abstract-client",
   "_phantomChildren": {},
   "_requested": {
@@ -8014,8 +8166,8 @@ module.exports={
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@cinerino/api-abstract-client/-/api-abstract-client-1.0.0-alpha.147.tgz",
-  "_shasum": "19f811dc5bc6392e8f4a260337a3b4a471f75eb5",
+  "_resolved": "https://registry.npmjs.org/@cinerino/api-abstract-client/-/api-abstract-client-1.0.0-alpha.152.tgz",
+  "_shasum": "548a0fcb5da5129c3e5fd7df1e51b71c9107e334",
   "_spec": "@cinerino/api-abstract-client@next",
   "_where": "C:\\projects\\cinerino-api-javascript-client",
   "author": {
@@ -8103,7 +8255,7 @@ module.exports={
     "version": "git add -A"
   },
   "types": "./lib/index.d.ts",
-  "version": "1.0.0-alpha.147"
+  "version": "1.0.0-alpha.152"
 }
 
 },{}],114:[function(require,module,exports){
