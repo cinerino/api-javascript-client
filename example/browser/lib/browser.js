@@ -2885,7 +2885,9 @@ var AccountService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -2915,7 +2917,9 @@ var AccountService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -3047,7 +3051,9 @@ var ActionService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -3189,7 +3195,9 @@ var AuthorizationService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -3285,7 +3293,9 @@ var CreativeWorkService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -3468,7 +3478,9 @@ var EventService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -3642,7 +3654,9 @@ var IAMService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -3728,7 +3742,9 @@ var IAMService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -3777,7 +3793,9 @@ var IAMService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -3968,7 +3986,9 @@ var InvoiceService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -4305,7 +4325,9 @@ var OrderService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -4335,7 +4357,9 @@ var OrderService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -4450,7 +4474,9 @@ var OwnershipInfoService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -4503,7 +4529,9 @@ var OwnershipInfoService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -4824,7 +4852,9 @@ var PaymentMethodService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -4965,7 +4995,9 @@ var PersonService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -4995,7 +5027,9 @@ var PersonService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -5294,7 +5328,9 @@ var PersonOwnershipInfoService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -5326,7 +5362,9 @@ var PersonOwnershipInfoService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -5447,7 +5485,9 @@ var ProgramMembershipService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -5543,7 +5583,9 @@ var ProjectService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -5724,7 +5766,9 @@ var ReservationService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -5876,7 +5920,9 @@ var SellerService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -6048,7 +6094,9 @@ var TaskService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -6225,7 +6273,9 @@ var MoneyTransferTransactionService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -6520,7 +6570,9 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -6992,7 +7044,9 @@ var ReturnOrderTransactionService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -7106,7 +7160,9 @@ var UserPoolService = /** @class */ (function (_super) {
                             switch (_b.label) {
                                 case 0:
                                     _a = {
-                                        totalCount: Number(response.headers.get('X-Total-Count'))
+                                        totalCount: (typeof response.headers.get('X-Total-Count') === 'string')
+                                            ? Number(response.headers.get('X-Total-Count'))
+                                            : undefined
                                     };
                                     return [4 /*yield*/, response.json()];
                                 case 1: return [2 /*return*/, (_a.data = _b.sent(),
@@ -8146,9 +8202,9 @@ module.exports = {
 },{}],113:[function(require,module,exports){
 module.exports={
   "_from": "@cinerino/api-abstract-client@next",
-  "_id": "@cinerino/api-abstract-client@1.0.0-alpha.153",
+  "_id": "@cinerino/api-abstract-client@1.0.0-alpha.155",
   "_inBundle": false,
-  "_integrity": "sha512-Ds8EQwiKKDopH4nhJ/oYIRHqF9poXpb6sWw9oIOF54zM4k2e/xyQ076Hux/vvltmb/o8btmobBLUmym7CXrUyQ==",
+  "_integrity": "sha512-WTug7ekNk5lIoNC1mdV6bXIISHfcuNPJLHLKjs5Vdcocf96ixDdNtp92w/UDitZcX6LX2iAsKjxr86eM2hyF2A==",
   "_location": "/@cinerino/api-abstract-client",
   "_phantomChildren": {},
   "_requested": {
@@ -8166,8 +8222,8 @@ module.exports={
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@cinerino/api-abstract-client/-/api-abstract-client-1.0.0-alpha.153.tgz",
-  "_shasum": "23738d34d5546ab381901d08979e1e432d36622a",
+  "_resolved": "https://registry.npmjs.org/@cinerino/api-abstract-client/-/api-abstract-client-1.0.0-alpha.155.tgz",
+  "_shasum": "b0537004a6575d8c77957d3cae4a60d166709ade",
   "_spec": "@cinerino/api-abstract-client@next",
   "_where": "C:\\projects\\cinerino-api-javascript-client",
   "author": {
@@ -8184,7 +8240,7 @@ module.exports={
     }
   ],
   "dependencies": {
-    "@cinerino/factory": "^1.2.0",
+    "@cinerino/factory": "^1.4.0",
     "debug": "^3.2.6",
     "http-status": "^1.3.2",
     "isomorphic-fetch": "^2.2.1",
@@ -8255,7 +8311,7 @@ module.exports={
     "version": "git add -A"
   },
   "types": "./lib/index.d.ts",
-  "version": "1.0.0-alpha.153"
+  "version": "1.0.0-alpha.155"
 }
 
 },{}],114:[function(require,module,exports){
