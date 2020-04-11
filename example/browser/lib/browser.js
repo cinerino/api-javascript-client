@@ -8468,9 +8468,9 @@ module.exports = {
 },{}],120:[function(require,module,exports){
 module.exports={
   "_from": "@cinerino/api-abstract-client@next",
-  "_id": "@cinerino/api-abstract-client@1.0.0-alpha.166",
+  "_id": "@cinerino/api-abstract-client@1.0.0-alpha.167",
   "_inBundle": false,
-  "_integrity": "sha512-ieoE6wGmytAOVCyGSHcuc9GW03VCUdJPIwbcTUZZGzrG6KmLHAqC7+yYf42UBlHX+DpS2kXtJWCYWF1KowCTGw==",
+  "_integrity": "sha512-IVQu1ZExDQ3m4tc6JMbr7KXzcP+FTAJM0c9Aif9OsRJkx1NtcaUqlXpyCRqoevOn+oZXPID0oNYD21KBFNRFkg==",
   "_location": "/@cinerino/api-abstract-client",
   "_phantomChildren": {},
   "_requested": {
@@ -8488,8 +8488,8 @@ module.exports={
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@cinerino/api-abstract-client/-/api-abstract-client-1.0.0-alpha.166.tgz",
-  "_shasum": "b7f7302d21ecf7d6e77446755d2dd77671ab7d7a",
+  "_resolved": "https://registry.npmjs.org/@cinerino/api-abstract-client/-/api-abstract-client-1.0.0-alpha.167.tgz",
+  "_shasum": "21d775218d0382c7db1cc4c032351c51a1c66a3f",
   "_spec": "@cinerino/api-abstract-client@next",
   "_where": "C:\\projects\\cinerino-api-javascript-client",
   "author": {
@@ -8506,7 +8506,7 @@ module.exports={
     }
   ],
   "dependencies": {
-    "@cinerino/factory": "^1.7.0",
+    "@cinerino/factory": "^1.8.0",
     "debug": "^3.2.6",
     "http-status": "^1.3.2",
     "isomorphic-fetch": "^2.2.1",
@@ -8577,7 +8577,7 @@ module.exports={
     "version": "git add -A"
   },
   "types": "./lib/index.d.ts",
-  "version": "1.0.0-alpha.166"
+  "version": "1.0.0-alpha.167"
 }
 
 },{}],121:[function(require,module,exports){
