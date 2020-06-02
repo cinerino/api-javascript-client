@@ -6406,6 +6406,26 @@ var ReservationService = /** @class */ (function (_super) {
         });
     };
     /**
+     * 予約取消
+     */
+    ReservationService.prototype.cancel = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.fetch({
+                            uri: '/reservations/cancel',
+                            method: 'PUT',
+                            body: params,
+                            expectedStatusCodes: [http_status_1.NO_CONTENT]
+                        })];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
      * 予約IDあるいは予約番号指定でチェックイン(発券)する
      */
     ReservationService.prototype.checkIn = function (params) {
@@ -6413,7 +6433,7 @@ var ReservationService = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, this.fetch({
-                            uri: "/reservations/checkedIn",
+                            uri: '/reservations/checkedIn',
                             method: 'PUT',
                             body: params,
                             expectedStatusCodes: [http_status_1.NO_CONTENT]
@@ -8937,9 +8957,9 @@ module.exports = {
 },{}],136:[function(require,module,exports){
 module.exports={
   "_from": "@cinerino/api-abstract-client@next",
-  "_id": "@cinerino/api-abstract-client@1.0.0-alpha.183",
+  "_id": "@cinerino/api-abstract-client@1.0.0-alpha.185",
   "_inBundle": false,
-  "_integrity": "sha512-M2AkF+6YcnbdsdcXwua1lbkShjURt2Wt5pqMs3OaD3+B4DaU3ZB+1lQgefeZUG/9L4+phOvCMVq3J5l/oc1jPA==",
+  "_integrity": "sha512-w0HixxUuwoUtshle8hOciK8x+QhnHWdy+yK09IacTV83oV8IwYZNZ194jX6d1Xm4Ud9CD88LZHLLJ6Snqz9JCQ==",
   "_location": "/@cinerino/api-abstract-client",
   "_phantomChildren": {},
   "_requested": {
@@ -8957,8 +8977,8 @@ module.exports={
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@cinerino/api-abstract-client/-/api-abstract-client-1.0.0-alpha.183.tgz",
-  "_shasum": "7dc5056dab07279f36cf4da5c145a2468014f62e",
+  "_resolved": "https://registry.npmjs.org/@cinerino/api-abstract-client/-/api-abstract-client-1.0.0-alpha.185.tgz",
+  "_shasum": "204eee59c8757731dd80e9304efc4cfea10d4d24",
   "_spec": "@cinerino/api-abstract-client@next",
   "_where": "C:\\projects\\cinerino-api-javascript-client",
   "author": {
@@ -8975,7 +8995,7 @@ module.exports={
     }
   ],
   "dependencies": {
-    "@cinerino/factory": "5.1.0-alpha.14",
+    "@cinerino/factory": "6.0.0-alpha.3",
     "debug": "^3.2.6",
     "http-status": "^1.3.2",
     "isomorphic-fetch": "^2.2.1",
@@ -9046,7 +9066,7 @@ module.exports={
     "version": "git add -A"
   },
   "types": "./lib/index.d.ts",
-  "version": "1.0.0-alpha.183"
+  "version": "1.0.0-alpha.185"
 }
 
 },{}],137:[function(require,module,exports){
