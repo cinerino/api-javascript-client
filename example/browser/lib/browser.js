@@ -11,7 +11,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 __export(require("@cinerino/api-abstract-client"));
 
-},{"@cinerino/api-abstract-client":99}],3:[function(require,module,exports){
+},{"@cinerino/api-abstract-client":100}],3:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -118,7 +118,7 @@ var IframeHandler = /** @class */ (function () {
 }());
 exports.default = IframeHandler;
 
-},{"debug":269}],5:[function(require,module,exports){
+},{"debug":270}],5:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -465,7 +465,7 @@ var ImplicitGrantClient = /** @class */ (function (_super) {
 }(oAuth2client_1.default));
 exports.ImplicitGrantClient = ImplicitGrantClient;
 
-},{"./error":3,"./oAuth2client":6,"./popupAuthenticationHandler":7,"./silentAuthenticationHandler":9,"./silentLogoutHandler":10,"debug":269,"idtoken-verifier":272,"qs":278}],6:[function(require,module,exports){
+},{"./error":3,"./oAuth2client":6,"./popupAuthenticationHandler":7,"./silentAuthenticationHandler":9,"./silentLogoutHandler":10,"debug":270,"idtoken-verifier":273,"qs":278}],6:[function(require,module,exports){
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -657,7 +657,7 @@ var OAuth2client = /** @class */ (function () {
 }());
 exports.default = OAuth2client;
 
-},{"../abstract":2,"debug":269,"http-status":271,"isomorphic-fetch":274}],7:[function(require,module,exports){
+},{"../abstract":2,"debug":270,"http-status":272,"isomorphic-fetch":274}],7:[function(require,module,exports){
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -842,7 +842,7 @@ var PopupHandler = /** @class */ (function () {
 }());
 exports.default = PopupHandler;
 
-},{"debug":269}],9:[function(require,module,exports){
+},{"debug":270}],9:[function(require,module,exports){
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -1784,6 +1784,8 @@ arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],54:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],55:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],56:[function(require,module,exports){
 "use strict";
 /**
  * 場所タイプ
@@ -1798,15 +1800,15 @@ var PlaceType;
 })(PlaceType || (PlaceType = {}));
 exports.default = PlaceType;
 
-},{}],56:[function(require,module,exports){
-arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],57:[function(require,module,exports){
+},{}],57:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],58:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],59:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],60:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],61:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -1820,7 +1822,7 @@ var PriceCurrency;
 })(PriceCurrency || (PriceCurrency = {}));
 exports.default = PriceCurrency;
 
-},{}],61:[function(require,module,exports){
+},{}],62:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -1851,7 +1853,7 @@ var PriceSpecificationType;
 })(PriceSpecificationType || (PriceSpecificationType = {}));
 exports.default = PriceSpecificationType;
 
-},{}],62:[function(require,module,exports){
+},{}],63:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var ProgramMembershipType;
@@ -1859,15 +1861,15 @@ var ProgramMembershipType;
     ProgramMembershipType["ProgramMembership"] = "ProgramMembership";
 })(ProgramMembershipType = exports.ProgramMembershipType || (exports.ProgramMembershipType = {}));
 
-},{}],63:[function(require,module,exports){
-arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],64:[function(require,module,exports){
+},{}],64:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],65:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],66:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],67:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],68:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -1894,7 +1896,7 @@ var ReservationStatusType;
 })(ReservationStatusType || (ReservationStatusType = {}));
 exports.default = ReservationStatusType;
 
-},{}],68:[function(require,module,exports){
+},{}],69:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -1907,9 +1909,9 @@ var ReservationType;
 })(ReservationType || (ReservationType = {}));
 exports.default = ReservationType;
 
-},{}],69:[function(require,module,exports){
+},{}],70:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],70:[function(require,module,exports){
+},{"dup":12}],71:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var Identifier;
@@ -1918,7 +1920,7 @@ var Identifier;
     Identifier["Chevre"] = "Chevre";
 })(Identifier = exports.Identifier || (exports.Identifier = {}));
 
-},{}],71:[function(require,module,exports){
+},{}],72:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -1931,9 +1933,9 @@ var SortType;
 })(SortType || (SortType = {}));
 exports.default = SortType;
 
-},{}],72:[function(require,module,exports){
+},{}],73:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],73:[function(require,module,exports){
+},{"dup":12}],74:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -1959,7 +1961,7 @@ var TaskName;
 })(TaskName || (TaskName = {}));
 exports.default = TaskName;
 
-},{}],74:[function(require,module,exports){
+},{}],75:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -1986,9 +1988,7 @@ var TaskStatus;
 })(TaskStatus || (TaskStatus = {}));
 exports.default = TaskStatus;
 
-},{}],75:[function(require,module,exports){
-arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],76:[function(require,module,exports){
+},{}],76:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],77:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
@@ -2011,6 +2011,8 @@ arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],86:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],87:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],88:[function(require,module,exports){
 "use strict";
 /**
  * 取引ステータス
@@ -2025,7 +2027,7 @@ var TransactionStatusType;
 })(TransactionStatusType || (TransactionStatusType = {}));
 exports.default = TransactionStatusType;
 
-},{}],88:[function(require,module,exports){
+},{}],89:[function(require,module,exports){
 "use strict";
 /**
  * 取引タスクエクスポートステータス
@@ -2048,7 +2050,7 @@ var TransactionTasksExportationStatus;
 })(TransactionTasksExportationStatus || (TransactionTasksExportationStatus = {}));
 exports.default = TransactionTasksExportationStatus;
 
-},{}],89:[function(require,module,exports){
+},{}],90:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -2085,9 +2087,7 @@ var TransactionType;
 })(TransactionType || (TransactionType = {}));
 exports.default = TransactionType;
 
-},{}],90:[function(require,module,exports){
-arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],91:[function(require,module,exports){
+},{}],91:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],92:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
@@ -2096,6 +2096,8 @@ arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],94:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],95:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],96:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -2121,7 +2123,7 @@ var UnitCode;
     UnitCode["Sec"] = "SEC";
 })(UnitCode = exports.UnitCode || (exports.UnitCode = {}));
 
-},{}],96:[function(require,module,exports){
+},{}],97:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var CancelReservationActionFactory = require("./factory/action/cancel/reservation");
@@ -2155,6 +2157,7 @@ var CreditCardFactory = require("./factory/paymentMethod/paymentCard/creditCard"
 var MGTicketFactory = require("./factory/paymentMethod/paymentCard/mgTicket");
 var MovieTicketFactory = require("./factory/paymentMethod/paymentCard/movieTicket");
 var paymentMethodType_1 = require("./factory/paymentMethodType");
+var PermitFactory = require("./factory/permit");
 var MovieTheaterPlaceFactory = require("./factory/place/movieTheater");
 var ScreeningRoomPlaceFactory = require("./factory/place/screeningRoom");
 var ScreeningRoomSectionPlaceFactory = require("./factory/place/screeningRoomSection");
@@ -2271,6 +2274,7 @@ var paymentMethod;
         paymentCard.movieTicket = MovieTicketFactory;
     })(paymentCard = paymentMethod.paymentCard || (paymentMethod.paymentCard = {}));
 })(paymentMethod = exports.paymentMethod || (exports.paymentMethod = {}));
+exports.permit = PermitFactory;
 exports.priceCurrency = priceCurrency_1.default;
 var place;
 (function (place) {
@@ -2325,7 +2329,7 @@ exports.transactionTasksExportationStatus = transactionTasksExportationStatus_1.
 exports.transactionType = transactionType_1.default;
 exports.unitCode = unitCode_1.UnitCode;
 
-},{"./factory/accountTitle":12,"./factory/action/cancel/reservation":15,"./factory/action/interact/inform":16,"./factory/action/interact/register/programMembership":17,"./factory/action/interact/register/service":18,"./factory/action/interact/unRegister/programMembership":19,"./factory/action/reserve":20,"./factory/action/transfer/moneyTransfer":21,"./factory/actionStatusType":13,"./factory/actionType":14,"./factory/categoryCode":22,"./factory/clientUser":23,"./factory/creativeWork/message/email":25,"./factory/creativeWork/movie":26,"./factory/creativeWorkType":24,"./factory/errorCode":27,"./factory/errors":38,"./factory/event/screeningEvent":41,"./factory/event/screeningEventSeries":42,"./factory/eventStatusType":39,"./factory/eventType":40,"./factory/itemAvailability":43,"./factory/language":44,"./factory/monetaryAmount":45,"./factory/offer":46,"./factory/offerCatalog":47,"./factory/offerType":48,"./factory/organization":49,"./factory/organizationType":50,"./factory/paymentMethod/paymentCard/creditCard":52,"./factory/paymentMethod/paymentCard/mgTicket":53,"./factory/paymentMethod/paymentCard/movieTicket":54,"./factory/paymentMethodType":51,"./factory/place/movieTheater":56,"./factory/place/screeningRoom":57,"./factory/place/screeningRoomSection":58,"./factory/place/seat":59,"./factory/placeType":55,"./factory/priceCurrency":60,"./factory/priceSpecificationType":61,"./factory/programMembership":62,"./factory/project":63,"./factory/propertyValue":64,"./factory/qualitativeValue":65,"./factory/quantitativeValue":66,"./factory/reservationStatusType":67,"./factory/reservationType":68,"./factory/service/webAPI":70,"./factory/serviceType":69,"./factory/sortType":71,"./factory/task/aggregateOnProject":75,"./factory/task/aggregateScreeningEvent":76,"./factory/task/cancelMoneyTransfer":77,"./factory/task/cancelPendingReservation":78,"./factory/task/cancelReservation":79,"./factory/task/importEventCapacitiesFromCOA":80,"./factory/task/importEventsFromCOA":81,"./factory/task/importOffersFromCOA":82,"./factory/task/moneyTransfer":83,"./factory/task/registerService":84,"./factory/task/reserve":85,"./factory/task/triggerWebhook":86,"./factory/taskExecutionResult":72,"./factory/taskName":73,"./factory/taskStatus":74,"./factory/transaction/cancelReservation":90,"./factory/transaction/moneyTransfer":91,"./factory/transaction/registerProgramMembership":92,"./factory/transaction/registerService":93,"./factory/transaction/reserve":94,"./factory/transactionStatusType":87,"./factory/transactionTasksExportationStatus":88,"./factory/transactionType":89,"./factory/unitCode":95}],97:[function(require,module,exports){
+},{"./factory/accountTitle":12,"./factory/action/cancel/reservation":15,"./factory/action/interact/inform":16,"./factory/action/interact/register/programMembership":17,"./factory/action/interact/register/service":18,"./factory/action/interact/unRegister/programMembership":19,"./factory/action/reserve":20,"./factory/action/transfer/moneyTransfer":21,"./factory/actionStatusType":13,"./factory/actionType":14,"./factory/categoryCode":22,"./factory/clientUser":23,"./factory/creativeWork/message/email":25,"./factory/creativeWork/movie":26,"./factory/creativeWorkType":24,"./factory/errorCode":27,"./factory/errors":38,"./factory/event/screeningEvent":41,"./factory/event/screeningEventSeries":42,"./factory/eventStatusType":39,"./factory/eventType":40,"./factory/itemAvailability":43,"./factory/language":44,"./factory/monetaryAmount":45,"./factory/offer":46,"./factory/offerCatalog":47,"./factory/offerType":48,"./factory/organization":49,"./factory/organizationType":50,"./factory/paymentMethod/paymentCard/creditCard":52,"./factory/paymentMethod/paymentCard/mgTicket":53,"./factory/paymentMethod/paymentCard/movieTicket":54,"./factory/paymentMethodType":51,"./factory/permit":55,"./factory/place/movieTheater":57,"./factory/place/screeningRoom":58,"./factory/place/screeningRoomSection":59,"./factory/place/seat":60,"./factory/placeType":56,"./factory/priceCurrency":61,"./factory/priceSpecificationType":62,"./factory/programMembership":63,"./factory/project":64,"./factory/propertyValue":65,"./factory/qualitativeValue":66,"./factory/quantitativeValue":67,"./factory/reservationStatusType":68,"./factory/reservationType":69,"./factory/service/webAPI":71,"./factory/serviceType":70,"./factory/sortType":72,"./factory/task/aggregateOnProject":76,"./factory/task/aggregateScreeningEvent":77,"./factory/task/cancelMoneyTransfer":78,"./factory/task/cancelPendingReservation":79,"./factory/task/cancelReservation":80,"./factory/task/importEventCapacitiesFromCOA":81,"./factory/task/importEventsFromCOA":82,"./factory/task/importOffersFromCOA":83,"./factory/task/moneyTransfer":84,"./factory/task/registerService":85,"./factory/task/reserve":86,"./factory/task/triggerWebhook":87,"./factory/taskExecutionResult":73,"./factory/taskName":74,"./factory/taskStatus":75,"./factory/transaction/cancelReservation":91,"./factory/transaction/moneyTransfer":92,"./factory/transaction/registerProgramMembership":93,"./factory/transaction/registerService":94,"./factory/transaction/reserve":95,"./factory/transactionStatusType":88,"./factory/transactionTasksExportationStatus":89,"./factory/transactionType":90,"./factory/unitCode":96}],98:[function(require,module,exports){
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -2364,6 +2368,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.StubAuthClient = exports.AuthClient = void 0;
 var transporters_1 = require("../transporters");
 /**
  * 抽象認証クライアント
@@ -2402,18 +2407,25 @@ var StubAuthClient = /** @class */ (function () {
 }());
 exports.StubAuthClient = StubAuthClient;
 
-},{"../transporters":130}],98:[function(require,module,exports){
+},{"../transporters":131}],99:[function(require,module,exports){
 "use strict";
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) __createBinding(exports, m, p);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * factory
  */
-__export(require("@cinerino/factory"));
+__exportStar(require("@cinerino/factory"), exports);
 
-},{"@cinerino/factory":218}],99:[function(require,module,exports){
+},{"@cinerino/factory":219}],100:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -2429,6 +2441,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.service = exports.auth = exports.Auth = exports.transporters = exports.factory = void 0;
 // tslint:disable:max-classes-per-file
 /**
  * API Service Library for Javascript
@@ -2857,7 +2870,7 @@ var service;
     service.UserPool = UserPool;
 })(service = exports.service || (exports.service = {}));
 
-},{"./auth/authClient":97,"./factory":98,"./service":100,"./service/account":101,"./service/action":102,"./service/authorization":103,"./service/creativeWork":104,"./service/delivery":105,"./service/event":106,"./service/iam":107,"./service/invoice":108,"./service/offer":109,"./service/order":110,"./service/ownershipInfo":111,"./service/payment":112,"./service/paymentMethod":113,"./service/person":114,"./service/person/ownershipInfo":115,"./service/place":116,"./service/product":117,"./service/programMembership":118,"./service/project":119,"./service/reservation":120,"./service/seller":121,"./service/serviceOutput":122,"./service/task":123,"./service/transaction/moneyTransfer":124,"./service/transaction/placeOrder":125,"./service/transaction/placeOrder4sskts":126,"./service/transaction/placeOrder4ttts":127,"./service/transaction/returnOrder":128,"./service/userPool":129,"./transporters":130}],100:[function(require,module,exports){
+},{"./auth/authClient":98,"./factory":99,"./service":101,"./service/account":102,"./service/action":103,"./service/authorization":104,"./service/creativeWork":105,"./service/delivery":106,"./service/event":107,"./service/iam":108,"./service/invoice":109,"./service/offer":110,"./service/order":111,"./service/ownershipInfo":112,"./service/payment":113,"./service/paymentMethod":114,"./service/person":115,"./service/person/ownershipInfo":116,"./service/place":117,"./service/product":118,"./service/programMembership":119,"./service/project":120,"./service/reservation":121,"./service/seller":122,"./service/serviceOutput":123,"./service/task":124,"./service/transaction/moneyTransfer":125,"./service/transaction/placeOrder":126,"./service/transaction/placeOrder4sskts":127,"./service/transaction/placeOrder4ttts":128,"./service/transaction/returnOrder":129,"./service/userPool":130,"./transporters":131}],101:[function(require,module,exports){
 "use strict";
 var __assign = (this && this.__assign) || function () {
     __assign = Object.assign || function(t) {
@@ -2907,6 +2920,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Service = void 0;
 var qs = require("qs");
 var transporters_1 = require("./transporters");
 /**
@@ -2964,7 +2978,7 @@ var Service = /** @class */ (function () {
 }());
 exports.Service = Service;
 
-},{"./transporters":130,"qs":132}],101:[function(require,module,exports){
+},{"./transporters":131,"qs":134}],102:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -3016,6 +3030,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.AccountService = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 /**
@@ -3168,7 +3183,7 @@ var AccountService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.AccountService = AccountService;
 
-},{"../service":100,"http-status":271}],102:[function(require,module,exports){
+},{"../service":101,"http-status":132}],103:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -3220,6 +3235,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ActionService = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 /**
@@ -3312,7 +3328,7 @@ var ActionService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.ActionService = ActionService;
 
-},{"../service":100,"http-status":271}],103:[function(require,module,exports){
+},{"../service":101,"http-status":132}],104:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -3364,6 +3380,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.AuthorizationService = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 /**
@@ -3410,7 +3427,7 @@ var AuthorizationService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.AuthorizationService = AuthorizationService;
 
-},{"../service":100,"http-status":271}],104:[function(require,module,exports){
+},{"../service":101,"http-status":132}],105:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -3462,6 +3479,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.CreativeWorkService = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 /**
@@ -3508,7 +3526,7 @@ var CreativeWorkService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.CreativeWorkService = CreativeWorkService;
 
-},{"../service":100,"http-status":271}],105:[function(require,module,exports){
+},{"../service":101,"http-status":132}],106:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -3560,6 +3578,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.DeliveryService = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 /**
@@ -3595,7 +3614,7 @@ var DeliveryService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.DeliveryService = DeliveryService;
 
-},{"../service":100,"http-status":271}],106:[function(require,module,exports){
+},{"../service":101,"http-status":132}],107:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -3647,6 +3666,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.EventService = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 /**
@@ -3796,7 +3816,7 @@ var EventService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.EventService = EventService;
 
-},{"../service":100,"http-status":271}],107:[function(require,module,exports){
+},{"../service":101,"http-status":132}],108:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -3848,6 +3868,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.IAMService = exports.RoleType = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 var RoleType;
@@ -4132,7 +4153,7 @@ var IAMService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.IAMService = IAMService;
 
-},{"../service":100,"http-status":271}],108:[function(require,module,exports){
+},{"../service":101,"http-status":132}],109:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -4184,6 +4205,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.InvoiceService = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 /**
@@ -4230,7 +4252,7 @@ var InvoiceService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.InvoiceService = InvoiceService;
 
-},{"../service":100,"http-status":271}],109:[function(require,module,exports){
+},{"../service":101,"http-status":132}],110:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -4282,6 +4304,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.OfferService = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 /**
@@ -4332,7 +4355,7 @@ var OfferService = /** @class */ (function (_super) {
         });
     };
     /**
-     * 決済カードオファー承認
+     * ペイメントカードオファー承認
      */
     OfferService.prototype.authorizePaymentCard = function (params) {
         return __awaiter(this, void 0, void 0, function () {
@@ -4374,7 +4397,7 @@ var OfferService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.OfferService = OfferService;
 
-},{"../service":100,"http-status":271}],110:[function(require,module,exports){
+},{"../service":101,"http-status":132}],111:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -4426,6 +4449,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.OrderService = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 /**
@@ -4459,7 +4483,7 @@ var OrderService = /** @class */ (function (_super) {
     };
     /**
      * 確認番号で検索
-     * 確認番号と購入者情報より、最新の注文を検索します
+     * 確認番号と購入者情報で注文を検索します
      */
     OrderService.prototype.findByConfirmationNumber = function (params) {
         return __awaiter(this, void 0, void 0, function () {
@@ -4639,7 +4663,7 @@ var OrderService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.OrderService = OrderService;
 
-},{"../service":100,"http-status":271}],111:[function(require,module,exports){
+},{"../service":101,"http-status":132}],112:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -4691,6 +4715,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.OwnershipInfoService = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 /**
@@ -4816,7 +4841,7 @@ var OwnershipInfoService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.OwnershipInfoService = OwnershipInfoService;
 
-},{"../service":100,"http-status":271}],112:[function(require,module,exports){
+},{"../service":101,"http-status":132}],113:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -4868,6 +4893,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PaymentService = void 0;
 var http_status_1 = require("http-status");
 var factory = require("../factory");
 var service_1 = require("../service");
@@ -4956,7 +4982,7 @@ var PaymentService = /** @class */ (function (_super) {
         });
     };
     /**
-     * 決済カード決済承認
+     * ペイメントカード決済承認
      */
     PaymentService.prototype.authorizePaymentCard = function (params) {
         return __awaiter(this, void 0, void 0, function () {
@@ -4994,7 +5020,7 @@ var PaymentService = /** @class */ (function (_super) {
         });
     };
     /**
-     * 決済カード照会
+     * ペイメントカード照会
      */
     PaymentService.prototype.checkPaymentCard = function (params) {
         return __awaiter(this, void 0, void 0, function () {
@@ -5055,7 +5081,7 @@ var PaymentService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.PaymentService = PaymentService;
 
-},{"../factory":98,"../service":100,"http-status":271}],113:[function(require,module,exports){
+},{"../factory":99,"../service":101,"http-status":132}],114:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -5107,6 +5133,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PaymentMethodService = void 0;
 var http_status_1 = require("http-status");
 var factory = require("../factory");
 var service_1 = require("../service");
@@ -5154,7 +5181,7 @@ var PaymentMethodService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.PaymentMethodService = PaymentMethodService;
 
-},{"../factory":98,"../service":100,"http-status":271}],114:[function(require,module,exports){
+},{"../factory":99,"../service":101,"http-status":132}],115:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -5206,6 +5233,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PersonService = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 /**
@@ -5419,7 +5447,7 @@ var PersonService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.PersonService = PersonService;
 
-},{"../service":100,"http-status":271}],115:[function(require,module,exports){
+},{"../service":101,"http-status":132}],116:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -5471,6 +5499,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PersonOwnershipInfoService = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../../service");
 /**
@@ -5685,7 +5714,7 @@ var PersonOwnershipInfoService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.PersonOwnershipInfoService = PersonOwnershipInfoService;
 
-},{"../../service":100,"http-status":271}],116:[function(require,module,exports){
+},{"../../service":101,"http-status":132}],117:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -5737,6 +5766,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PlaceService = void 0;
 var http_status_1 = require("http-status");
 var factory = require("../factory");
 var service_1 = require("../service");
@@ -5836,7 +5866,7 @@ var PlaceService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.PlaceService = PlaceService;
 
-},{"../factory":98,"../service":100,"http-status":271}],117:[function(require,module,exports){
+},{"../factory":99,"../service":101,"http-status":132}],118:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -5888,6 +5918,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ProductService = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 /**
@@ -5949,7 +5980,7 @@ var ProductService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.ProductService = ProductService;
 
-},{"../service":100,"http-status":271}],118:[function(require,module,exports){
+},{"../service":101,"http-status":132}],119:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6001,6 +6032,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ProgramMembershipService = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 /**
@@ -6051,7 +6083,7 @@ var ProgramMembershipService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.ProgramMembershipService = ProgramMembershipService;
 
-},{"../service":100,"http-status":271}],119:[function(require,module,exports){
+},{"../service":101,"http-status":132}],120:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6103,6 +6135,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ProjectService = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 /**
@@ -6273,7 +6306,7 @@ var ProjectService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.ProjectService = ProjectService;
 
-},{"../service":100,"http-status":271}],120:[function(require,module,exports){
+},{"../service":101,"http-status":132}],121:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6325,6 +6358,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ReservationService = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 /**
@@ -6468,7 +6502,7 @@ var ReservationService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.ReservationService = ReservationService;
 
-},{"../service":100,"http-status":271}],121:[function(require,module,exports){
+},{"../service":101,"http-status":132}],122:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6520,6 +6554,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.SellerService = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 /**
@@ -6642,7 +6677,7 @@ var SellerService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.SellerService = SellerService;
 
-},{"../service":100,"http-status":271}],122:[function(require,module,exports){
+},{"../service":101,"http-status":132}],123:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6694,6 +6729,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ServiceOutputService = void 0;
 var http_status_1 = require("http-status");
 // import * as factory from '../factory';
 var service_1 = require("../service");
@@ -6737,7 +6773,7 @@ var ServiceOutputService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.ServiceOutputService = ServiceOutputService;
 
-},{"../service":100,"http-status":271}],123:[function(require,module,exports){
+},{"../service":101,"http-status":132}],124:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6789,6 +6825,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.TaskService = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 /**
@@ -6872,7 +6909,7 @@ var TaskService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.TaskService = TaskService;
 
-},{"../service":100,"http-status":271}],124:[function(require,module,exports){
+},{"../service":101,"http-status":132}],125:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -6924,6 +6961,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MoneyTransferTransactionService = void 0;
 var http_status_1 = require("http-status");
 var factory = require("../../factory");
 var service_1 = require("../../service");
@@ -7070,7 +7108,7 @@ var MoneyTransferTransactionService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.MoneyTransferTransactionService = MoneyTransferTransactionService;
 
-},{"../../factory":98,"../../service":100,"http-status":271}],125:[function(require,module,exports){
+},{"../../factory":99,"../../service":101,"http-status":132}],126:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -7122,10 +7160,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PlaceOrderTransactionService = void 0;
 var http_status_1 = require("http-status");
-var util = require("util");
-// tslint:disable-next-line:no-require-imports no-var-requires
-var packageInfo = require('../../../package.json');
 var factory = require("../../factory");
 var service_1 = require("../../service");
 /**
@@ -7230,26 +7266,6 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
                         _a.sent();
                         return [2 /*return*/];
                 }
-            });
-        });
-    };
-    /**
-     * 購入者プロフィール変更
-     * @deprecated Use setProfile()
-     */
-    PlaceOrderTransactionService.prototype.setCustomerContact = function (params) {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                return [2 /*return*/, this.fetch({
-                        uri: "/transactions/" + this.typeOf + "/" + params.id + "/customerContact",
-                        method: 'PUT',
-                        expectedStatusCodes: [http_status_1.OK],
-                        body: params.object.customerContact
-                    })
-                        .then(function (response) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
-                        return [2 /*return*/, response.json()];
-                    }); }); })];
             });
         });
     };
@@ -7385,9 +7401,8 @@ var PlaceOrderTransactionService = /** @class */ (function (_super) {
     return PlaceOrderTransactionService;
 }(service_1.Service));
 exports.PlaceOrderTransactionService = PlaceOrderTransactionService;
-PlaceOrderTransactionService.prototype.setCustomerContact = util.deprecate(PlaceOrderTransactionService.prototype.setCustomerContact, packageInfo.name + ": setCustomerContact() is deprecated. Use setProfile() instead.");
 
-},{"../../../package.json":136,"../../factory":98,"../../service":100,"http-status":271,"util":285}],126:[function(require,module,exports){
+},{"../../factory":99,"../../service":101,"http-status":132}],127:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -7439,6 +7454,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PlaceOrderTransaction4ssktsService = void 0;
 var http_status_1 = require("http-status");
 var placeOrder_1 = require("./placeOrder");
 /**
@@ -7555,7 +7571,7 @@ var PlaceOrderTransaction4ssktsService = /** @class */ (function (_super) {
 }(placeOrder_1.PlaceOrderTransactionService));
 exports.PlaceOrderTransaction4ssktsService = PlaceOrderTransaction4ssktsService;
 
-},{"./placeOrder":125,"http-status":271}],127:[function(require,module,exports){
+},{"./placeOrder":126,"http-status":132}],128:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -7607,6 +7623,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PlaceOrderTransaction4tttsService = void 0;
 var http_status_1 = require("http-status");
 var placeOrder_1 = require("./placeOrder");
 /**
@@ -7643,7 +7660,7 @@ var PlaceOrderTransaction4tttsService = /** @class */ (function (_super) {
 }(placeOrder_1.PlaceOrderTransactionService));
 exports.PlaceOrderTransaction4tttsService = PlaceOrderTransaction4tttsService;
 
-},{"./placeOrder":125,"http-status":271}],128:[function(require,module,exports){
+},{"./placeOrder":126,"http-status":132}],129:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -7695,6 +7712,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ReturnOrderTransactionService = void 0;
 var http_status_1 = require("http-status");
 var factory = require("../../factory");
 var service_1 = require("../../service");
@@ -7803,7 +7821,7 @@ var ReturnOrderTransactionService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.ReturnOrderTransactionService = ReturnOrderTransactionService;
 
-},{"../../factory":98,"../../service":100,"http-status":271}],129:[function(require,module,exports){
+},{"../../factory":99,"../../service":101,"http-status":132}],130:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -7855,6 +7873,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.UserPoolService = void 0;
 var http_status_1 = require("http-status");
 var service_1 = require("../service");
 /**
@@ -7937,7 +7956,7 @@ var UserPoolService = /** @class */ (function (_super) {
 }(service_1.Service));
 exports.UserPoolService = UserPoolService;
 
-},{"../service":100,"http-status":271}],130:[function(require,module,exports){
+},{"../service":101,"http-status":132}],131:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -7989,6 +8008,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.StubTransporter = exports.DefaultTransporter = exports.RequestError = exports.Transporter = void 0;
 // tslint:disable:max-classes-per-file
 /**
  * transporters
@@ -8131,7 +8151,632 @@ var StubTransporter = /** @class */ (function () {
 }());
 exports.StubTransporter = StubTransporter;
 
-},{"debug":269,"isomorphic-fetch":274}],131:[function(require,module,exports){
+},{"debug":270,"isomorphic-fetch":274}],132:[function(require,module,exports){
+// Generated by CoffeeScript 2.3.0
+// # node-http-status
+
+// **Reference:**  
+
+// - https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml
+// - https://tools.ietf.org/html/rfc2324#section-2.3.2
+
+// ## Classes
+
+// The first digit of the status-code defines the class of response. The last two digits do not have any categorization role. There are five values for the first digit:
+var classes;
+
+classes = {
+  // 1xx - The 1xx (Informational) class of status code indicates an interim response for communicating connection status or request progress prior to completing the requested action and sending a final response.
+  '1xx': 'Informational',
+  '1xx_NAME': 'INFORMATIONAL',
+  '1xx_MESSAGE': 'Indicates an interim response for communicating connection status or request progress prior to completing the requested action and sending a final response.',
+  INFORMATIONAL: '1xx',
+  // 2xx - The 2xx (Successful) class of status code indicates that the client's request was successfully received, understood, and accepted.
+  '2xx': 'Successful',
+  '2xx_NAME': 'SUCCESSFUL',
+  '2xx_MESSAGE': 'Indicates that the client\'s request was successfully received, understood, and accepted.',
+  SUCCESSFUL: '2xx',
+  // 3xx - The 3xx (Redirection) class of status code indicates that further action needs to be taken by the user agent in order to fulfill the request.
+  '3xx': 'Redirection',
+  '3xx_NAME': 'REDIRECTION',
+  '3xx_MESSAGE': 'Indicates that further action needs to be taken by the user agent in order to fulfill the request.',
+  REDIRECTION: '3xx',
+  // 4xx - The 4xx (Client Error) class of status code indicates that the client seems to have erred.
+  '4xx': 'Client Error',
+  '4xx_NAME': 'CLIENT_ERROR',
+  '4xx_MESSAGE': 'Indicates that the client seems to have erred.',
+  CLIENT_ERROR: '4xx',
+  // 5xx - The 5xx (Server Error) class of status code indicates that the server is aware that it has erred or is incapable of performing the requested method.
+  '5xx': 'Server Error',
+  '5xx_NAME': 'SERVER_ERROR',
+  '5xx_MESSAGE': 'Indicates that the server is aware that it has erred or is incapable of performing the requested method.',
+  SERVER_ERROR: '5xx'
+};
+
+module.exports = {
+  classes: classes,
+  // ## Informational 1xx
+
+  // Indicates an interim response for communicating connection status or request progress prior to completing the requested action and sending a final response.
+
+  // 100 - The server has received the request headers and the client should proceed to send the request body.
+  100: 'Continue',
+  '100_NAME': 'CONTINUE',
+  '100_MESSAGE': 'The server has received the request headers and the client should proceed to send the request body.',
+  '100_CLASS': classes.INFORMATIONAL,
+  CONTINUE: 100,
+  // 101 - The requester has asked the server to switch protocols and the server has agreed to do so.
+  101: 'Switching Protocols',
+  '101_NAME': 'SWITCHING_PROTOCOLS',
+  '101_MESSAGE': 'The requester has asked the server to switch protocols and the server has agreed to do so.',
+  '101_CLASS': classes.INFORMATIONAL,
+  SWITCHING_PROTOCOLS: 101,
+  // 102 Processing (WebDAV; RFC 2518) - A WebDAV request may contain many sub-requests involving file operations, requiring a long time to complete the request. This code indicates that the server has received and is processing the request, but no response is available yet.[7] This prevents the client from timing out and assuming the request was lost.
+  102: 'Processing',
+  '102_NAME': 'PROCESSING',
+  '102_MESSAGE': 'A WebDAV request may contain many sub-requests involving file operations, requiring a long time to complete the request. This code indicates that the server has received and is processing the request, but no response is available yet.[7] This prevents the client from timing out and assuming the request was lost.',
+  '102_CLASS': classes.INFORMATIONAL,
+  PROCESSING: 102,
+  // 103 Early Hints (RFC 8297) - Used to return some response headers before final HTTP message.
+  103: 'Early Hints',
+  '103_NAME': 'EARLY_HINTS',
+  '103_MESSAGE': 'Used to return some response headers before final HTTP message.',
+  '103_CLASS': classes.INFORMATIONAL,
+  EARLY_HINTS: 103,
+  // ## Successful 2xx
+
+  // Indicates that the client's request was successfully received, understood, and accepted.
+
+  // 200 - Standard response for successful HTTP requests.
+  200: 'OK',
+  '200_NAME': 'OK',
+  '200_MESSAGE': 'Standard response for successful HTTP requests.',
+  '200_CLASS': classes.SUCCESSFUL,
+  OK: 200,
+  // 201 - The request has been fulfilled, resulting in the creation of a new resource.
+  201: 'Created',
+  '201_NAME': 'CREATED',
+  '201_MESSAGE': 'The request has been fulfilled, resulting in the creation of a new resource.',
+  '201_CLASS': classes.SUCCESSFUL,
+  CREATED: 201,
+  // 202 - The request has been accepted for processing, but the processing has not been completed.
+  202: 'Accepted',
+  '202_NAME': 'ACCEPTED',
+  '202_MESSAGE': 'The request has been accepted for processing, but the processing has not been completed.',
+  '202_CLASS': classes.SUCCESSFUL,
+  ACCEPTED: 202,
+  // 203 (since HTTP/1.1) - The server is a transforming proxy (e.g. a Web accelerator) that received a 200 OK from its origin, but is returning a modified version of the origin's response.
+  203: 'Non-Authoritative Information',
+  '203_NAME': 'NON_AUTHORITATIVE_INFORMATION',
+  '203_MESSAGE': 'The server is a transforming proxy (e.g. a Web accelerator) that received a 200 OK from its origin, but is returning a modified version of the origin\'s response.',
+  '203_CLASS': classes.SUCCESSFUL,
+  NON_AUTHORITATIVE_INFORMATION: 203,
+  // 204 - The server successfully processed the request and is not returning any content.
+  204: 'No Content',
+  '204_NAME': 'NO_CONTENT',
+  '204_MESSAGE': 'The server successfully processed the request and is not returning any content.',
+  '204_CLASS': classes.SUCCESSFUL,
+  NO_CONTENT: 204,
+  // 205 - The server successfully processed the request, but is not returning any content. Unlike a 204 response, this response requires that the requester reset the document view.
+  205: 'Reset Content',
+  '205_NAME': 'RESET_CONTENT',
+  '205_MESSAGE': 'The server successfully processed the request, but is not returning any content. Unlike a 204 response, this response requires that the requester reset the document view.',
+  '205_CLASS': classes.SUCCESSFUL,
+  RESET_CONTENT: 205,
+  // 206 (RFC 7233) - The server is delivering only part of the resource (byte serving) due to a range header sent by the client.
+  206: 'Partial Content',
+  '206_NAME': 'PARTIAL_CONTENT',
+  '206_MESSAGE': 'The server is delivering only part of the resource (byte serving) due to a range header sent by the client.',
+  '206_CLASS': classes.SUCCESSFUL,
+  PARTIAL_CONTENT: 206,
+  // 207 (WebDAV; RFC 4918) - The message body that follows is by default an XML message and can contain a number of separate response codes, depending on how many sub-requests were made.
+  207: 'Multi Status',
+  '207_NAME': 'MULTI_STATUS',
+  '207_MESSAGE': 'The message body that follows is by default an XML message and can contain a number of separate response codes, depending on how many sub-requests were made.',
+  '207_CLASS': classes.SUCCESSFUL,
+  MULTI_STATUS: 207,
+  // 208 (WebDAV; RFC 5842) - The members of a DAV binding have already been enumerated in a preceding part of the (multistatus) response, and are not being included again.
+  208: 'Already Reported',
+  '208_NAME': 'ALREADY_REPORTED',
+  '208_MESSAGE': 'The members of a DAV binding have already been enumerated in a preceding part of the (multistatus) response, and are not being included again.',
+  '208_CLASS': classes.SUCCESSFUL,
+  ALREADY_REPORTED: 208,
+  // 226 (RFC 3229) - The server has fulfilled a request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.
+  226: 'IM Used',
+  '226_NAME': 'IM_USED',
+  '226_MESSAGE': 'The server has fulfilled a request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.',
+  '226_CLASS': classes.SUCCESSFUL,
+  IM_USED: 226,
+  // ## Redirection 3xx
+
+  // Indicates that further action needs to be taken by the user agent in order to fulfill the request.
+
+  // 300 - Indicates multiple options for the resource from which the client may choose.
+  300: 'Multiple Choices',
+  '300_NAME': 'MULTIPLE_CHOICES',
+  '300_MESSAGE': 'Indicates multiple options for the resource from which the client may choose.',
+  '300_CLASS': classes.REDIRECTION,
+  MULTIPLE_CHOICES: 300,
+  // 301 - This and all future requests should be directed to the given URI.
+  301: 'Moved Permanently',
+  '301_NAME': 'MOVED_PERMANENTLY',
+  '301_MESSAGE': 'This and all future requests should be directed to the given URI.',
+  '301_CLASS': classes.REDIRECTION,
+  MOVED_PERMANENTLY: 301,
+  // 302 - This is an example of industry practice contradicting the standard. The HTTP/1.0 specification (RFC 1945) required the client to perform a temporary redirect (the original describing phrase was "Moved Temporarily"), but popular browsers implemented 302 with the functionality of a 303 See Other. Therefore, HTTP/1.1 added status codes 303 and 307 to distinguish between the two behaviours.
+  302: 'Found',
+  '302_NAME': 'FOUND',
+  '302_MESSAGE': 'This is an example of industry practice contradicting the standard. The HTTP/1.0 specification (RFC 1945) required the client to perform a temporary redirect (the original describing phrase was "Moved Temporarily"), but popular browsers implemented 302 with the functionality of a 303 See Other. Therefore, HTTP/1.1 added status codes 303 and 307 to distinguish between the two behaviours.',
+  '302_CLASS': classes.REDIRECTION,
+  FOUND: 302,
+  // 303 (since HTTP/1.1) - The response to the request can be found under another URI using the GET method.
+  303: 'See Other',
+  '303_NAME': 'SEE_OTHER',
+  '303_MESSAGE': 'The response to the request can be found under another URI using the GET method.',
+  '303_CLASS': classes.REDIRECTION,
+  SEE_OTHER: 303,
+  // 304 (RFC 7232) - Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match.
+  304: 'Not Modified',
+  '304_NAME': 'NOT_MODIFIED',
+  '304_MESSAGE': 'Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match.',
+  '304_CLASS': classes.REDIRECTION,
+  NOT_MODIFIED: 304,
+  // 305 (since HTTP/1.1) - The requested resource is available only through a proxy, the address for which is provided in the response.
+  305: 'Use Proxy',
+  '305_NAME': 'USE_PROXY',
+  '305_MESSAGE': 'The requested resource is available only through a proxy, the address for which is provided in the response.',
+  '305_CLASS': classes.REDIRECTION,
+  USE_PROXY: 305,
+  // 306 - No longer used. Originally meant "Subsequent requests should use the specified proxy.
+  306: 'Switch Proxy',
+  '306_NAME': 'SWITCH_PROXY',
+  '306_MESSAGE': 'No longer used. Originally meant "Subsequent requests should use the specified proxy.',
+  '306_CLASS': classes.REDIRECTION,
+  SWITCH_PROXY: 306,
+  // 307 (since HTTP/1.1) - In this case, the request should be repeated with another URI; however, future requests should still use the original URI.
+  307: 'Temporary Redirect',
+  '307_NAME': 'TEMPORARY_REDIRECT',
+  '307_MESSAGE': 'In this case, the request should be repeated with another URI; however, future requests should still use the original URI.',
+  '307_CLASS': classes.REDIRECTION,
+  TEMPORARY_REDIRECT: 307,
+  // 308 (RFC 7538) - The request and all future requests should be repeated using another URI.
+  308: 'Permanent Redirect',
+  '308_NAME': 'PERMANENT_REDIRECT',
+  '308_MESSAGE': 'The request and all future requests should be repeated using another URI.',
+  '308_CLASS': classes.REDIRECTION,
+  PERMANENT_REDIRECT: 308,
+  // ## Client Error 4xx
+
+  // Indicates that the client seems to have erred.
+
+  // 400 - The server cannot or will not process the request due to an apparent client error.
+  400: 'Bad Request',
+  '400_NAME': 'BAD_REQUEST',
+  '400_MESSAGE': 'The server cannot or will not process the request due to an apparent client error.',
+  '400_CLASS': classes.CLIENT_ERROR,
+  BAD_REQUEST: 400,
+  // 401 (RFC 7235) - Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided.
+  401: 'Unauthorized',
+  '401_NAME': 'UNAUTHORIZED',
+  '401_MESSAGE': 'Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided.',
+  '401_CLASS': classes.CLIENT_ERROR,
+  UNAUTHORIZED: 401,
+  // 402 - Reserved for future use. The original intention was that this code might be used as part of some form of digital cash or micropayment scheme, as proposed for example by GNU Taler, but that has not yet happened, and this code is not usually used.
+  402: 'Payment Required',
+  '402_NAME': 'PAYMENT_REQUIRED',
+  '402_MESSAGE': 'Reserved for future use. The original intention was that this code might be used as part of some form of digital cash or micropayment scheme, as proposed for example by GNU Taler, but that has not yet happened, and this code is not usually used.',
+  '402_CLASS': classes.CLIENT_ERROR,
+  PAYMENT_REQUIRED: 402,
+  // 403 - The request was valid, but the server is refusing action.
+  403: 'Forbidden',
+  '403_NAME': 'FORBIDDEN',
+  '403_MESSAGE': 'The request was valid, but the server is refusing action.',
+  '403_CLASS': classes.CLIENT_ERROR,
+  FORBIDDEN: 403,
+  // 404 - The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.
+  404: 'Not Found',
+  '404_NAME': 'NOT_FOUND',
+  '404_MESSAGE': 'The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.',
+  '404_CLASS': classes.CLIENT_ERROR,
+  NOT_FOUND: 404,
+  // 405 - A request method is not supported for the requested resource.
+  405: 'Method Not Allowed',
+  '405_NAME': 'METHOD_NOT_ALLOWED',
+  '405_MESSAGE': 'A request method is not supported for the requested resource.',
+  '405_CLASS': classes.CLIENT_ERROR,
+  METHOD_NOT_ALLOWED: 405,
+  // 406 - The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request.
+  406: 'Not Acceptable',
+  '406_NAME': 'NOT_ACCEPTABLE',
+  '406_MESSAGE': 'The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request.',
+  '406_CLASS': classes.CLIENT_ERROR,
+  NOT_ACCEPTABLE: 406,
+  // 407 (RFC 7235) - The client must first authenticate itself with the proxy.
+  407: 'Proxy Authentication Required',
+  '407_NAME': 'PROXY_AUTHENTICATION_REQUIRED',
+  '407_MESSAGE': 'The client must first authenticate itself with the proxy.',
+  '407_CLASS': classes.CLIENT_ERROR,
+  PROXY_AUTHENTICATION_REQUIRED: 407,
+  // 408 - The server timed out waiting for the request.
+  408: 'Request Time-out',
+  '408_NAME': 'REQUEST_TIMEOUT',
+  '408_MESSAGE': 'The server timed out waiting for the request.',
+  '408_CLASS': classes.CLIENT_ERROR,
+  REQUEST_TIMEOUT: 408,
+  // 409 - Indicates that the request could not be processed because of conflict in the request, such as an edit conflict between multiple simultaneous updates.
+  409: 'Conflict',
+  '409_NAME': 'CONFLICT',
+  '409_MESSAGE': 'Indicates that the request could not be processed because of conflict in the request, such as an edit conflict between multiple simultaneous updates.',
+  '409_CLASS': classes.CLIENT_ERROR,
+  CONFLICT: 409,
+  // 410 - Indicates that the resource requested is no longer available and will not be available again.
+  410: 'Gone',
+  '410_NAME': 'GONE',
+  '410_MESSAGE': 'Indicates that the resource requested is no longer available and will not be available again.',
+  '410_CLASS': classes.CLIENT_ERROR,
+  GONE: 410,
+  // 411 - The request did not specify the length of its content, which is required by the requested resource.
+  411: 'Length Required',
+  '411_NAME': 'LENGTH_REQUIRED',
+  '411_MESSAGE': 'The request did not specify the length of its content, which is required by the requested resource.',
+  '411_CLASS': classes.CLIENT_ERROR,
+  LENGTH_REQUIRED: 411,
+  // 412 (RFC 7232) - The server does not meet one of the preconditions that the requester put on the request.
+  412: 'Precondition Failed',
+  '412_NAME': 'PRECONDITION_FAILED',
+  '412_MESSAGE': 'The server does not meet one of the preconditions that the requester put on the request.',
+  '412_CLASS': classes.CLIENT_ERROR,
+  PRECONDITION_FAILED: 412,
+  // 413 (RFC 7231) - The request is larger than the server is willing or able to process. Previously called "Request Entity Too Large".
+  413: 'Request Entity Too Large',
+  '413_NAME': 'REQUEST_ENTITY_TOO_LARGE',
+  '413_MESSAGE': 'The request is larger than the server is willing or able to process. Previously called "Request Entity Too Large".',
+  '413_CLASS': classes.CLIENT_ERROR,
+  REQUEST_ENTITY_TOO_LARGE: 413,
+  // 414 (RFC 7231) - The URI provided was too long for the server to process.
+  414: 'Request-URI Too Large',
+  '414_NAME': 'REQUEST_URI_TOO_LONG',
+  '414_MESSAGE': 'The URI provided was too long for the server to process.',
+  '414_CLASS': classes.CLIENT_ERROR,
+  REQUEST_URI_TOO_LONG: 414,
+  // 415 - The request entity has a media type which the server or resource does not support.
+  415: 'Unsupported Media Type',
+  '415_NAME': 'UNSUPPORTED_MEDIA_TYPE',
+  '415_MESSAGE': 'The request entity has a media type which the server or resource does not support.',
+  '415_CLASS': classes.CLIENT_ERROR,
+  UNSUPPORTED_MEDIA_TYPE: 415,
+  // 416 (RFC 7233) - The client has asked for a portion of the file (byte serving), but the server cannot supply that portion.
+  416: 'Requested Range not Satisfiable',
+  '416_NAME': 'REQUESTED_RANGE_NOT_SATISFIABLE',
+  '416_MESSAGE': 'The client has asked for a portion of the file (byte serving), but the server cannot supply that portion.',
+  '416_CLASS': classes.CLIENT_ERROR,
+  REQUESTED_RANGE_NOT_SATISFIABLE: 416,
+  // 417 - The server cannot meet the requirements of the Expect request-header field.
+  417: 'Expectation Failed',
+  '417_NAME': 'EXPECTATION_FAILED',
+  '417_MESSAGE': 'The server cannot meet the requirements of the Expect request-header field.',
+  '417_CLASS': classes.CLIENT_ERROR,
+  EXPECTATION_FAILED: 417,
+  // 418 (RFC 2324, RFC 7168) - Any attempt to brew coffee with a teapot should result in the error code "418 I'm a teapot". The resulting entity body MAY be short and stout. This code was defined in 1998 as one of the traditional IETF April Fools' jokes, in RFC 2324, Hyper Text Coffee Pot Control Protocol, and is not expected to be implemented by actual HTTP servers. The RFC specifies this code should be returned by teapots requested to brew coffee. This HTTP status is used as an Easter egg in some websites, including Google.com.
+  418: 'I\'m a teapot',
+  '418_NAME': 'IM_A_TEAPOT',
+  '418_MESSAGE': 'Any attempt to brew coffee with a teapot should result in the error code "418 I\'m a teapot". The resulting entity body MAY be short and stout.',
+  '418_CLASS': classes.CLIENT_ERROR,
+  IM_A_TEAPOT: 418,
+  // 421 (RFC 7540) - The request was directed at a server that is not able to produce a response.
+  421: 'Misdirected Request',
+  '421_NAME': 'MISDIRECTED_REQUEST',
+  '421_MESSAGE': 'The request was directed at a server that is not able to produce a response.',
+  '421_CLASS': classes.CLIENT_ERROR,
+  MISDIRECTED_REQUEST: 421,
+  // 422 (WebDAV; RFC 4918) - The request was well-formed but was unable to be followed due to semantic errors.
+  422: 'Unprocessable Entity',
+  '422_NAME': 'UNPROCESSABLE_ENTITY',
+  '422_MESSAGE': 'The request was well-formed but was unable to be followed due to semantic errors.',
+  '422_CLASS': classes.CLIENT_ERROR,
+  UNPROCESSABLE_ENTITY: 422,
+  // 423 (WebDAV; RFC 4918) - The resource that is being accessed is locked.
+  423: 'Locked',
+  '423_NAME': 'LOCKED',
+  '423_MESSAGE': 'The resource that is being accessed is locked.',
+  '423_CLASS': classes.CLIENT_ERROR,
+  LOCKED: 423,
+  // 424 (WebDAV; RFC 4918) - The request failed because it depended on another request and that request failed.
+  424: 'Failed Dependency',
+  '424_NAME': 'FAILED_DEPENDENCY',
+  '424_MESSAGE': 'The request failed because it depended on another request and that request failed.',
+  '424_CLASS': classes.CLIENT_ERROR,
+  FAILED_DEPENDENCY: 424,
+  // 426 - The client should switch to a different protocol such as TLS/1.0, given in the Upgrade header field.
+  426: 'Upgrade Required',
+  '426_NAME': 'UPGRADE_REQUIRED',
+  '426_MESSAGE': 'The client should switch to a different protocol such as TLS/1.0, given in the Upgrade header field.',
+  '426_CLASS': classes.CLIENT_ERROR,
+  UPGRADE_REQUIRED: 426,
+  // 428 (RFC 6585) - The origin server requires the request to be conditional.
+  428: 'Precondition Required', // RFC 6585
+  '428_NAME': 'PRECONDITION_REQUIRED',
+  '428_MESSAGE': 'The origin server requires the request to be conditional.',
+  '428_CLASS': classes.CLIENT_ERROR,
+  PRECONDITION_REQUIRED: 428,
+  // 429 (RFC 6585) - The user has sent too many requests in a given amount of time.
+  429: 'Too Many Requests',
+  '429_NAME': 'TOO_MANY_REQUESTS',
+  '429_MESSAGE': 'The user has sent too many requests in a given amount of time.',
+  '429_CLASS': classes.CLIENT_ERROR,
+  TOO_MANY_REQUESTS: 429,
+  // 431 (RFC 6585) - The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large.
+  431: 'Request Header Fields Too Large', // RFC 6585
+  '431_NAME': 'REQUEST_HEADER_FIELDS_TOO_LARGE',
+  '431_MESSAGE': 'The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large.',
+  '431_CLASS': classes.CLIENT_ERROR,
+  REQUEST_HEADER_FIELDS_TOO_LARGE: 431,
+  // 451 (RFC 7725) - A server operator has received a legal demand to deny access to a resource or to a set of resources that includes the requested resource.
+  451: 'Unavailable For Legal Reasons',
+  '451_NAME': 'UNAVAILABLE_FOR_LEGAL_REASONS',
+  '451_MESSAGE': 'A server operator has received a legal demand to deny access to a resource or to a set of resources that includes the requested resource.',
+  '451_CLASS': classes.CLIENT_ERROR,
+  UNAVAILABLE_FOR_LEGAL_REASONS: 451,
+  // ## Server Error 5xx
+
+  // Indicates that the server is aware that it has erred or is incapable of performing the requested method.
+
+  // 500 - A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.
+  500: 'Internal Server Error',
+  '500_NAME': 'INTERNAL_SERVER_ERROR',
+  '500_MESSAGE': 'A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.',
+  '500_CLASS': classes.SERVER_ERROR,
+  INTERNAL_SERVER_ERROR: 500,
+  // 501 - The server either does not recognize the request method, or it lacks the ability to fulfil the request. Usually this implies future availability.
+  501: 'Not Implemented',
+  '501_NAME': 'NOT_IMPLEMENTED',
+  '501_MESSAGE': 'The server either does not recognize the request method, or it lacks the ability to fulfil the request. Usually this implies future availability.',
+  '501_CLASS': classes.SERVER_ERROR,
+  NOT_IMPLEMENTED: 501,
+  // 502 - The server was acting as a gateway or proxy and received an invalid response from the upstream server.
+  502: 'Bad Gateway',
+  '502_NAME': 'BAD_GATEWAY',
+  '502_MESSAGE': 'The server was acting as a gateway or proxy and received an invalid response from the upstream server.',
+  '502_CLASS': classes.SERVER_ERROR,
+  BAD_GATEWAY: 502,
+  // 503 - The server is currently unavailable (because it is overloaded or down for maintenance). Generally, this is a temporary state.
+  503: 'Service Unavailable',
+  '503_NAME': 'SERVICE_UNAVAILABLE',
+  '503_MESSAGE': 'The server is currently unavailable (because it is overloaded or down for maintenance). Generally, this is a temporary state.',
+  '503_CLASS': classes.SERVER_ERROR,
+  SERVICE_UNAVAILABLE: 503,
+  // 504 - The server was acting as a gateway or proxy and did not receive a timely response from the upstream server.
+  504: 'Gateway Time-out',
+  '504_NAME': 'GATEWAY_TIMEOUT',
+  '504_MESSAGE': 'The server was acting as a gateway or proxy and did not receive a timely response from the upstream server.',
+  '504_CLASS': classes.SERVER_ERROR,
+  GATEWAY_TIMEOUT: 504,
+  // 505 - The server does not support the HTTP protocol version used in the request.
+  505: 'HTTP Version not Supported',
+  '505_NAME': 'HTTP_VERSION_NOT_SUPPORTED',
+  '505_MESSAGE': 'The server does not support the HTTP protocol version used in the request.',
+  '505_CLASS': classes.SERVER_ERROR,
+  HTTP_VERSION_NOT_SUPPORTED: 505,
+  // 506 (RFC 2295) - Transparent content negotiation for the request results in a circular reference.
+  506: 'Variant Also Negotiates',
+  '506_NAME': 'VARIANT_ALSO_NEGOTIATES',
+  '506_MESSAGE': 'Transparent content negotiation for the request results in a circular reference.',
+  '506_CLASS': classes.SERVER_ERROR,
+  VARIANT_ALSO_NEGOTIATES: 506,
+  // 507 (WebDAV; RFC 4918) - The server is unable to store the representation needed to complete the request.
+  507: 'Insufficient Storage',
+  '507_NAME': 'INSUFFICIENT_STORAGE',
+  '507_MESSAGE': 'The server is unable to store the representation needed to complete the request.',
+  '507_CLASS': classes.SERVER_ERROR,
+  INSUFFICIENT_STORAGE: 507,
+  // 508 (WebDAV; RFC 5842) - The server detected an infinite loop while processing the request.
+  508: 'Loop Detected',
+  '508_NAME': 'LOOP_DETECTED',
+  '508_MESSAGE': 'The server detected an infinite loop while processing the request.',
+  '508_CLASS': classes.SERVER_ERROR,
+  LOOP_DETECTED: 508,
+  // 510 (RFC 2774) - Further extensions to the request are required for the server to fulfil it.
+  510: 'Not Extended',
+  '510_NAME': 'NOT_EXTENDED',
+  '510_MESSAGE': 'Further extensions to the request are required for the server to fulfil it.',
+  '510_CLASS': classes.SERVER_ERROR,
+  NOT_EXTENDED: 510,
+  // 511 (RFC 6585) - The client needs to authenticate to gain network access. Intended for use by intercepting proxies used to control access to the network.
+  511: 'Network Authentication Required',
+  '511_NAME': 'NETWORK_AUTHENTICATION_REQUIRED',
+  '511_MESSAGE': 'The client needs to authenticate to gain network access. Intended for use by intercepting proxies used to control access to the network.',
+  '511_CLASS': classes.SERVER_ERROR,
+  NETWORK_AUTHENTICATION_REQUIRED: 511,
+  // ## Extra code
+
+  // Extra HTTP code implemented by vendors and other specifications.
+  extra: {
+    // ### Unofficial codes
+
+    // The following codes are not specified by any standard.
+    unofficial: {
+      // 103 - Used in the resumable requests proposal to resume aborted PUT or POST requests.
+      103: 'Checkpoint',
+      '103_NAME': 'CHECKPOINT',
+      '103_MESSAGE': 'Used in the resumable requests proposal to resume aborted PUT or POST requests.',
+      '103_CLASS': classes.INFORMATIONAL,
+      CHECKPOINT: 103,
+      // 419 Page Expired (Laravel Framework) - Used by the Laravel Framework when a CSRF Token is missing or expired.
+      419: 'Page Expired',
+      '419_NAME': 'PAGE_EXPIRED',
+      '419_MESSAGE': 'Used by the Laravel Framework when a CSRF Token is missing or expired.',
+      '419_CLASS': classes.CLIENT_ERROR,
+      PAGE_EXPIRED: 419,
+      // 218 This is fine (Apache Web Server) - Used as a catch-all error condition for allowing response bodies to flow through Apache when ProxyErrorOverride is enabled. When ProxyErrorOverride is enabled in Apache, response bodies that contain a status code of 4xx or 5xx are automatically discarded by Apache in favor of a generic response or a custom response specified by the ErrorDocument directive.
+      218: 'This is fine',
+      '218_NAME': 'THIS_IS_FINE',
+      '218_MESSAGE': 'Used as a catch-all error condition for allowing response bodies to flow through Apache when ProxyErrorOverride is enabled. When ProxyErrorOverride is enabled in Apache, response bodies that contain a status code of 4xx or 5xx are automatically discarded by Apache in favor of a generic response or a custom response specified by the ErrorDocument directive.',
+      '218_CLASS': classes.SUCCESSFUL,
+      THIS_IS_FINE: 218,
+      // 420 Enhance Your Calm (Twitter) - Returned by version 1 of the Twitter Search and Trends API when the client is being rate limited; versions 1.1 and later use the 429 Too Many Requests response code instead.
+      420: 'Enhance Your Calm',
+      '420_NAME': 'ENHANCE_YOUR_CALM',
+      '420_MESSAGE': 'Returned by version 1 of the Twitter Search and Trends API when the client is being rate limited; versions 1.1 and later use the 429 Too Many Requests response code instead.',
+      '420_CLASS': classes.CLIENT_ERROR,
+      ENHANCE_YOUR_CALM: 420,
+      // 450 Blocked by Windows Parental (Microsoft) - The Microsoft extension code indicated when Windows Parental Controls are turned on and are blocking access to the requested webpage.
+      450: 'Blocked by Windows Parental Controls',
+      '450_NAME': 'BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS',
+      '450_MESSAGE': 'The Microsoft extension code indicated when Windows Parental Controls are turned on and are blocking access to the requested webpage.',
+      '450_CLASS': classes.CLIENT_ERROR,
+      BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS: 450,
+      // 498 Invalid Token (Esri) - Returned by ArcGIS for Server. Code 498 indicates an expired or otherwise invalid token.
+      498: 'Invalid Token',
+      '498_NAME': 'INVALID_TOKEN',
+      '498_MESSAGE': 'Returned by ArcGIS for Server. Code 498 indicates an expired or otherwise invalid token.',
+      '498_CLASS': classes.CLIENT_ERROR,
+      INVALID_TOKEN: 498,
+      // 499 Token Required (Esri) - Returned by ArcGIS for Server. Code 499 indicates that a token is required but was not submitted.
+      499: 'Token Required',
+      '499_NAME': 'TOKEN_REQUIRED',
+      '499_MESSAGE': 'Returned by ArcGIS for Server. Code 499 indicates that a token is required but was not submitted.',
+      '499_CLASS': classes.CLIENT_ERROR,
+      TOKEN_REQUIRED: 499,
+      // 509 Bandwidth Limit Exceeded (Apache Web Server/cPanel) - The server has exceeded the bandwidth specified by the server administrator.
+      509: 'Bandwidth Limit Exceeded',
+      '509_NAME': 'BANDWIDTH_LIMIT_EXCEEDED',
+      '509_MESSAGE': 'The server has exceeded the bandwidth specified by the server administrator.',
+      '509_CLASS': classes.SERVER_ERROR,
+      BANDWIDTH_LIMIT_EXCEEDED: 509,
+      // 530 Site is frozen - Used by the Pantheon web platform to indicate a site that has been frozen due to inactivity.
+      530: 'Site is frozen',
+      '530_NAME': 'SITE_IS_FROZEN',
+      '530_MESSAGE': 'Used by the Pantheon web platform to indicate a site that has been frozen due to inactivity.',
+      '530_CLASS': classes.SERVER_ERROR,
+      SITE_IS_FROZEN: 530,
+      // 598 (Informal convention) Network read timeout error - Used by some HTTP proxies to signal a network read timeout behind the proxy to a client in front of the proxy.
+      598: 'Network read timeout error',
+      '598_NAME': 'NETWORK_READ_TIMEOUT_ERROR',
+      '598_MESSAGE': 'Used by some HTTP proxies to signal a network read timeout behind the proxy to a client in front of the proxy.',
+      '598_CLASS': classes.SERVER_ERROR,
+      NETWORK_READ_TIMEOUT_ERROR: 598
+    },
+    // ### Internet Information Services (IIS)
+
+    // Microsoft's Internet Information Services (IIS) web server expands the 4xx error space to signal errors with the client's request.
+    iis: {
+      // 440 - The client's session has expired and must log in again.
+      440: 'Login Time-out',
+      '440_NAME': 'LOGIN_TIME_OUT',
+      '440_MESSAGE': 'The client\'s session has expired and must log in again.',
+      '440_CLASS': classes.CLIENT_ERROR,
+      LOGIN_TIME_OUT: 440,
+      // 449 - The server cannot honour the request because the user has not provided the required information.
+      449: 'Retry With',
+      '449_NAME': 'RETRY_WITH',
+      '449_MESSAGE': 'The server cannot honour the request because the user has not provided the required information.',
+      '449_CLASS': classes.CLIENT_ERROR,
+      RETRY_WITH: 449,
+      // 451 - Used in Exchange ActiveSync when either a more efficient server is available or the server cannot access the users' mailbox.
+      451: 'Redirect',
+      '451_NAME': 'REDIRECT',
+      '451_MESSAGE': 'Used in Exchange ActiveSync when either a more efficient server is available or the server cannot access the users\' mailbox.',
+      '451_CLASS': classes.CLIENT_ERROR,
+      REDIRECT: 451
+    },
+    // ### NGINX
+
+    // The NGINX web server software expands the 4xx error space to signal issues with the client's request.
+    nginx: {
+      // 444 - Used internally to instruct the server to return no information to the client and close the connection immediately.
+      444: 'No Response',
+      '444_NAME': 'NO_RESPONSE',
+      '444_MESSAGE': 'Used internally to instruct the server to return no information to the client and close the connection immediately.',
+      '444_CLASS': classes.CLIENT_ERROR,
+      NO_RESPONSE: 444,
+      // 494 - Client sent too large request or too long header line.
+      494: 'Request header too large',
+      '494_NAME': 'REQUEST_HEADER_TOO_LARGE',
+      '494_MESSAGE': 'Client sent too large request or too long header line.',
+      '494_CLASS': classes.CLIENT_ERROR,
+      REQUEST_HEADER_TOO_LARGE: 494,
+      // 495 - An expansion of the 400 Bad Request response code, used when the client has provided an invalid client certificate.
+      495: 'SSL Certificate Error',
+      '495_NAME': 'SSL_CERTIFICATE_ERROR',
+      '495_MESSAGE': 'An expansion of the 400 Bad Request response code, used when the client has provided an invalid client certificate.',
+      '495_CLASS': classes.CLIENT_ERROR,
+      SSL_CERTIFICATE_ERROR: 495,
+      // 496 - An expansion of the 400 Bad Request response code, used when a client certificate is required but not provided.
+      496: 'SSL Certificate Required',
+      '496_NAME': 'SSL_CERTIFICATE_REQUIRED',
+      '496_MESSAGE': 'An expansion of the 400 Bad Request response code, used when a client certificate is required but not provided.',
+      '496_CLASS': classes.CLIENT_ERROR,
+      SSL_CERTIFICATE_REQUIRED: 496,
+      // 497 - An expansion of the 400 Bad Request response code, used when the client has made a HTTP request to a port listening for HTTPS requests.
+      497: 'HTTP Request Sent to HTTPS Port',
+      '497_NAME': 'HTTP_REQUEST_SENT_TO_HTTPS_PORT',
+      '497_MESSAGE': 'An expansion of the 400 Bad Request response code, used when the client has made a HTTP request to a port listening for HTTPS requests.',
+      '497_CLASS': classes.CLIENT_ERROR,
+      HTTP_REQUEST_SENT_TO_HTTPS_PORT: 497,
+      // 499 - Used when the client has closed the request before the server could send a response.
+      499: 'Client Closed Request',
+      '499_NAME': 'CLIENT_CLOSED_REQUEST',
+      '499_MESSAGE': 'Used when the client has closed the request before the server could send a response.',
+      '499_CLASS': classes.CLIENT_ERROR,
+      CLIENT_CLOSED_REQUEST: 499
+    },
+    // ### Cloudflare
+
+    // Cloudflare's reverse proxy service expands the 5xx series of errors space to signal issues with the origin server.
+    cloudflare: {
+      // 520 - The 520 error is used as a "catch-all response for when the origin server returns something unexpected", listing connection resets, large headers, and empty or invalid responses as common triggers.
+      520: 'Unknown Error',
+      '520_NAME': 'UNKNOWN_ERROR',
+      '520_MESSAGE': 'The 520 error is used as a "catch-all response for when the origin server returns something unexpected", listing connection resets, large headers, and empty or invalid responses as common triggers.',
+      '520_CLASS': classes.SERVER_ERROR,
+      UNKNOWN_ERROR: 520,
+      // 521 - The origin server has refused the connection from Cloudflare.
+      521: 'Web Server Is Down',
+      '521_NAME': 'WEB_SERVER_IS_DOWN',
+      '521_MESSAGE': 'The origin server has refused the connection from Cloudflare.',
+      '521_CLASS': classes.SERVER_ERROR,
+      WEB_SERVER_IS_DOWN: 521,
+      // 522 - Cloudflare could not negotiate a TCP handshake with the origin server.
+      522: 'Connection Timed Out',
+      '522_NAME': 'CONNECTION_TIMED_OUT',
+      '522_MESSAGE': 'Cloudflare could not negotiate a TCP handshake with the origin server.',
+      '522_CLASS': classes.SERVER_ERROR,
+      CONNECTION_TIMED_OUT: 522,
+      // 523 - Cloudflare could not reach the origin server.
+      523: 'Origin Is Unreachable',
+      '523_NAME': 'ORIGIN_IS_UNREACHABLE',
+      '523_MESSAGE': 'Cloudflare could not reach the origin server.',
+      '523_CLASS': classes.SERVER_ERROR,
+      ORIGIN_IS_UNREACHABLE: 523,
+      // 524 - Cloudflare was able to complete a TCP connection to the origin server, but did not receive a timely HTTP response.
+      524: 'A Timeout Occurred',
+      '524_NAME': 'A_TIMEOUT_OCCURRED',
+      '524_MESSAGE': 'Cloudflare was able to complete a TCP connection to the origin server, but did not receive a timely HTTP response.',
+      '524_CLASS': classes.SERVER_ERROR,
+      A_TIMEOUT_OCCURRED: 524,
+      // 525 - Cloudflare could not negotiate a SSL/TLS handshake with the origin server.
+      525: 'SSL Handshake Failed',
+      '525_NAME': 'SSL_HANDSHAKE_FAILED',
+      '525_MESSAGE': 'Cloudflare could not negotiate a SSL/TLS handshake with the origin server.',
+      '525_CLASS': classes.SERVER_ERROR,
+      SSL_HANDSHAKE_FAILED: 525,
+      // 526 - Cloudflare could not validate the SSL/TLS certificate that the origin server presented.
+      526: 'Invalid SSL Certificate',
+      '526_NAME': 'INVALID_SSL_CERTIFICATE',
+      '526_MESSAGE': 'Cloudflare could not validate the SSL/TLS certificate that the origin server presented.',
+      '526_CLASS': classes.SERVER_ERROR,
+      INVALID_SSL_CERTIFICATE: 526,
+      // 527 - Error 527 indicates that the request timed out or failed after the WAN connection had been established.
+      527: 'Railgun Error',
+      '527_NAME': 'RAILGUN_ERROR',
+      '527_MESSAGE': 'Error 527 indicates that the request timed out or failed after the WAN connection had been established.',
+      '527_CLASS': classes.SERVER_ERROR,
+      RAILGUN_ERROR: 527
+    }
+  }
+};
+
+},{}],133:[function(require,module,exports){
 'use strict';
 
 var replace = String.prototype.replace;
@@ -8159,7 +8804,7 @@ module.exports = util.assign(
     Format
 );
 
-},{"./utils":135}],132:[function(require,module,exports){
+},{"./utils":137}],134:[function(require,module,exports){
 'use strict';
 
 var stringify = require('./stringify');
@@ -8172,7 +8817,7 @@ module.exports = {
     stringify: stringify
 };
 
-},{"./formats":131,"./parse":133,"./stringify":134}],133:[function(require,module,exports){
+},{"./formats":133,"./parse":135,"./stringify":136}],135:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -8431,7 +9076,7 @@ module.exports = function (str, opts) {
     return utils.compact(obj);
 };
 
-},{"./utils":135}],134:[function(require,module,exports){
+},{"./utils":137}],136:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -8704,7 +9349,7 @@ module.exports = function (object, opts) {
     return joined.length > 0 ? prefix + joined : '';
 };
 
-},{"./formats":131,"./utils":135}],135:[function(require,module,exports){
+},{"./formats":133,"./utils":137}],137:[function(require,module,exports){
 'use strict';
 
 var has = Object.prototype.hasOwnProperty;
@@ -8954,122 +9599,7 @@ module.exports = {
     merge: merge
 };
 
-},{}],136:[function(require,module,exports){
-module.exports={
-  "_from": "@cinerino/api-abstract-client@next",
-  "_id": "@cinerino/api-abstract-client@1.0.0-alpha.185",
-  "_inBundle": false,
-  "_integrity": "sha512-w0HixxUuwoUtshle8hOciK8x+QhnHWdy+yK09IacTV83oV8IwYZNZ194jX6d1Xm4Ud9CD88LZHLLJ6Snqz9JCQ==",
-  "_location": "/@cinerino/api-abstract-client",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "@cinerino/api-abstract-client@next",
-    "name": "@cinerino/api-abstract-client",
-    "escapedName": "@cinerino%2fapi-abstract-client",
-    "scope": "@cinerino",
-    "rawSpec": "next",
-    "saveSpec": null,
-    "fetchSpec": "next"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/@cinerino/api-abstract-client/-/api-abstract-client-1.0.0-alpha.185.tgz",
-  "_shasum": "204eee59c8757731dd80e9304efc4cfea10d4d24",
-  "_spec": "@cinerino/api-abstract-client@next",
-  "_where": "C:\\projects\\cinerino-api-javascript-client",
-  "author": {
-    "name": "Motionpicture co.,ltd."
-  },
-  "bugs": {
-    "url": "https://github.com/cinerino/api-abstract-client/issues"
-  },
-  "bundleDependencies": false,
-  "contributors": [
-    {
-      "name": "Tetsu Yamazaki",
-      "email": "yamazaki@motionpicture.jp"
-    }
-  ],
-  "dependencies": {
-    "@cinerino/factory": "6.0.0-alpha.3",
-    "debug": "^3.2.6",
-    "http-status": "^1.3.2",
-    "isomorphic-fetch": "^2.2.1",
-    "qs": "^6.9.0"
-  },
-  "deprecated": false,
-  "description": "Cinerino API Abstract Client Library for Javascript",
-  "devDependencies": {
-    "@types/debug": "0.0.30",
-    "@types/fetch-mock": "^6.0.5",
-    "@types/form-data": "^2.5.0",
-    "@types/http-status": "^0.2.30",
-    "@types/isomorphic-fetch": "0.0.34",
-    "@types/mocha": "^5.2.7",
-    "@types/nock": "^9.3.1",
-    "@types/node": "^8.10.54",
-    "@types/power-assert": "^1.5.0",
-    "@types/qs": "^6.5.3",
-    "@types/sinon": "^4.3.3",
-    "coveralls": "^3.0.6",
-    "fetch-mock": "^6.5.2",
-    "mocha": "^5.2.0",
-    "nock": "^9.3.2",
-    "nyc": "^13.3.0",
-    "power-assert": "^1.6.1",
-    "rimraf": "^2.7.1",
-    "sinon": "^5.1.1",
-    "ts-node": "^8.4.1",
-    "tslint": "^5.20.0",
-    "tslint-microsoft-contrib": "^6.2.0",
-    "typescript": "^3.6.3"
-  },
-  "directories": {
-    "doc": "./doc",
-    "lib": "./lib",
-    "example": "./example",
-    "test": "./test"
-  },
-  "files": [
-    "doc",
-    "example",
-    "lib"
-  ],
-  "homepage": "https://github.com/cinerino/api-abstract-client#readme",
-  "keywords": [
-    "cinerino"
-  ],
-  "license": "ISC",
-  "main": "./lib/index.js",
-  "name": "@cinerino/api-abstract-client",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cinerino/api-abstract-client.git"
-  },
-  "scripts": {
-    "build": "tsc",
-    "check": "npm run tslint",
-    "clean": "rimraf ./lib \"npm-debug.log*\" ./doc ./.nyc_output",
-    "coverage": "npm run nyc && nyc report --reporter=text-lcov | coveralls",
-    "doc": "echo \"implementing...\" && exit 0",
-    "mocha": "mocha",
-    "nyc": "nyc mocha \"src/**/*.spec.ts\"",
-    "postversion": "git push origin --tags",
-    "prepublishOnly": "npm run clean && npm run build && npm test && npm run doc",
-    "preversion": "npm run clean && npm run build && npm test",
-    "test": "npm run check && npm run coverage",
-    "tslint": "tslint --project tsconfig.json -c tslint.json --exclude \"**/*.spec.ts\" src/**/*.ts",
-    "version": "git add -A"
-  },
-  "types": "./lib/index.d.ts",
-  "version": "1.0.0-alpha.185"
-}
-
-},{}],137:[function(require,module,exports){
+},{}],138:[function(require,module,exports){
 "use strict";
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
@@ -9080,9 +9610,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 __export(require("@chevre/factory"));
 
-},{"@chevre/factory":96}],138:[function(require,module,exports){
+},{"@chevre/factory":97}],139:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],139:[function(require,module,exports){
+},{"dup":12}],140:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -9101,9 +9631,9 @@ var AccountType;
     AccountType["Transactional"] = "Transactional";
 })(AccountType = exports.AccountType || (exports.AccountType = {}));
 
-},{}],140:[function(require,module,exports){
+},{}],141:[function(require,module,exports){
 arguments[4][13][0].apply(exports,arguments)
-},{"dup":13}],141:[function(require,module,exports){
+},{"dup":13}],142:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -9132,7 +9662,7 @@ var ActionType;
 })(ActionType || (ActionType = {}));
 exports.default = ActionType;
 
-},{}],142:[function(require,module,exports){
+},{}],143:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var ObjectType;
@@ -9140,13 +9670,13 @@ var ObjectType;
     ObjectType["PointAward"] = "PointAward";
 })(ObjectType = exports.ObjectType || (exports.ObjectType = {}));
 
-},{}],143:[function(require,module,exports){
-arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],144:[function(require,module,exports){
+},{}],144:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],145:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],146:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],147:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var ObjectType;
@@ -9154,9 +9684,7 @@ var ObjectType;
     ObjectType["SeatReservation"] = "SeatReservation";
 })(ObjectType = exports.ObjectType || (exports.ObjectType = {}));
 
-},{}],147:[function(require,module,exports){
-arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],148:[function(require,module,exports){
+},{}],148:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],149:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
@@ -9187,14 +9715,14 @@ arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],162:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],163:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],164:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var point_1 = require("../../authorize/award/point");
 exports.ObjectType = point_1.ObjectType;
 
-},{"../../authorize/award/point":142}],164:[function(require,module,exports){
-arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],165:[function(require,module,exports){
+},{"../../authorize/award/point":143}],165:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],166:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
@@ -9211,6 +9739,8 @@ arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],172:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],173:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],174:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -9224,11 +9754,11 @@ var CreativeWorkType;
 })(CreativeWorkType || (CreativeWorkType = {}));
 exports.default = CreativeWorkType;
 
-},{}],174:[function(require,module,exports){
-arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],175:[function(require,module,exports){
+},{}],175:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],176:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],177:[function(require,module,exports){
 "use strict";
 /**
  * Media type typically expressed using a MIME format
@@ -9270,9 +9800,9 @@ var Video;
 (function (Video) {
 })(Video = exports.Video || (exports.Video = {}));
 
-},{}],177:[function(require,module,exports){
+},{}],178:[function(require,module,exports){
 arguments[4][27][0].apply(exports,arguments)
-},{"dup":27}],178:[function(require,module,exports){
+},{"dup":27}],179:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -9314,7 +9844,7 @@ var AlreadyInUseError = /** @class */ (function (_super) {
 }(common_1.CinerinoError));
 exports.default = AlreadyInUseError;
 
-},{"../errorCode":177,"./common":181,"setprototypeof":282}],179:[function(require,module,exports){
+},{"../errorCode":178,"./common":182,"setprototypeof":282}],180:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -9355,7 +9885,7 @@ var ArgumentError = /** @class */ (function (_super) {
 }(common_1.CinerinoError));
 exports.default = ArgumentError;
 
-},{"../errorCode":177,"./common":181,"setprototypeof":282}],180:[function(require,module,exports){
+},{"../errorCode":178,"./common":182,"setprototypeof":282}],181:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -9396,7 +9926,7 @@ var ArgumentNullError = /** @class */ (function (_super) {
 }(common_1.CinerinoError));
 exports.default = ArgumentNullError;
 
-},{"../errorCode":177,"./common":181,"setprototypeof":282}],181:[function(require,module,exports){
+},{"../errorCode":178,"./common":182,"setprototypeof":282}],182:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -9429,7 +9959,7 @@ var CinerinoError = /** @class */ (function (_super) {
 }(Error));
 exports.CinerinoError = CinerinoError;
 
-},{}],182:[function(require,module,exports){
+},{}],183:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -9469,7 +9999,7 @@ var ForbiddenError = /** @class */ (function (_super) {
 }(common_1.CinerinoError));
 exports.default = ForbiddenError;
 
-},{"../errorCode":177,"./common":181,"setprototypeof":282}],183:[function(require,module,exports){
+},{"../errorCode":178,"./common":182,"setprototypeof":282}],184:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -9510,7 +10040,7 @@ var NotFoundError = /** @class */ (function (_super) {
 }(common_1.CinerinoError));
 exports.default = NotFoundError;
 
-},{"../errorCode":177,"./common":181,"setprototypeof":282}],184:[function(require,module,exports){
+},{"../errorCode":178,"./common":182,"setprototypeof":282}],185:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -9550,7 +10080,7 @@ var NotImplementedError = /** @class */ (function (_super) {
 }(common_1.CinerinoError));
 exports.default = NotImplementedError;
 
-},{"../errorCode":177,"./common":181,"setprototypeof":282}],185:[function(require,module,exports){
+},{"../errorCode":178,"./common":182,"setprototypeof":282}],186:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -9590,7 +10120,7 @@ var RateLimitExceededError = /** @class */ (function (_super) {
 }(common_1.CinerinoError));
 exports.default = RateLimitExceededError;
 
-},{"../errorCode":177,"./common":181,"setprototypeof":282}],186:[function(require,module,exports){
+},{"../errorCode":178,"./common":182,"setprototypeof":282}],187:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -9630,7 +10160,7 @@ var ServiceUnavailableError = /** @class */ (function (_super) {
 }(common_1.CinerinoError));
 exports.default = ServiceUnavailableError;
 
-},{"../errorCode":177,"./common":181,"setprototypeof":282}],187:[function(require,module,exports){
+},{"../errorCode":178,"./common":182,"setprototypeof":282}],188:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -9670,7 +10200,7 @@ var UnauthorizedError = /** @class */ (function (_super) {
 }(common_1.CinerinoError));
 exports.default = UnauthorizedError;
 
-},{"../errorCode":177,"./common":181,"setprototypeof":282}],188:[function(require,module,exports){
+},{"../errorCode":178,"./common":182,"setprototypeof":282}],189:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -9697,23 +10227,23 @@ exports.ServiceUnavailable = serviceUnavailable_1.default;
 var unauthorized_1 = require("./error/unauthorized");
 exports.Unauthorized = unauthorized_1.default;
 
-},{"./error/alreadyInUse":178,"./error/argument":179,"./error/argumentNull":180,"./error/common":181,"./error/forbidden":182,"./error/notFound":183,"./error/notImplemented":184,"./error/rateLimitExceeded":185,"./error/serviceUnavailable":186,"./error/unauthorized":187}],189:[function(require,module,exports){
-arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],190:[function(require,module,exports){
+},{"./error/alreadyInUse":179,"./error/argument":180,"./error/argumentNull":181,"./error/common":182,"./error/forbidden":183,"./error/notFound":184,"./error/notImplemented":185,"./error/rateLimitExceeded":186,"./error/serviceUnavailable":187,"./error/unauthorized":188}],190:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],191:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],192:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],193:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var SeatReservationOfferFactory = require("./offer/seatReservation");
 exports.seatReservation = SeatReservationOfferFactory;
 
-},{"./offer/seatReservation":193}],193:[function(require,module,exports){
-arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],194:[function(require,module,exports){
+},{"./offer/seatReservation":194}],194:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],195:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],196:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -9732,9 +10262,9 @@ var OrderStatus;
 })(OrderStatus || (OrderStatus = {}));
 exports.default = OrderStatus;
 
-},{}],196:[function(require,module,exports){
+},{}],197:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],197:[function(require,module,exports){
+},{"dup":12}],198:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -9748,9 +10278,9 @@ var OrganizationType;
 })(OrganizationType || (OrganizationType = {}));
 exports.default = OrganizationType;
 
-},{}],198:[function(require,module,exports){
+},{}],199:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],199:[function(require,module,exports){
+},{"dup":12}],200:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -9764,7 +10294,7 @@ var AccountGoodType;
     AccountGoodType["Account"] = "Account";
 })(AccountGoodType = exports.AccountGoodType || (exports.AccountGoodType = {}));
 
-},{}],200:[function(require,module,exports){
+},{}],201:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var chevre_1 = require("../chevre");
@@ -9773,7 +10303,7 @@ var chevre_1 = require("../chevre");
  */
 exports.default = chevre_1.paymentMethodType;
 
-},{"../chevre":137}],201:[function(require,module,exports){
+},{"../chevre":138}],202:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -9789,9 +10319,9 @@ var PaymentStatusType;
 })(PaymentStatusType || (PaymentStatusType = {}));
 exports.default = PaymentStatusType;
 
-},{}],202:[function(require,module,exports){
+},{}],203:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],203:[function(require,module,exports){
+},{"dup":12}],204:[function(require,module,exports){
 "use strict";
 /**
  * 人物タイプ
@@ -9803,17 +10333,17 @@ var PersonType;
 })(PersonType || (PersonType = {}));
 exports.default = PersonType;
 
-},{}],204:[function(require,module,exports){
-arguments[4][60][0].apply(exports,arguments)
-},{"dup":60}],205:[function(require,module,exports){
-arguments[4][62][0].apply(exports,arguments)
-},{"dup":62}],206:[function(require,module,exports){
+},{}],205:[function(require,module,exports){
+arguments[4][61][0].apply(exports,arguments)
+},{"dup":61}],206:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],207:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],208:[function(require,module,exports){
-arguments[4][71][0].apply(exports,arguments)
-},{"dup":71}],209:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],209:[function(require,module,exports){
+arguments[4][72][0].apply(exports,arguments)
+},{"dup":72}],210:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -9834,7 +10364,7 @@ var TaskName;
      */
     TaskName["CancelCreditCard"] = "cancelCreditCard";
     /**
-     * 決済カード決済承認アクション取消
+     * ペイメントカード決済承認アクション取消
      */
     TaskName["CancelPaymentCard"] = "cancelPaymentCard";
     /**
@@ -9862,7 +10392,7 @@ var TaskName;
      */
     TaskName["MoneyTransfer"] = "moneyTransfer";
     /**
-     * 会員プログラム注文
+     * メンバーシップ注文
      */
     TaskName["OrderProgramMembership"] = "orderProgramMembership";
     /**
@@ -9882,7 +10412,7 @@ var TaskName;
      */
     TaskName["PayMovieTicket"] = "payMovieTicket";
     /**
-     * 決済カード決済
+     * ペイメントカード決済
      */
     TaskName["PayPaymentCard"] = "payPaymentCard";
     /**
@@ -9906,11 +10436,11 @@ var TaskName;
      */
     TaskName["RefundMovieTicket"] = "refundMovieTicket";
     /**
-     * 決済カード返金
+     * ペイメントカード返金
      */
     TaskName["RefundPaymentCard"] = "refundPaymentCard";
     /**
-     * 会員プログラム登録
+     * メンバーシップ登録
      */
     TaskName["RegisterProgramMembership"] = "registerProgramMembership";
     /**
@@ -9938,7 +10468,7 @@ var TaskName;
      */
     TaskName["TriggerWebhook"] = "triggerWebhook";
     /**
-     * 会員プログラム登録解除
+     * メンバーシップ登録解除
      */
     TaskName["UnRegisterProgramMembership"] = "unRegisterProgramMembership";
     /**
@@ -9948,7 +10478,7 @@ var TaskName;
 })(TaskName || (TaskName = {}));
 exports.default = TaskName;
 
-},{}],210:[function(require,module,exports){
+},{}],211:[function(require,module,exports){
 "use strict";
 /**
  * タスクステータス
@@ -9975,11 +10505,11 @@ var TaskStatus;
 })(TaskStatus || (TaskStatus = {}));
 exports.default = TaskStatus;
 
-},{}],211:[function(require,module,exports){
-arguments[4][87][0].apply(exports,arguments)
-},{"dup":87}],212:[function(require,module,exports){
+},{}],212:[function(require,module,exports){
 arguments[4][88][0].apply(exports,arguments)
 },{"dup":88}],213:[function(require,module,exports){
+arguments[4][89][0].apply(exports,arguments)
+},{"dup":89}],214:[function(require,module,exports){
 "use strict";
 /**
  * 取引タイプ
@@ -10002,11 +10532,11 @@ var TransactionType;
 })(TransactionType || (TransactionType = {}));
 exports.default = TransactionType;
 
-},{}],214:[function(require,module,exports){
-arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],215:[function(require,module,exports){
+},{}],215:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],216:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],217:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -10024,13 +10554,13 @@ var Reason;
     Reason["Seller"] = "Seller";
 })(Reason = exports.Reason || (exports.Reason = {}));
 
-},{}],217:[function(require,module,exports){
+},{}],218:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var chevre_1 = require("../chevre");
 exports.UnitCode = chevre_1.unitCode;
 
-},{"../chevre":137}],218:[function(require,module,exports){
+},{"../chevre":138}],219:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -10042,7 +10572,7 @@ var chevre = require("./chevre");
 var cognito = require("./cognito");
 var PointAwardAuthorizeActionFactory = require("./factory/action/authorize/award/point");
 var AuthorizeMonetaryAmountOfferActionFactory = require("./factory/action/authorize/offer/monetaryAmount");
-var AuthorizePaymentCardOfferActionFactory = require("./factory/action/authorize/offer/paymentCard");
+var AuthorizeProductOfferActionFactory = require("./factory/action/authorize/offer/product");
 var AuthorizeProgramMembershipOfferActionFactory = require("./factory/action/authorize/offer/programMembership");
 var AuthorizeSeatReservationOfferActionFactory = require("./factory/action/authorize/offer/seatReservation");
 var AuthorizeAccountPaymentActionFactory = require("./factory/action/authorize/paymentMethod/account");
@@ -10140,7 +10670,7 @@ var action;
         (function (offer) {
             // tslint:disable-next-line:no-shadowed-variable
             offer.monetaryAmount = AuthorizeMonetaryAmountOfferActionFactory;
-            offer.paymentCard = AuthorizePaymentCardOfferActionFactory;
+            offer.product = AuthorizeProductOfferActionFactory;
             // tslint:disable-next-line:no-shadowed-variable
             offer.programMembership = AuthorizeProgramMembershipOfferActionFactory;
             // tslint:disable-next-line:no-shadowed-variable
@@ -10281,7 +10811,7 @@ exports.transactionTasksExportationStatus = transactionTasksExportationStatus_1.
 exports.transactionType = transactionType_1.default;
 exports.unitCode = unitCode_1.UnitCode;
 
-},{"./chevre":137,"./cognito":138,"./factory/accountType":139,"./factory/action/authorize/award/point":142,"./factory/action/authorize/offer/monetaryAmount":143,"./factory/action/authorize/offer/paymentCard":144,"./factory/action/authorize/offer/programMembership":145,"./factory/action/authorize/offer/seatReservation":146,"./factory/action/authorize/paymentMethod/account":147,"./factory/action/authorize/paymentMethod/any":148,"./factory/action/authorize/paymentMethod/creditCard":149,"./factory/action/authorize/paymentMethod/movieTicket":150,"./factory/action/authorize/paymentMethod/paymentCard":151,"./factory/action/check/paymentMethod/movieTicket":152,"./factory/action/check/token":153,"./factory/action/interact/confirm/reservation":154,"./factory/action/interact/inform":155,"./factory/action/interact/register/programMembership":156,"./factory/action/interact/register/service":157,"./factory/action/interact/unRegister/programMembership":158,"./factory/action/organize/cancel":159,"./factory/action/trade/order":160,"./factory/action/trade/pay":161,"./factory/action/trade/refund":162,"./factory/action/transfer/give/pointAward":163,"./factory/action/transfer/moneyTransfer":164,"./factory/action/transfer/print/ticket":165,"./factory/action/transfer/return/order":166,"./factory/action/transfer/return/pointAward":167,"./factory/action/transfer/send/message/email":168,"./factory/action/transfer/send/order":169,"./factory/action/update/delete/member":170,"./factory/actionStatusType":140,"./factory/actionType":141,"./factory/authorization":171,"./factory/clientUser":172,"./factory/creativeWork/message/email":174,"./factory/creativeWork/softwareApplication/webApplication":175,"./factory/creativeWorkType":173,"./factory/encodingFormat":176,"./factory/errorCode":177,"./factory/errors":188,"./factory/event/screeningEvent":189,"./factory/event/screeningEventSeries":190,"./factory/invoice":191,"./factory/offer":192,"./factory/order":194,"./factory/orderStatus":195,"./factory/organization":196,"./factory/organization/project":198,"./factory/organizationType":197,"./factory/ownershipInfo":199,"./factory/paymentMethodType":200,"./factory/paymentStatusType":201,"./factory/person":202,"./factory/personType":203,"./factory/priceCurrency":204,"./factory/programMembership":205,"./factory/propertyValue":206,"./factory/quantitativeValue":207,"./factory/sortType":208,"./factory/taskName":209,"./factory/taskStatus":210,"./factory/transaction/moneyTransfer":214,"./factory/transaction/placeOrder":215,"./factory/transaction/returnOrder":216,"./factory/transactionStatusType":211,"./factory/transactionTasksExportationStatus":212,"./factory/transactionType":213,"./factory/unitCode":217,"@pecorino/factory":254,"@waiter/factory":268}],219:[function(require,module,exports){
+},{"./chevre":138,"./cognito":139,"./factory/accountType":140,"./factory/action/authorize/award/point":143,"./factory/action/authorize/offer/monetaryAmount":144,"./factory/action/authorize/offer/product":145,"./factory/action/authorize/offer/programMembership":146,"./factory/action/authorize/offer/seatReservation":147,"./factory/action/authorize/paymentMethod/account":148,"./factory/action/authorize/paymentMethod/any":149,"./factory/action/authorize/paymentMethod/creditCard":150,"./factory/action/authorize/paymentMethod/movieTicket":151,"./factory/action/authorize/paymentMethod/paymentCard":152,"./factory/action/check/paymentMethod/movieTicket":153,"./factory/action/check/token":154,"./factory/action/interact/confirm/reservation":155,"./factory/action/interact/inform":156,"./factory/action/interact/register/programMembership":157,"./factory/action/interact/register/service":158,"./factory/action/interact/unRegister/programMembership":159,"./factory/action/organize/cancel":160,"./factory/action/trade/order":161,"./factory/action/trade/pay":162,"./factory/action/trade/refund":163,"./factory/action/transfer/give/pointAward":164,"./factory/action/transfer/moneyTransfer":165,"./factory/action/transfer/print/ticket":166,"./factory/action/transfer/return/order":167,"./factory/action/transfer/return/pointAward":168,"./factory/action/transfer/send/message/email":169,"./factory/action/transfer/send/order":170,"./factory/action/update/delete/member":171,"./factory/actionStatusType":141,"./factory/actionType":142,"./factory/authorization":172,"./factory/clientUser":173,"./factory/creativeWork/message/email":175,"./factory/creativeWork/softwareApplication/webApplication":176,"./factory/creativeWorkType":174,"./factory/encodingFormat":177,"./factory/errorCode":178,"./factory/errors":189,"./factory/event/screeningEvent":190,"./factory/event/screeningEventSeries":191,"./factory/invoice":192,"./factory/offer":193,"./factory/order":195,"./factory/orderStatus":196,"./factory/organization":197,"./factory/organization/project":199,"./factory/organizationType":198,"./factory/ownershipInfo":200,"./factory/paymentMethodType":201,"./factory/paymentStatusType":202,"./factory/person":203,"./factory/personType":204,"./factory/priceCurrency":205,"./factory/programMembership":206,"./factory/propertyValue":207,"./factory/quantitativeValue":208,"./factory/sortType":209,"./factory/taskName":210,"./factory/taskStatus":211,"./factory/transaction/moneyTransfer":215,"./factory/transaction/placeOrder":216,"./factory/transaction/returnOrder":217,"./factory/transactionStatusType":212,"./factory/transactionTasksExportationStatus":213,"./factory/transactionType":214,"./factory/unitCode":218,"@pecorino/factory":255,"@waiter/factory":269}],220:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -10295,7 +10825,7 @@ var TypeOf;
     TypeOf["Account"] = "Account";
 })(TypeOf = exports.TypeOf || (exports.TypeOf = {}));
 
-},{}],220:[function(require,module,exports){
+},{}],221:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -10314,9 +10844,9 @@ var AccountStatusType;
 })(AccountStatusType || (AccountStatusType = {}));
 exports.default = AccountStatusType;
 
-},{}],221:[function(require,module,exports){
+},{}],222:[function(require,module,exports){
 arguments[4][13][0].apply(exports,arguments)
-},{"dup":13}],222:[function(require,module,exports){
+},{"dup":13}],223:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -10337,13 +10867,13 @@ var ActionType;
 })(ActionType || (ActionType = {}));
 exports.default = ActionType;
 
-},{}],223:[function(require,module,exports){
-arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],224:[function(require,module,exports){
+},{}],224:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],225:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],226:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],227:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -10355,9 +10885,9 @@ var CreativeWorkType;
 })(CreativeWorkType || (CreativeWorkType = {}));
 exports.default = CreativeWorkType;
 
-},{}],227:[function(require,module,exports){
+},{}],228:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],228:[function(require,module,exports){
+},{"dup":12}],229:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -10377,7 +10907,7 @@ var ErrorCode;
 })(ErrorCode || (ErrorCode = {}));
 exports.default = ErrorCode;
 
-},{}],229:[function(require,module,exports){
+},{}],230:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -10419,7 +10949,7 @@ var AlreadyInUseError = /** @class */ (function (_super) {
 }(pecorino_1.PecorinoError));
 exports.default = AlreadyInUseError;
 
-},{"../errorCode":228,"./pecorino":235,"setprototypeof":282}],230:[function(require,module,exports){
+},{"../errorCode":229,"./pecorino":236,"setprototypeof":282}],231:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -10460,7 +10990,7 @@ var ArgumentError = /** @class */ (function (_super) {
 }(pecorino_1.PecorinoError));
 exports.default = ArgumentError;
 
-},{"../errorCode":228,"./pecorino":235,"setprototypeof":282}],231:[function(require,module,exports){
+},{"../errorCode":229,"./pecorino":236,"setprototypeof":282}],232:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -10501,7 +11031,7 @@ var ArgumentNullError = /** @class */ (function (_super) {
 }(pecorino_1.PecorinoError));
 exports.default = ArgumentNullError;
 
-},{"../errorCode":228,"./pecorino":235,"setprototypeof":282}],232:[function(require,module,exports){
+},{"../errorCode":229,"./pecorino":236,"setprototypeof":282}],233:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -10541,7 +11071,7 @@ var ForbiddenError = /** @class */ (function (_super) {
 }(pecorino_1.PecorinoError));
 exports.default = ForbiddenError;
 
-},{"../errorCode":228,"./pecorino":235,"setprototypeof":282}],233:[function(require,module,exports){
+},{"../errorCode":229,"./pecorino":236,"setprototypeof":282}],234:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -10582,7 +11112,7 @@ var NotFoundError = /** @class */ (function (_super) {
 }(pecorino_1.PecorinoError));
 exports.default = NotFoundError;
 
-},{"../errorCode":228,"./pecorino":235,"setprototypeof":282}],234:[function(require,module,exports){
+},{"../errorCode":229,"./pecorino":236,"setprototypeof":282}],235:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -10622,7 +11152,7 @@ var NotImplementedError = /** @class */ (function (_super) {
 }(pecorino_1.PecorinoError));
 exports.default = NotImplementedError;
 
-},{"../errorCode":228,"./pecorino":235,"setprototypeof":282}],235:[function(require,module,exports){
+},{"../errorCode":229,"./pecorino":236,"setprototypeof":282}],236:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -10656,7 +11186,7 @@ var PecorinoError = /** @class */ (function (_super) {
 }(Error));
 exports.PecorinoError = PecorinoError;
 
-},{}],236:[function(require,module,exports){
+},{}],237:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -10696,7 +11226,7 @@ var RateLimitExceededError = /** @class */ (function (_super) {
 }(pecorino_1.PecorinoError));
 exports.default = RateLimitExceededError;
 
-},{"../errorCode":228,"./pecorino":235,"setprototypeof":282}],237:[function(require,module,exports){
+},{"../errorCode":229,"./pecorino":236,"setprototypeof":282}],238:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -10736,7 +11266,7 @@ var ServiceUnavailableError = /** @class */ (function (_super) {
 }(pecorino_1.PecorinoError));
 exports.default = ServiceUnavailableError;
 
-},{"../errorCode":228,"./pecorino":235,"setprototypeof":282}],238:[function(require,module,exports){
+},{"../errorCode":229,"./pecorino":236,"setprototypeof":282}],239:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -10776,7 +11306,7 @@ var UnauthorizedError = /** @class */ (function (_super) {
 }(pecorino_1.PecorinoError));
 exports.default = UnauthorizedError;
 
-},{"../errorCode":228,"./pecorino":235,"setprototypeof":282}],239:[function(require,module,exports){
+},{"../errorCode":229,"./pecorino":236,"setprototypeof":282}],240:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -10803,13 +11333,13 @@ exports.ServiceUnavailable = serviceUnavailable_1.default;
 var unauthorized_1 = require("./error/unauthorized");
 exports.Unauthorized = unauthorized_1.default;
 
-},{"./error/alreadyInUse":229,"./error/argument":230,"./error/argumentNull":231,"./error/forbidden":232,"./error/notFound":233,"./error/notImplemented":234,"./error/pecorino":235,"./error/rateLimitExceeded":236,"./error/serviceUnavailable":237,"./error/unauthorized":238}],240:[function(require,module,exports){
-arguments[4][60][0].apply(exports,arguments)
-},{"dup":60}],241:[function(require,module,exports){
+},{"./error/alreadyInUse":230,"./error/argument":231,"./error/argumentNull":232,"./error/forbidden":233,"./error/notFound":234,"./error/notImplemented":235,"./error/pecorino":236,"./error/rateLimitExceeded":237,"./error/serviceUnavailable":238,"./error/unauthorized":239}],241:[function(require,module,exports){
+arguments[4][61][0].apply(exports,arguments)
+},{"dup":61}],242:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],242:[function(require,module,exports){
-arguments[4][71][0].apply(exports,arguments)
-},{"dup":71}],243:[function(require,module,exports){
+},{"dup":12}],243:[function(require,module,exports){
+arguments[4][72][0].apply(exports,arguments)
+},{"dup":72}],244:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -10832,15 +11362,15 @@ var TaskName;
 })(TaskName || (TaskName = {}));
 exports.default = TaskName;
 
-},{}],244:[function(require,module,exports){
-arguments[4][74][0].apply(exports,arguments)
-},{"dup":74}],245:[function(require,module,exports){
-arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],246:[function(require,module,exports){
+},{}],245:[function(require,module,exports){
+arguments[4][75][0].apply(exports,arguments)
+},{"dup":75}],246:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],247:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],248:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],249:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -10856,7 +11386,7 @@ var TransactionStatusType;
 })(TransactionStatusType || (TransactionStatusType = {}));
 exports.default = TransactionStatusType;
 
-},{}],249:[function(require,module,exports){
+},{}],250:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -10879,7 +11409,7 @@ var TransactionTasksExportationStatus;
 })(TransactionTasksExportationStatus || (TransactionTasksExportationStatus = {}));
 exports.default = TransactionTasksExportationStatus;
 
-},{}],250:[function(require,module,exports){
+},{}],251:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -10902,13 +11432,13 @@ var TransactionType;
 })(TransactionType || (TransactionType = {}));
 exports.default = TransactionType;
 
-},{}],251:[function(require,module,exports){
-arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],252:[function(require,module,exports){
+},{}],252:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],253:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],254:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],255:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -10989,9 +11519,9 @@ exports.transactionStatusType = transactionStatusType_1.default;
 exports.transactionTasksExportationStatus = transactionTasksExportationStatus_1.default;
 exports.transactionType = transactionType_1.default;
 
-},{"./factory/account":219,"./factory/accountStatusType":220,"./factory/action/transfer/moneyTransfer":223,"./factory/action/transfer/send/message/email":224,"./factory/actionStatusType":221,"./factory/actionType":222,"./factory/clientUser":225,"./factory/creativeWork/message/email":227,"./factory/creativeWorkType":226,"./factory/errorCode":228,"./factory/errors":239,"./factory/priceCurrency":240,"./factory/project":241,"./factory/sortType":242,"./factory/task/cancelMoneyTransfer":245,"./factory/task/moneyTransfer":246,"./factory/task/returnMoneyTransfer":247,"./factory/taskName":243,"./factory/taskStatus":244,"./factory/transaction/deposit":251,"./factory/transaction/transfer":252,"./factory/transaction/withdraw":253,"./factory/transactionStatusType":248,"./factory/transactionTasksExportationStatus":249,"./factory/transactionType":250}],255:[function(require,module,exports){
+},{"./factory/account":220,"./factory/accountStatusType":221,"./factory/action/transfer/moneyTransfer":224,"./factory/action/transfer/send/message/email":225,"./factory/actionStatusType":222,"./factory/actionType":223,"./factory/clientUser":226,"./factory/creativeWork/message/email":228,"./factory/creativeWorkType":227,"./factory/errorCode":229,"./factory/errors":240,"./factory/priceCurrency":241,"./factory/project":242,"./factory/sortType":243,"./factory/task/cancelMoneyTransfer":246,"./factory/task/moneyTransfer":247,"./factory/task/returnMoneyTransfer":248,"./factory/taskName":244,"./factory/taskStatus":245,"./factory/transaction/deposit":252,"./factory/transaction/transfer":253,"./factory/transaction/withdraw":254,"./factory/transactionStatusType":249,"./factory/transactionTasksExportationStatus":250,"./factory/transactionType":251}],256:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],256:[function(require,module,exports){
+},{"dup":12}],257:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -11010,7 +11540,7 @@ var ErrorCode;
 })(ErrorCode || (ErrorCode = {}));
 exports.default = ErrorCode;
 
-},{}],257:[function(require,module,exports){
+},{}],258:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -11051,7 +11581,7 @@ var ArgumentError = /** @class */ (function (_super) {
 }(waiter_1.WaiterError));
 exports.default = ArgumentError;
 
-},{"../errorCode":256,"./waiter":263,"setprototypeof":282}],258:[function(require,module,exports){
+},{"../errorCode":257,"./waiter":264,"setprototypeof":282}],259:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -11092,7 +11622,7 @@ var ArgumentNullError = /** @class */ (function (_super) {
 }(waiter_1.WaiterError));
 exports.default = ArgumentNullError;
 
-},{"../errorCode":256,"./waiter":263,"setprototypeof":282}],259:[function(require,module,exports){
+},{"../errorCode":257,"./waiter":264,"setprototypeof":282}],260:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -11132,7 +11662,7 @@ var ForbiddenError = /** @class */ (function (_super) {
 }(waiter_1.WaiterError));
 exports.default = ForbiddenError;
 
-},{"../errorCode":256,"./waiter":263,"setprototypeof":282}],260:[function(require,module,exports){
+},{"../errorCode":257,"./waiter":264,"setprototypeof":282}],261:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -11173,7 +11703,7 @@ var NotFoundError = /** @class */ (function (_super) {
 }(waiter_1.WaiterError));
 exports.default = NotFoundError;
 
-},{"../errorCode":256,"./waiter":263,"setprototypeof":282}],261:[function(require,module,exports){
+},{"../errorCode":257,"./waiter":264,"setprototypeof":282}],262:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -11213,7 +11743,7 @@ var RateLimitExceededError = /** @class */ (function (_super) {
 }(waiter_1.WaiterError));
 exports.default = RateLimitExceededError;
 
-},{"../errorCode":256,"./waiter":263,"setprototypeof":282}],262:[function(require,module,exports){
+},{"../errorCode":257,"./waiter":264,"setprototypeof":282}],263:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -11253,7 +11783,7 @@ var ServiceUnavailableError = /** @class */ (function (_super) {
 }(waiter_1.WaiterError));
 exports.default = ServiceUnavailableError;
 
-},{"../errorCode":256,"./waiter":263,"setprototypeof":282}],263:[function(require,module,exports){
+},{"../errorCode":257,"./waiter":264,"setprototypeof":282}],264:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -11286,7 +11816,7 @@ var WaiterError = /** @class */ (function (_super) {
 }(Error));
 exports.WaiterError = WaiterError;
 
-},{}],264:[function(require,module,exports){
+},{}],265:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -11307,13 +11837,13 @@ exports.ServiceUnavailable = serviceUnavailable_1.default;
 var waiter_1 = require("./error/waiter");
 exports.Waiter = waiter_1.WaiterError;
 
-},{"./error/argument":257,"./error/argumentNull":258,"./error/forbidden":259,"./error/notFound":260,"./error/rateLimitExceeded":261,"./error/serviceUnavailable":262,"./error/waiter":263}],265:[function(require,module,exports){
-arguments[4][12][0].apply(exports,arguments)
-},{"dup":12}],266:[function(require,module,exports){
+},{"./error/argument":258,"./error/argumentNull":259,"./error/forbidden":260,"./error/notFound":261,"./error/rateLimitExceeded":262,"./error/serviceUnavailable":263,"./error/waiter":264}],266:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],267:[function(require,module,exports){
 arguments[4][12][0].apply(exports,arguments)
 },{"dup":12}],268:[function(require,module,exports){
+arguments[4][12][0].apply(exports,arguments)
+},{"dup":12}],269:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
@@ -11332,7 +11862,7 @@ exports.passport = passport;
 exports.project = project;
 exports.rule = rule;
 
-},{"./factory/client":255,"./factory/errorCode":256,"./factory/errors":264,"./factory/passport":265,"./factory/project":266,"./factory/rule":267}],269:[function(require,module,exports){
+},{"./factory/client":256,"./factory/errorCode":257,"./factory/errors":265,"./factory/passport":266,"./factory/project":267,"./factory/rule":268}],270:[function(require,module,exports){
 (function (process){
 "use strict";
 
@@ -11516,7 +12046,7 @@ formatters.j = function (v) {
 
 
 }).call(this,require('_process'))
-},{"./common":270,"_process":276}],270:[function(require,module,exports){
+},{"./common":271,"_process":276}],271:[function(require,module,exports){
 "use strict";
 
 /**
@@ -11767,7 +12297,7 @@ function setup(env) {
 module.exports = setup;
 
 
-},{"ms":275}],271:[function(require,module,exports){
+},{"ms":275}],272:[function(require,module,exports){
 // Generated by CoffeeScript 2.3.0
 // # node-http-status
 
@@ -12267,38 +12797,13 @@ module.exports = {
   }
 };
 
-},{}],272:[function(require,module,exports){
+},{}],273:[function(require,module,exports){
 (function (global,setImmediate){
 var t="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{};function r(t,r){return t(r={exports:{}},r.exports),r.exports}var e=r(function(t,r){var e;t.exports=(e=e||function(t,r){var e=Object.create||function(){function t(){}return function(r){var e;return t.prototype=r,e=new t,t.prototype=null,e}}(),i={},n=i.lib={},o=n.Base={extend:function(t){var r=e(this);return t&&r.mixIn(t),r.hasOwnProperty("init")&&this.init!==r.init||(r.init=function(){r.$super.init.apply(this,arguments)}),r.init.prototype=r,r.$super=this,r},create:function(){var t=this.extend();return t.init.apply(t,arguments),t},init:function(){},mixIn:function(t){for(var r in t)t.hasOwnProperty(r)&&(this[r]=t[r]);t.hasOwnProperty("toString")&&(this.toString=t.toString)},clone:function(){return this.init.prototype.extend(this)}},s=n.WordArray=o.extend({init:function(t,r){t=this.words=t||[],this.sigBytes=null!=r?r:4*t.length},toString:function(t){return(t||a).stringify(this)},concat:function(t){var r=this.words,e=t.words,i=this.sigBytes,n=t.sigBytes;if(this.clamp(),i%4)for(var o=0;o<n;o++){var s=e[o>>>2]>>>24-o%4*8&255;r[i+o>>>2]|=s<<24-(i+o)%4*8}else for(var o=0;o<n;o+=4)r[i+o>>>2]=e[o>>>2];return this.sigBytes+=n,this},clamp:function(){var r=this.words,e=this.sigBytes;r[e>>>2]&=4294967295<<32-e%4*8,r.length=t.ceil(e/4)},clone:function(){var t=o.clone.call(this);return t.words=this.words.slice(0),t},random:function(r){for(var e,i=[],n=function(r){var r=r,e=987654321,i=4294967295;return function(){var n=((e=36969*(65535&e)+(e>>16)&i)<<16)+(r=18e3*(65535&r)+(r>>16)&i)&i;return n/=4294967296,(n+=.5)*(t.random()>.5?1:-1)}},o=0;o<r;o+=4){var h=n(4294967296*(e||t.random()));e=987654071*h(),i.push(4294967296*h()|0)}return new s.init(i,r)}}),h=i.enc={},a=h.Hex={stringify:function(t){for(var r=t.words,e=t.sigBytes,i=[],n=0;n<e;n++){var o=r[n>>>2]>>>24-n%4*8&255;i.push((o>>>4).toString(16)),i.push((15&o).toString(16))}return i.join("")},parse:function(t){for(var r=t.length,e=[],i=0;i<r;i+=2)e[i>>>3]|=parseInt(t.substr(i,2),16)<<24-i%8*4;return new s.init(e,r/2)}},u=h.Latin1={stringify:function(t){for(var r=t.words,e=t.sigBytes,i=[],n=0;n<e;n++){var o=r[n>>>2]>>>24-n%4*8&255;i.push(String.fromCharCode(o))}return i.join("")},parse:function(t){for(var r=t.length,e=[],i=0;i<r;i++)e[i>>>2]|=(255&t.charCodeAt(i))<<24-i%4*8;return new s.init(e,r)}},f=h.Utf8={stringify:function(t){try{return decodeURIComponent(escape(u.stringify(t)))}catch(t){throw new Error("Malformed UTF-8 data")}},parse:function(t){return u.parse(unescape(encodeURIComponent(t)))}},c=n.BufferedBlockAlgorithm=o.extend({reset:function(){this._data=new s.init,this._nDataBytes=0},_append:function(t){"string"==typeof t&&(t=f.parse(t)),this._data.concat(t),this._nDataBytes+=t.sigBytes},_process:function(r){var e=this._data,i=e.words,n=e.sigBytes,o=this.blockSize,h=4*o,a=n/h,u=(a=r?t.ceil(a):t.max((0|a)-this._minBufferSize,0))*o,f=t.min(4*u,n);if(u){for(var c=0;c<u;c+=o)this._doProcessBlock(i,c);var p=i.splice(0,u);e.sigBytes-=f}return new s.init(p,f)},clone:function(){var t=o.clone.call(this);return t._data=this._data.clone(),t},_minBufferSize:0}),p=(n.Hasher=c.extend({cfg:o.extend(),init:function(t){this.cfg=this.cfg.extend(t),this.reset()},reset:function(){c.reset.call(this),this._doReset()},update:function(t){return this._append(t),this._process(),this},finalize:function(t){t&&this._append(t);var r=this._doFinalize();return r},blockSize:16,_createHelper:function(t){return function(r,e){return new t.init(e).finalize(r)}},_createHmacHelper:function(t){return function(r,e){return new p.HMAC.init(t,e).finalize(r)}}}),i.algo={});return i}(Math),e)}),i=r(function(t,r){var i;t.exports=(i=e,function(t){var r=i,e=r.lib,n=e.WordArray,o=e.Hasher,s=r.algo,h=[],a=[];!function(){function r(r){for(var e=t.sqrt(r),i=2;i<=e;i++)if(!(r%i))return!1;return!0}function e(t){return 4294967296*(t-(0|t))|0}for(var i=2,n=0;n<64;)r(i)&&(n<8&&(h[n]=e(t.pow(i,.5))),a[n]=e(t.pow(i,1/3)),n++),i++}();var u=[],f=s.SHA256=o.extend({_doReset:function(){this._hash=new n.init(h.slice(0))},_doProcessBlock:function(t,r){for(var e=this._hash.words,i=e[0],n=e[1],o=e[2],s=e[3],h=e[4],f=e[5],c=e[6],p=e[7],l=0;l<64;l++){if(l<16)u[l]=0|t[r+l];else{var d=u[l-15],v=u[l-2];u[l]=((d<<25|d>>>7)^(d<<14|d>>>18)^d>>>3)+u[l-7]+((v<<15|v>>>17)^(v<<13|v>>>19)^v>>>10)+u[l-16]}var y=i&n^i&o^n&o,m=p+((h<<26|h>>>6)^(h<<21|h>>>11)^(h<<7|h>>>25))+(h&f^~h&c)+a[l]+u[l];p=c,c=f,f=h,h=s+m|0,s=o,o=n,n=i,i=m+(((i<<30|i>>>2)^(i<<19|i>>>13)^(i<<10|i>>>22))+y)|0}e[0]=e[0]+i|0,e[1]=e[1]+n|0,e[2]=e[2]+o|0,e[3]=e[3]+s|0,e[4]=e[4]+h|0,e[5]=e[5]+f|0,e[6]=e[6]+c|0,e[7]=e[7]+p|0},_doFinalize:function(){var r=this._data,e=r.words,i=8*this._nDataBytes,n=8*r.sigBytes;return e[n>>>5]|=128<<24-n%32,e[14+(n+64>>>9<<4)]=t.floor(i/4294967296),e[15+(n+64>>>9<<4)]=i,r.sigBytes=4*e.length,this._process(),this._hash},clone:function(){var t=o.clone.call(this);return t._hash=this._hash.clone(),t}});r.SHA256=o._createHelper(f),r.HmacSHA256=o._createHmacHelper(f)}(Math),i.SHA256)}),n=r(function(t,r){var i,n;t.exports=(n=(i=e).lib.WordArray,i.enc.Base64={stringify:function(t){var r=t.words,e=t.sigBytes,i=this._map;t.clamp();for(var n=[],o=0;o<e;o+=3)for(var s=(r[o>>>2]>>>24-o%4*8&255)<<16|(r[o+1>>>2]>>>24-(o+1)%4*8&255)<<8|r[o+2>>>2]>>>24-(o+2)%4*8&255,h=0;h<4&&o+.75*h<e;h++)n.push(i.charAt(s>>>6*(3-h)&63));var a=i.charAt(64);if(a)for(;n.length%4;)n.push(a);return n.join("")},parse:function(t){var r=t.length,e=this._map,i=this._reverseMap;if(!i){i=this._reverseMap=[];for(var o=0;o<e.length;o++)i[e.charCodeAt(o)]=o}var s=e.charAt(64);if(s){var h=t.indexOf(s);-1!==h&&(r=h)}return function(t,r,e){for(var i=[],o=0,s=0;s<r;s++)if(s%4){var h=e[t.charCodeAt(s-1)]<<s%4*2,a=e[t.charCodeAt(s)]>>>6-s%4*2;i[o>>>2]|=(h|a)<<24-o%4*8,o++}return n.create(i,o)}(t,r,i)},_map:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="},i.enc.Base64)}),o=r(function(t,r){t.exports=e.enc.Hex}),s=r(function(r,e){(function(){var t;function e(t,r,e){null!=t&&("number"==typeof t?this.fromNumber(t,r,e):this.fromString(t,null==r&&"string"!=typeof t?256:r))}function i(){return new e(null)}var n="undefined"!=typeof navigator;n&&"Microsoft Internet Explorer"==navigator.appName?(e.prototype.am=function(t,r,e,i,n,o){for(var s=32767&r,h=r>>15;--o>=0;){var a=32767&this[t],u=this[t++]>>15,f=h*a+u*s;n=((a=s*a+((32767&f)<<15)+e[i]+(1073741823&n))>>>30)+(f>>>15)+h*u+(n>>>30),e[i++]=1073741823&a}return n},t=30):n&&"Netscape"!=navigator.appName?(e.prototype.am=function(t,r,e,i,n,o){for(;--o>=0;){var s=r*this[t++]+e[i]+n;n=Math.floor(s/67108864),e[i++]=67108863&s}return n},t=26):(e.prototype.am=function(t,r,e,i,n,o){for(var s=16383&r,h=r>>14;--o>=0;){var a=16383&this[t],u=this[t++]>>14,f=h*a+u*s;n=((a=s*a+((16383&f)<<14)+e[i]+n)>>28)+(f>>14)+h*u,e[i++]=268435455&a}return n},t=28),e.prototype.DB=t,e.prototype.DM=(1<<t)-1,e.prototype.DV=1<<t;e.prototype.FV=Math.pow(2,52),e.prototype.F1=52-t,e.prototype.F2=2*t-52;var o,s,h="0123456789abcdefghijklmnopqrstuvwxyz",a=new Array;for(o="0".charCodeAt(0),s=0;s<=9;++s)a[o++]=s;for(o="a".charCodeAt(0),s=10;s<36;++s)a[o++]=s;for(o="A".charCodeAt(0),s=10;s<36;++s)a[o++]=s;function u(t){return h.charAt(t)}function f(t,r){var e=a[t.charCodeAt(r)];return null==e?-1:e}function c(t){var r=i();return r.fromInt(t),r}function p(t){var r,e=1;return 0!=(r=t>>>16)&&(t=r,e+=16),0!=(r=t>>8)&&(t=r,e+=8),0!=(r=t>>4)&&(t=r,e+=4),0!=(r=t>>2)&&(t=r,e+=2),0!=(r=t>>1)&&(t=r,e+=1),e}function l(t){this.m=t}function d(t){this.m=t,this.mp=t.invDigit(),this.mpl=32767&this.mp,this.mph=this.mp>>15,this.um=(1<<t.DB-15)-1,this.mt2=2*t.t}function v(t,r){return t&r}function y(t,r){return t|r}function m(t,r){return t^r}function g(t,r){return t&~r}function w(t){if(0==t)return-1;var r=0;return 0==(65535&t)&&(t>>=16,r+=16),0==(255&t)&&(t>>=8,r+=8),0==(15&t)&&(t>>=4,r+=4),0==(3&t)&&(t>>=2,r+=2),0==(1&t)&&++r,r}function T(t){for(var r=0;0!=t;)t&=t-1,++r;return r}function b(){}function S(t){return t}function B(t){this.r2=i(),this.q3=i(),e.ONE.dlShiftTo(2*t.t,this.r2),this.mu=this.r2.divide(t),this.m=t}l.prototype.convert=function(t){return t.s<0||t.compareTo(this.m)>=0?t.mod(this.m):t},l.prototype.revert=function(t){return t},l.prototype.reduce=function(t){t.divRemTo(this.m,null,t)},l.prototype.mulTo=function(t,r,e){t.multiplyTo(r,e),this.reduce(e)},l.prototype.sqrTo=function(t,r){t.squareTo(r),this.reduce(r)},d.prototype.convert=function(t){var r=i();return t.abs().dlShiftTo(this.m.t,r),r.divRemTo(this.m,null,r),t.s<0&&r.compareTo(e.ZERO)>0&&this.m.subTo(r,r),r},d.prototype.revert=function(t){var r=i();return t.copyTo(r),this.reduce(r),r},d.prototype.reduce=function(t){for(;t.t<=this.mt2;)t[t.t++]=0;for(var r=0;r<this.m.t;++r){var e=32767&t[r],i=e*this.mpl+((e*this.mph+(t[r]>>15)*this.mpl&this.um)<<15)&t.DM;for(t[e=r+this.m.t]+=this.m.am(0,i,t,r,0,this.m.t);t[e]>=t.DV;)t[e]-=t.DV,t[++e]++}t.clamp(),t.drShiftTo(this.m.t,t),t.compareTo(this.m)>=0&&t.subTo(this.m,t)},d.prototype.mulTo=function(t,r,e){t.multiplyTo(r,e),this.reduce(e)},d.prototype.sqrTo=function(t,r){t.squareTo(r),this.reduce(r)},e.prototype.copyTo=function(t){for(var r=this.t-1;r>=0;--r)t[r]=this[r];t.t=this.t,t.s=this.s},e.prototype.fromInt=function(t){this.t=1,this.s=t<0?-1:0,t>0?this[0]=t:t<-1?this[0]=t+this.DV:this.t=0},e.prototype.fromString=function(t,r){var i;if(16==r)i=4;else if(8==r)i=3;else if(256==r)i=8;else if(2==r)i=1;else if(32==r)i=5;else{if(4!=r)return void this.fromRadix(t,r);i=2}this.t=0,this.s=0;for(var n=t.length,o=!1,s=0;--n>=0;){var h=8==i?255&t[n]:f(t,n);h<0?"-"==t.charAt(n)&&(o=!0):(o=!1,0==s?this[this.t++]=h:s+i>this.DB?(this[this.t-1]|=(h&(1<<this.DB-s)-1)<<s,this[this.t++]=h>>this.DB-s):this[this.t-1]|=h<<s,(s+=i)>=this.DB&&(s-=this.DB))}8==i&&0!=(128&t[0])&&(this.s=-1,s>0&&(this[this.t-1]|=(1<<this.DB-s)-1<<s)),this.clamp(),o&&e.ZERO.subTo(this,this)},e.prototype.clamp=function(){for(var t=this.s&this.DM;this.t>0&&this[this.t-1]==t;)--this.t},e.prototype.dlShiftTo=function(t,r){var e;for(e=this.t-1;e>=0;--e)r[e+t]=this[e];for(e=t-1;e>=0;--e)r[e]=0;r.t=this.t+t,r.s=this.s},e.prototype.drShiftTo=function(t,r){for(var e=t;e<this.t;++e)r[e-t]=this[e];r.t=Math.max(this.t-t,0),r.s=this.s},e.prototype.lShiftTo=function(t,r){var e,i=t%this.DB,n=this.DB-i,o=(1<<n)-1,s=Math.floor(t/this.DB),h=this.s<<i&this.DM;for(e=this.t-1;e>=0;--e)r[e+s+1]=this[e]>>n|h,h=(this[e]&o)<<i;for(e=s-1;e>=0;--e)r[e]=0;r[s]=h,r.t=this.t+s+1,r.s=this.s,r.clamp()},e.prototype.rShiftTo=function(t,r){r.s=this.s;var e=Math.floor(t/this.DB);if(e>=this.t)r.t=0;else{var i=t%this.DB,n=this.DB-i,o=(1<<i)-1;r[0]=this[e]>>i;for(var s=e+1;s<this.t;++s)r[s-e-1]|=(this[s]&o)<<n,r[s-e]=this[s]>>i;i>0&&(r[this.t-e-1]|=(this.s&o)<<n),r.t=this.t-e,r.clamp()}},e.prototype.subTo=function(t,r){for(var e=0,i=0,n=Math.min(t.t,this.t);e<n;)i+=this[e]-t[e],r[e++]=i&this.DM,i>>=this.DB;if(t.t<this.t){for(i-=t.s;e<this.t;)i+=this[e],r[e++]=i&this.DM,i>>=this.DB;i+=this.s}else{for(i+=this.s;e<t.t;)i-=t[e],r[e++]=i&this.DM,i>>=this.DB;i-=t.s}r.s=i<0?-1:0,i<-1?r[e++]=this.DV+i:i>0&&(r[e++]=i),r.t=e,r.clamp()},e.prototype.multiplyTo=function(t,r){var i=this.abs(),n=t.abs(),o=i.t;for(r.t=o+n.t;--o>=0;)r[o]=0;for(o=0;o<n.t;++o)r[o+i.t]=i.am(0,n[o],r,o,0,i.t);r.s=0,r.clamp(),this.s!=t.s&&e.ZERO.subTo(r,r)},e.prototype.squareTo=function(t){for(var r=this.abs(),e=t.t=2*r.t;--e>=0;)t[e]=0;for(e=0;e<r.t-1;++e){var i=r.am(e,r[e],t,2*e,0,1);(t[e+r.t]+=r.am(e+1,2*r[e],t,2*e+1,i,r.t-e-1))>=r.DV&&(t[e+r.t]-=r.DV,t[e+r.t+1]=1)}t.t>0&&(t[t.t-1]+=r.am(e,r[e],t,2*e,0,1)),t.s=0,t.clamp()},e.prototype.divRemTo=function(t,r,n){var o=t.abs();if(!(o.t<=0)){var s=this.abs();if(s.t<o.t)return null!=r&&r.fromInt(0),void(null!=n&&this.copyTo(n));null==n&&(n=i());var h=i(),a=this.s,u=t.s,f=this.DB-p(o[o.t-1]);f>0?(o.lShiftTo(f,h),s.lShiftTo(f,n)):(o.copyTo(h),s.copyTo(n));var c=h.t,l=h[c-1];if(0!=l){var d=l*(1<<this.F1)+(c>1?h[c-2]>>this.F2:0),v=this.FV/d,y=(1<<this.F1)/d,m=1<<this.F2,g=n.t,w=g-c,T=null==r?i():r;for(h.dlShiftTo(w,T),n.compareTo(T)>=0&&(n[n.t++]=1,n.subTo(T,n)),e.ONE.dlShiftTo(c,T),T.subTo(h,h);h.t<c;)h[h.t++]=0;for(;--w>=0;){var b=n[--g]==l?this.DM:Math.floor(n[g]*v+(n[g-1]+m)*y);if((n[g]+=h.am(0,b,n,w,0,c))<b)for(h.dlShiftTo(w,T),n.subTo(T,n);n[g]<--b;)n.subTo(T,n)}null!=r&&(n.drShiftTo(c,r),a!=u&&e.ZERO.subTo(r,r)),n.t=c,n.clamp(),f>0&&n.rShiftTo(f,n),a<0&&e.ZERO.subTo(n,n)}}},e.prototype.invDigit=function(){if(this.t<1)return 0;var t=this[0];if(0==(1&t))return 0;var r=3&t;return(r=(r=(r=(r=r*(2-(15&t)*r)&15)*(2-(255&t)*r)&255)*(2-((65535&t)*r&65535))&65535)*(2-t*r%this.DV)%this.DV)>0?this.DV-r:-r},e.prototype.isEven=function(){return 0==(this.t>0?1&this[0]:this.s)},e.prototype.exp=function(t,r){if(t>4294967295||t<1)return e.ONE;var n=i(),o=i(),s=r.convert(this),h=p(t)-1;for(s.copyTo(n);--h>=0;)if(r.sqrTo(n,o),(t&1<<h)>0)r.mulTo(o,s,n);else{var a=n;n=o,o=a}return r.revert(n)},e.prototype.toString=function(t){if(this.s<0)return"-"+this.negate().toString(t);var r;if(16==t)r=4;else if(8==t)r=3;else if(2==t)r=1;else if(32==t)r=5;else{if(4!=t)return this.toRadix(t);r=2}var e,i=(1<<r)-1,n=!1,o="",s=this.t,h=this.DB-s*this.DB%r;if(s-- >0)for(h<this.DB&&(e=this[s]>>h)>0&&(n=!0,o=u(e));s>=0;)h<r?(e=(this[s]&(1<<h)-1)<<r-h,e|=this[--s]>>(h+=this.DB-r)):(e=this[s]>>(h-=r)&i,h<=0&&(h+=this.DB,--s)),e>0&&(n=!0),n&&(o+=u(e));return n?o:"0"},e.prototype.negate=function(){var t=i();return e.ZERO.subTo(this,t),t},e.prototype.abs=function(){return this.s<0?this.negate():this},e.prototype.compareTo=function(t){var r=this.s-t.s;if(0!=r)return r;var e=this.t;if(0!=(r=e-t.t))return this.s<0?-r:r;for(;--e>=0;)if(0!=(r=this[e]-t[e]))return r;return 0},e.prototype.bitLength=function(){return this.t<=0?0:this.DB*(this.t-1)+p(this[this.t-1]^this.s&this.DM)},e.prototype.mod=function(t){var r=i();return this.abs().divRemTo(t,null,r),this.s<0&&r.compareTo(e.ZERO)>0&&t.subTo(r,r),r},e.prototype.modPowInt=function(t,r){var e;return e=t<256||r.isEven()?new l(r):new d(r),this.exp(t,e)},e.ZERO=c(0),e.ONE=c(1),b.prototype.convert=S,b.prototype.revert=S,b.prototype.mulTo=function(t,r,e){t.multiplyTo(r,e)},b.prototype.sqrTo=function(t,r){t.squareTo(r)},B.prototype.convert=function(t){if(t.s<0||t.t>2*this.m.t)return t.mod(this.m);if(t.compareTo(this.m)<0)return t;var r=i();return t.copyTo(r),this.reduce(r),r},B.prototype.revert=function(t){return t},B.prototype.reduce=function(t){for(t.drShiftTo(this.m.t-1,this.r2),t.t>this.m.t+1&&(t.t=this.m.t+1,t.clamp()),this.mu.multiplyUpperTo(this.r2,this.m.t+1,this.q3),this.m.multiplyLowerTo(this.q3,this.m.t+1,this.r2);t.compareTo(this.r2)<0;)t.dAddOffset(1,this.m.t+1);for(t.subTo(this.r2,t);t.compareTo(this.m)>=0;)t.subTo(this.m,t)},B.prototype.mulTo=function(t,r,e){t.multiplyTo(r,e),this.reduce(e)},B.prototype.sqrTo=function(t,r){t.squareTo(r),this.reduce(r)};var D,A,_,x=[2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157,163,167,173,179,181,191,193,197,199,211,223,227,229,233,239,241,251,257,263,269,271,277,281,283,293,307,311,313,317,331,337,347,349,353,359,367,373,379,383,389,397,401,409,419,421,431,433,439,443,449,457,461,463,467,479,487,491,499,503,509,521,523,541,547,557,563,569,571,577,587,593,599,601,607,613,617,619,631,641,643,647,653,659,661,673,677,683,691,701,709,719,727,733,739,743,751,757,761,769,773,787,797,809,811,821,823,827,829,839,853,857,859,863,877,881,883,887,907,911,919,929,937,941,947,953,967,971,977,983,991,997],E=(1<<26)/x[x.length-1];function R(){var t;t=(new Date).getTime(),A[_++]^=255&t,A[_++]^=t>>8&255,A[_++]^=t>>16&255,A[_++]^=t>>24&255,_>=N&&(_-=N)}if(e.prototype.chunkSize=function(t){return Math.floor(Math.LN2*this.DB/Math.log(t))},e.prototype.toRadix=function(t){if(null==t&&(t=10),0==this.signum()||t<2||t>36)return"0";var r=this.chunkSize(t),e=Math.pow(t,r),n=c(e),o=i(),s=i(),h="";for(this.divRemTo(n,o,s);o.signum()>0;)h=(e+s.intValue()).toString(t).substr(1)+h,o.divRemTo(n,o,s);return s.intValue().toString(t)+h},e.prototype.fromRadix=function(t,r){this.fromInt(0),null==r&&(r=10);for(var i=this.chunkSize(r),n=Math.pow(r,i),o=!1,s=0,h=0,a=0;a<t.length;++a){var u=f(t,a);u<0?"-"==t.charAt(a)&&0==this.signum()&&(o=!0):(h=r*h+u,++s>=i&&(this.dMultiply(n),this.dAddOffset(h,0),s=0,h=0))}s>0&&(this.dMultiply(Math.pow(r,s)),this.dAddOffset(h,0)),o&&e.ZERO.subTo(this,this)},e.prototype.fromNumber=function(t,r,i){if("number"==typeof r)if(t<2)this.fromInt(1);else for(this.fromNumber(t,i),this.testBit(t-1)||this.bitwiseTo(e.ONE.shiftLeft(t-1),y,this),this.isEven()&&this.dAddOffset(1,0);!this.isProbablePrime(r);)this.dAddOffset(2,0),this.bitLength()>t&&this.subTo(e.ONE.shiftLeft(t-1),this);else{var n=new Array,o=7&t;n.length=1+(t>>3),r.nextBytes(n),o>0?n[0]&=(1<<o)-1:n[0]=0,this.fromString(n,256)}},e.prototype.bitwiseTo=function(t,r,e){var i,n,o=Math.min(t.t,this.t);for(i=0;i<o;++i)e[i]=r(this[i],t[i]);if(t.t<this.t){for(n=t.s&this.DM,i=o;i<this.t;++i)e[i]=r(this[i],n);e.t=this.t}else{for(n=this.s&this.DM,i=o;i<t.t;++i)e[i]=r(n,t[i]);e.t=t.t}e.s=r(this.s,t.s),e.clamp()},e.prototype.changeBit=function(t,r){var i=e.ONE.shiftLeft(t);return this.bitwiseTo(i,r,i),i},e.prototype.addTo=function(t,r){for(var e=0,i=0,n=Math.min(t.t,this.t);e<n;)i+=this[e]+t[e],r[e++]=i&this.DM,i>>=this.DB;if(t.t<this.t){for(i+=t.s;e<this.t;)i+=this[e],r[e++]=i&this.DM,i>>=this.DB;i+=this.s}else{for(i+=this.s;e<t.t;)i+=t[e],r[e++]=i&this.DM,i>>=this.DB;i+=t.s}r.s=i<0?-1:0,i>0?r[e++]=i:i<-1&&(r[e++]=this.DV+i),r.t=e,r.clamp()},e.prototype.dMultiply=function(t){this[this.t]=this.am(0,t-1,this,0,0,this.t),++this.t,this.clamp()},e.prototype.dAddOffset=function(t,r){if(0!=t){for(;this.t<=r;)this[this.t++]=0;for(this[r]+=t;this[r]>=this.DV;)this[r]-=this.DV,++r>=this.t&&(this[this.t++]=0),++this[r]}},e.prototype.multiplyLowerTo=function(t,r,e){var i,n=Math.min(this.t+t.t,r);for(e.s=0,e.t=n;n>0;)e[--n]=0;for(i=e.t-this.t;n<i;++n)e[n+this.t]=this.am(0,t[n],e,n,0,this.t);for(i=Math.min(t.t,r);n<i;++n)this.am(0,t[n],e,n,0,r-n);e.clamp()},e.prototype.multiplyUpperTo=function(t,r,e){var i=e.t=this.t+t.t- --r;for(e.s=0;--i>=0;)e[i]=0;for(i=Math.max(r-this.t,0);i<t.t;++i)e[this.t+i-r]=this.am(r-i,t[i],e,0,0,this.t+i-r);e.clamp(),e.drShiftTo(1,e)},e.prototype.modInt=function(t){if(t<=0)return 0;var r=this.DV%t,e=this.s<0?t-1:0;if(this.t>0)if(0==r)e=this[0]%t;else for(var i=this.t-1;i>=0;--i)e=(r*e+this[i])%t;return e},e.prototype.millerRabin=function(t){var r=this.subtract(e.ONE),n=r.getLowestSetBit();if(n<=0)return!1;var o=r.shiftRight(n);(t=t+1>>1)>x.length&&(t=x.length);for(var s=i(),h=0;h<t;++h){s.fromInt(x[Math.floor(Math.random()*x.length)]);var a=s.modPow(o,this);if(0!=a.compareTo(e.ONE)&&0!=a.compareTo(r)){for(var u=1;u++<n&&0!=a.compareTo(r);)if(0==(a=a.modPowInt(2,this)).compareTo(e.ONE))return!1;if(0!=a.compareTo(r))return!1}}return!0},e.prototype.clone=function(){var t=i();return this.copyTo(t),t},e.prototype.intValue=function(){if(this.s<0){if(1==this.t)return this[0]-this.DV;if(0==this.t)return-1}else{if(1==this.t)return this[0];if(0==this.t)return 0}return(this[1]&(1<<32-this.DB)-1)<<this.DB|this[0]},e.prototype.byteValue=function(){return 0==this.t?this.s:this[0]<<24>>24},e.prototype.shortValue=function(){return 0==this.t?this.s:this[0]<<16>>16},e.prototype.signum=function(){return this.s<0?-1:this.t<=0||1==this.t&&this[0]<=0?0:1},e.prototype.toByteArray=function(){var t=this.t,r=new Array;r[0]=this.s;var e,i=this.DB-t*this.DB%8,n=0;if(t-- >0)for(i<this.DB&&(e=this[t]>>i)!=(this.s&this.DM)>>i&&(r[n++]=e|this.s<<this.DB-i);t>=0;)i<8?(e=(this[t]&(1<<i)-1)<<8-i,e|=this[--t]>>(i+=this.DB-8)):(e=this[t]>>(i-=8)&255,i<=0&&(i+=this.DB,--t)),0!=(128&e)&&(e|=-256),0==n&&(128&this.s)!=(128&e)&&++n,(n>0||e!=this.s)&&(r[n++]=e);return r},e.prototype.equals=function(t){return 0==this.compareTo(t)},e.prototype.min=function(t){return this.compareTo(t)<0?this:t},e.prototype.max=function(t){return this.compareTo(t)>0?this:t},e.prototype.and=function(t){var r=i();return this.bitwiseTo(t,v,r),r},e.prototype.or=function(t){var r=i();return this.bitwiseTo(t,y,r),r},e.prototype.xor=function(t){var r=i();return this.bitwiseTo(t,m,r),r},e.prototype.andNot=function(t){var r=i();return this.bitwiseTo(t,g,r),r},e.prototype.not=function(){for(var t=i(),r=0;r<this.t;++r)t[r]=this.DM&~this[r];return t.t=this.t,t.s=~this.s,t},e.prototype.shiftLeft=function(t){var r=i();return t<0?this.rShiftTo(-t,r):this.lShiftTo(t,r),r},e.prototype.shiftRight=function(t){var r=i();return t<0?this.lShiftTo(-t,r):this.rShiftTo(t,r),r},e.prototype.getLowestSetBit=function(){for(var t=0;t<this.t;++t)if(0!=this[t])return t*this.DB+w(this[t]);return this.s<0?this.t*this.DB:-1},e.prototype.bitCount=function(){for(var t=0,r=this.s&this.DM,e=0;e<this.t;++e)t+=T(this[e]^r);return t},e.prototype.testBit=function(t){var r=Math.floor(t/this.DB);return r>=this.t?0!=this.s:0!=(this[r]&1<<t%this.DB)},e.prototype.setBit=function(t){return this.changeBit(t,y)},e.prototype.clearBit=function(t){return this.changeBit(t,g)},e.prototype.flipBit=function(t){return this.changeBit(t,m)},e.prototype.add=function(t){var r=i();return this.addTo(t,r),r},e.prototype.subtract=function(t){var r=i();return this.subTo(t,r),r},e.prototype.multiply=function(t){var r=i();return this.multiplyTo(t,r),r},e.prototype.divide=function(t){var r=i();return this.divRemTo(t,r,null),r},e.prototype.remainder=function(t){var r=i();return this.divRemTo(t,null,r),r},e.prototype.divideAndRemainder=function(t){var r=i(),e=i();return this.divRemTo(t,r,e),new Array(r,e)},e.prototype.modPow=function(t,r){var e,n,o=t.bitLength(),s=c(1);if(o<=0)return s;e=o<18?1:o<48?3:o<144?4:o<768?5:6,n=o<8?new l(r):r.isEven()?new B(r):new d(r);var h=new Array,a=3,u=e-1,f=(1<<e)-1;if(h[1]=n.convert(this),e>1){var v=i();for(n.sqrTo(h[1],v);a<=f;)h[a]=i(),n.mulTo(v,h[a-2],h[a]),a+=2}var y,m,g=t.t-1,w=!0,T=i();for(o=p(t[g])-1;g>=0;){for(o>=u?y=t[g]>>o-u&f:(y=(t[g]&(1<<o+1)-1)<<u-o,g>0&&(y|=t[g-1]>>this.DB+o-u)),a=e;0==(1&y);)y>>=1,--a;if((o-=a)<0&&(o+=this.DB,--g),w)h[y].copyTo(s),w=!1;else{for(;a>1;)n.sqrTo(s,T),n.sqrTo(T,s),a-=2;a>0?n.sqrTo(s,T):(m=s,s=T,T=m),n.mulTo(T,h[y],s)}for(;g>=0&&0==(t[g]&1<<o);)n.sqrTo(s,T),m=s,s=T,T=m,--o<0&&(o=this.DB-1,--g)}return n.revert(s)},e.prototype.modInverse=function(t){var r=t.isEven();if(this.isEven()&&r||0==t.signum())return e.ZERO;for(var i=t.clone(),n=this.clone(),o=c(1),s=c(0),h=c(0),a=c(1);0!=i.signum();){for(;i.isEven();)i.rShiftTo(1,i),r?(o.isEven()&&s.isEven()||(o.addTo(this,o),s.subTo(t,s)),o.rShiftTo(1,o)):s.isEven()||s.subTo(t,s),s.rShiftTo(1,s);for(;n.isEven();)n.rShiftTo(1,n),r?(h.isEven()&&a.isEven()||(h.addTo(this,h),a.subTo(t,a)),h.rShiftTo(1,h)):a.isEven()||a.subTo(t,a),a.rShiftTo(1,a);i.compareTo(n)>=0?(i.subTo(n,i),r&&o.subTo(h,o),s.subTo(a,s)):(n.subTo(i,n),r&&h.subTo(o,h),a.subTo(s,a))}return 0!=n.compareTo(e.ONE)?e.ZERO:a.compareTo(t)>=0?a.subtract(t):a.signum()<0?(a.addTo(t,a),a.signum()<0?a.add(t):a):a},e.prototype.pow=function(t){return this.exp(t,new b)},e.prototype.gcd=function(t){var r=this.s<0?this.negate():this.clone(),e=t.s<0?t.negate():t.clone();if(r.compareTo(e)<0){var i=r;r=e,e=i}var n=r.getLowestSetBit(),o=e.getLowestSetBit();if(o<0)return r;for(n<o&&(o=n),o>0&&(r.rShiftTo(o,r),e.rShiftTo(o,e));r.signum()>0;)(n=r.getLowestSetBit())>0&&r.rShiftTo(n,r),(n=e.getLowestSetBit())>0&&e.rShiftTo(n,e),r.compareTo(e)>=0?(r.subTo(e,r),r.rShiftTo(1,r)):(e.subTo(r,e),e.rShiftTo(1,e));return o>0&&e.lShiftTo(o,e),e},e.prototype.isProbablePrime=function(t){var r,e=this.abs();if(1==e.t&&e[0]<=x[x.length-1]){for(r=0;r<x.length;++r)if(e[0]==x[r])return!0;return!1}if(e.isEven())return!1;for(r=1;r<x.length;){for(var i=x[r],n=r+1;n<x.length&&i<E;)i*=x[n++];for(i=e.modInt(i);r<n;)if(i%x[r++]==0)return!1}return e.millerRabin(t)},e.prototype.square=function(){var t=i();return this.squareTo(t),t},e.prototype.Barrett=B,null==A){var M;if(A=new Array,_=0,"undefined"!=typeof window&&window.crypto)if(window.crypto.getRandomValues){var C=new Uint8Array(32);for(window.crypto.getRandomValues(C),M=0;M<32;++M)A[_++]=C[M]}else if("Netscape"==navigator.appName&&navigator.appVersion<"5"){var k=window.crypto.random(32);for(M=0;M<k.length;++M)A[_++]=255&k.charCodeAt(M)}for(;_<N;)M=Math.floor(65536*Math.random()),A[_++]=M>>>8,A[_++]=255&M;_=0,R()}function j(){if(null==D){for(R(),(D=new I).init(A),_=0;_<A.length;++_)A[_]=0;_=0}return D.next()}function O(){}function I(){this.i=0,this.j=0,this.S=new Array}O.prototype.nextBytes=function(t){var r;for(r=0;r<t.length;++r)t[r]=j()},I.prototype.init=function(t){var r,e,i;for(r=0;r<256;++r)this.S[r]=r;for(e=0,r=0;r<256;++r)i=this.S[r],this.S[r]=this.S[e=e+this.S[r]+t[r%t.length]&255],this.S[e]=i;this.i=0,this.j=0},I.prototype.next=function(){var t;return this.i=this.i+1&255,this.j=this.j+this.S[this.i]&255,t=this.S[this.i],this.S[this.i]=this.S[this.j],this.S[this.j]=t,this.S[t+this.S[this.i]&255]};var N=256;e.SecureRandom=O,e.BigInteger=e,r.exports=e}).call(t)}),h={sha1:"3021300906052b0e03021a05000414",sha224:"302d300d06096086480165030402040500041c",sha256:"3031300d060960864801650304020105000420",sha384:"3041300d060960864801650304020205000430",sha512:"3051300d060960864801650304020305000440",md2:"3020300c06082a864886f70d020205000410",md5:"3020300c06082a864886f70d020505000410",ripemd160:"3021300906052b2403020105000414"},a={sha256:i};function u(t,r){if(this.n=null,this.e=0,!(null!=t&&null!=r&&t.length>0&&r.length>0))throw new Error("Invalid key data");this.n=new s(t,16),this.e=parseInt(r,16)}u.prototype.verify=function(t,r){r=r.replace(/[^0-9a-f]|[\s\n]]/gi,"");var e=new s(r,16);if(e.bitLength()>this.n.bitLength())throw new Error("Signature does not match with the key modulus.");var i=function(t){for(var r in h){var e=h[r],i=e.length;if(t.substring(0,i)===e)return{alg:r,hash:t.substring(i)}}return[]}(e.modPowInt(this.e,this.n).toString(16).replace(/^1f+00/,""));if(0===i.length)return!1;if(!a.hasOwnProperty(i.alg))throw new Error("Hashing algorithm is not supported.");var n=a[i.alg](t).toString();return i.hash===n};for(var f=function(t){return 3*t.length/4-w(t)},c=function(t){var r,e,i,n,o,s,h=t.length;o=w(t),s=new v(3*h/4-o),i=o>0?h-4:h;var a=0;for(r=0,e=0;r<i;r+=4,e+=3)n=d[t.charCodeAt(r)]<<18|d[t.charCodeAt(r+1)]<<12|d[t.charCodeAt(r+2)]<<6|d[t.charCodeAt(r+3)],s[a++]=n>>16&255,s[a++]=n>>8&255,s[a++]=255&n;2===o?(n=d[t.charCodeAt(r)]<<2|d[t.charCodeAt(r+1)]>>4,s[a++]=255&n):1===o&&(n=d[t.charCodeAt(r)]<<10|d[t.charCodeAt(r+1)]<<4|d[t.charCodeAt(r+2)]>>2,s[a++]=n>>8&255,s[a++]=255&n);return s},p=function(t){for(var r,e=t.length,i=e%3,n="",o=[],s=0,h=e-i;s<h;s+=16383)o.push(T(t,s,s+16383>h?h:s+16383));1===i?(n+=l[(r=t[e-1])>>2],n+=l[r<<4&63],n+="=="):2===i&&(n+=l[(r=(t[e-2]<<8)+t[e-1])>>10],n+=l[r>>4&63],n+=l[r<<2&63],n+="=");return o.push(n),o.join("")},l=[],d=[],v="undefined"!=typeof Uint8Array?Uint8Array:Array,y="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",m=0,g=y.length;m<g;++m)l[m]=y[m],d[y.charCodeAt(m)]=m;function w(t){var r=t.length;if(r%4>0)throw new Error("Invalid string. Length must be a multiple of 4");return"="===t[r-2]?2:"="===t[r-1]?1:0}function T(t,r,e){for(var i,n=[],o=r;o<e;o+=3)n.push(l[(i=(t[o]<<16)+(t[o+1]<<8)+t[o+2])>>18&63]+l[i>>12&63]+l[i>>6&63]+l[63&i]);return n.join("")}d["-".charCodeAt(0)]=62,d["_".charCodeAt(0)]=63;var b={byteLength:f,toByteArray:c,fromByteArray:p};function S(t){var r=t.length%4;return 0===r?t:t+new Array(1+(4-r)).join("=")}function B(t){return t=S(t).replace(/\-/g,"+").replace(/_/g,"/"),decodeURIComponent(function(t){for(var r="",e=0;e<t.length;e++)r+=String.fromCharCode(t[e]);return r}(b.toByteArray(t)).split("").map(function(t){return"%"+("00"+t.charCodeAt(0).toString(16)).slice(-2)}).join(""))}function D(t){return function(t){for(var r="",e=0;e<t.length;e++){var i=t[e].toString(16);r+=2===i.length?i:"0"+i}return r}(b.toByteArray(S(t)))}var A=r(function(r){var e,i;e=t,i=function(){return function(){var t=arguments;"object"==typeof arguments[0]&&(t=arguments[0]);var r=[].slice.call(t,0).join("/");return r.replace(/:\//g,"://").replace(/([^:\s])\/+/g,"$1/").replace(/\/(\?|&|#[^!])/g,"$1").replace(/(\?.+)\?/g,"$1&")}},r.exports?r.exports=i():e.urljoin=i()});function _(t,r){return r=r||{},new Promise(function(e,i){var n=new XMLHttpRequest,o=[],s=[],h={},a=function(){return{ok:2==(n.status/100|0),statusText:n.statusText,status:n.status,url:n.responseURL,text:function(){return Promise.resolve(n.responseText)},json:function(){return Promise.resolve(JSON.parse(n.responseText))},blob:function(){return Promise.resolve(new Blob([n.response]))},clone:a,headers:{keys:function(){return o},entries:function(){return s},get:function(t){return h[t.toLowerCase()]},has:function(t){return t.toLowerCase()in h}}}};for(var u in n.open(r.method||"get",t,!0),n.onload=function(){n.getAllResponseHeaders().replace(/^(.*?):[^\S\n]*([\s\S]*?)$/gm,function(t,r,e){o.push(r=r.toLowerCase()),s.push([r,e]),h[r]=h[r]?h[r]+","+e:e}),e(a())},n.onerror=i,n.withCredentials="include"==r.credentials,r.headers)n.setRequestHeader(u,r.headers[u]);n.send(r.body||null)})}var x=setTimeout;function E(t){return Boolean(t&&void 0!==t.length)}function R(){}function M(t){if(!(this instanceof M))throw new TypeError("Promises must be constructed via new");if("function"!=typeof t)throw new TypeError("not a function");this._state=0,this._handled=!1,this._value=void 0,this._deferreds=[],N(t,this)}function C(t,r){for(;3===t._state;)t=t._value;0!==t._state?(t._handled=!0,M._immediateFn(function(){var e=1===t._state?r.onFulfilled:r.onRejected;if(null!==e){var i;try{i=e(t._value)}catch(t){return void j(r.promise,t)}k(r.promise,i)}else(1===t._state?k:j)(r.promise,t._value)})):t._deferreds.push(r)}function k(t,r){try{if(r===t)throw new TypeError("A promise cannot be resolved with itself.");if(r&&("object"==typeof r||"function"==typeof r)){var e=r.then;if(r instanceof M)return t._state=3,t._value=r,void O(t);if("function"==typeof e)return void N((i=e,n=r,function(){i.apply(n,arguments)}),t)}t._state=1,t._value=r,O(t)}catch(r){j(t,r)}var i,n}function j(t,r){t._state=2,t._value=r,O(t)}function O(t){2===t._state&&0===t._deferreds.length&&M._immediateFn(function(){t._handled||M._unhandledRejectionFn(t._value)});for(var r=0,e=t._deferreds.length;r<e;r++)C(t,t._deferreds[r]);t._deferreds=null}function I(t,r,e){this.onFulfilled="function"==typeof t?t:null,this.onRejected="function"==typeof r?r:null,this.promise=e}function N(t,r){var e=!1;try{t(function(t){e||(e=!0,k(r,t))},function(t){e||(e=!0,j(r,t))})}catch(t){if(e)return;e=!0,j(r,t)}}function V(t){if(t.ok)return t.json();var r=new Error(t.statusText);return r.response=t,M.reject(r)}function L(t,r){return("undefined"==typeof fetch?_:fetch)(t.jwksURI||A(t.iss,".well-known","jwks.json")).then(V).then(function(e){var i,n,o,s=null;for(i=0;i<e.keys.length&&null===s;i++)(n=e.keys[i]).kid===t.kid&&(s=n);return r(null,{modulus:D((o=s).n),exp:D(o.e)})}).catch(function(t){r(t)})}function P(t){this.name="ConfigurationError",this.message=t||""}function q(t){this.name="TokenValidationError",this.message=t||""}M.prototype.catch=function(t){return this.then(null,t)},M.prototype.then=function(t,r){var e=new this.constructor(R);return C(this,new I(t,r,e)),e},M.prototype.finally=function(t){var r=this.constructor;return this.then(function(e){return r.resolve(t()).then(function(){return e})},function(e){return r.resolve(t()).then(function(){return r.reject(e)})})},M.all=function(t){return new M(function(r,e){if(!E(t))return e(new TypeError("Promise.all accepts an array"));var i=Array.prototype.slice.call(t);if(0===i.length)return r([]);var n=i.length;function o(t,s){try{if(s&&("object"==typeof s||"function"==typeof s)){var h=s.then;if("function"==typeof h)return void h.call(s,function(r){o(t,r)},e)}i[t]=s,0==--n&&r(i)}catch(t){e(t)}}for(var s=0;s<i.length;s++)o(s,i[s])})},M.resolve=function(t){return t&&"object"==typeof t&&t.constructor===M?t:new M(function(r){r(t)})},M.reject=function(t){return new M(function(r,e){e(t)})},M.race=function(t){return new M(function(r,e){if(!E(t))return e(new TypeError("Promise.race accepts an array"));for(var i=0,n=t.length;i<n;i++)M.resolve(t[i]).then(r,e)})},M._immediateFn="function"==typeof setImmediate&&function(t){setImmediate(t)}||function(t){x(t,0)},M._unhandledRejectionFn=function(t){"undefined"!=typeof console&&console&&console.warn("Possible Unhandled Promise Rejection:",t)},P.prototype=Error.prototype,q.prototype=Error.prototype;var U=function(){};U.prototype.get=function(){return null},U.prototype.has=function(){return null},U.prototype.set=function(){return null};var H=["RS256"];function F(t){var r=t||{};if(this.jwksCache=r.jwksCache||new U,this.expectedAlg=r.expectedAlg||"RS256",this.issuer=r.issuer,this.audience=r.audience,this.leeway=r.leeway||0,this.__disableExpirationCheck=r.__disableExpirationCheck||!1,this.jwksURI=r.jwksURI,this.leeway<0||this.leeway>300)throw new P("The leeway should be positive and lower than five minutes.");if(-1===H.indexOf(this.expectedAlg))throw new P("Algorithm "+this.expectedAlg+" is not supported. (Expected algs: ["+H.join(",")+"])")}F.prototype.verify=function(t,r,e){var i=this.decode(t);if(i instanceof Error)return e(i,!1);var n=i.encoded.header+"."+i.encoded.payload,o=D(i.encoded.signature),s=i.header.alg,h=i.header.kid,a=i.payload.aud,u=i.payload.iss,f=i.payload.exp,c=i.payload.nbf,p=i.payload.nonce||null,l=this;if(l.expectedAlg!==s)return e(new q("Algorithm "+s+" is not supported. (Expected algs: ["+H.join(",")+"])"),!1);this.getRsaVerifier(u,h,function(t,s){if(t)return e(t);if(s.verify(n,o)){if(l.issuer!==u)return e(new q("Issuer "+u+" is not valid."),!1);if(l.audience!==a)return e(new q("Audience "+a+" is not valid."),!1);if(p!==r)return e(new q("Nonce does not match."),!1);var h=l.verifyExpAndNbf(f,c);return h?e(h,!1):e(null,i.payload)}return e(new q("Invalid signature."))})},F.prototype.verifyExpAndNbf=function(t,r){var e=new Date,i=new Date(0),n=new Date(0);return this.__disableExpirationCheck?null:(i.setUTCSeconds(t+this.leeway),e>i?new q("Expired token."):void 0===r?null:(n.setUTCSeconds(r-this.leeway),e<n?new q("The token is not valid until later in the future. Please check your computed clock."):null))},F.prototype.verifyExpAndIat=function(t,r){var e=new Date,i=new Date(0),n=new Date(0);return this.__disableExpirationCheck?null:(i.setUTCSeconds(t+this.leeway),e>i?new q("Expired token."):(n.setUTCSeconds(r-this.leeway),e<n?new q("The token was issued in the future. Please check your computed clock."):null))},F.prototype.getRsaVerifier=function(t,r,e){var i=this,n=t+r;if(this.jwksCache.has(n)){var o=this.jwksCache.get(n);e(null,new u(o.modulus,o.exp))}else L({jwksURI:this.jwksURI,iss:t,kid:r},function(t,r){return t?e(t):(i.jwksCache.set(n,r),e(null,new u(r.modulus,r.exp)))})},F.prototype.decode=function(t){var r,e,i=t.split(".");if(3!==i.length)return new q("Cannot decode a malformed JWT");try{r=JSON.parse(B(i[0])),e=JSON.parse(B(i[1]))}catch(t){return new q("Token header or payload is not valid JSON")}return{header:r,payload:e,encoded:{header:i[0],payload:i[1],signature:i[2]}}},F.prototype.validateAccessToken=function(t,r,e,s){if(this.expectedAlg!==r)return s(new q("Algorithm "+r+" is not supported. (Expected alg: "+this.expectedAlg+")"));var h,a=i(t),u=o.stringify(a),f=u.substring(0,u.length/2),c=o.parse(f),p=n.stringify(c);return s((h={"+":"-","/":"_","=":""},p.replace(/[+\/=]/g,function(t){return h[t]}))!==e?new q("Invalid access_token"):null)},module.exports=F;
 
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("timers").setImmediate)
-},{"timers":283}],273:[function(require,module,exports){
-if (typeof Object.create === 'function') {
-  // implementation from standard node.js 'util' module
-  module.exports = function inherits(ctor, superCtor) {
-    ctor.super_ = superCtor
-    ctor.prototype = Object.create(superCtor.prototype, {
-      constructor: {
-        value: ctor,
-        enumerable: false,
-        writable: true,
-        configurable: true
-      }
-    });
-  };
-} else {
-  // old school shim for old browsers
-  module.exports = function inherits(ctor, superCtor) {
-    ctor.super_ = superCtor
-    var TempCtor = function () {}
-    TempCtor.prototype = superCtor.prototype
-    ctor.prototype = new TempCtor()
-    ctor.prototype.constructor = ctor
-  }
-}
-
-},{}],274:[function(require,module,exports){
+},{"timers":283}],274:[function(require,module,exports){
 // the whatwg-fetch polyfill installs the fetch() function
 // on the global object (window or self)
 //
@@ -12306,7 +12811,7 @@ if (typeof Object.create === 'function') {
 require('whatwg-fetch');
 module.exports = self.fetch.bind(self);
 
-},{"whatwg-fetch":286}],275:[function(require,module,exports){
+},{"whatwg-fetch":284}],275:[function(require,module,exports){
 /**
  * Helpers.
  */
@@ -12677,8 +13182,8 @@ module.exports = {
 };
 
 },{}],278:[function(require,module,exports){
-arguments[4][132][0].apply(exports,arguments)
-},{"./formats":277,"./parse":279,"./stringify":280,"dup":132}],279:[function(require,module,exports){
+arguments[4][134][0].apply(exports,arguments)
+},{"./formats":277,"./parse":279,"./stringify":280,"dup":134}],279:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -13524,603 +14029,6 @@ exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate :
 };
 }).call(this,require("timers").setImmediate,require("timers").clearImmediate)
 },{"process/browser.js":276,"timers":283}],284:[function(require,module,exports){
-module.exports = function isBuffer(arg) {
-  return arg && typeof arg === 'object'
-    && typeof arg.copy === 'function'
-    && typeof arg.fill === 'function'
-    && typeof arg.readUInt8 === 'function';
-}
-},{}],285:[function(require,module,exports){
-(function (process,global){
-// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-var formatRegExp = /%[sdj%]/g;
-exports.format = function(f) {
-  if (!isString(f)) {
-    var objects = [];
-    for (var i = 0; i < arguments.length; i++) {
-      objects.push(inspect(arguments[i]));
-    }
-    return objects.join(' ');
-  }
-
-  var i = 1;
-  var args = arguments;
-  var len = args.length;
-  var str = String(f).replace(formatRegExp, function(x) {
-    if (x === '%%') return '%';
-    if (i >= len) return x;
-    switch (x) {
-      case '%s': return String(args[i++]);
-      case '%d': return Number(args[i++]);
-      case '%j':
-        try {
-          return JSON.stringify(args[i++]);
-        } catch (_) {
-          return '[Circular]';
-        }
-      default:
-        return x;
-    }
-  });
-  for (var x = args[i]; i < len; x = args[++i]) {
-    if (isNull(x) || !isObject(x)) {
-      str += ' ' + x;
-    } else {
-      str += ' ' + inspect(x);
-    }
-  }
-  return str;
-};
-
-
-// Mark that a method should not be used.
-// Returns a modified function which warns once by default.
-// If --no-deprecation is set, then it is a no-op.
-exports.deprecate = function(fn, msg) {
-  // Allow for deprecating things in the process of starting up.
-  if (isUndefined(global.process)) {
-    return function() {
-      return exports.deprecate(fn, msg).apply(this, arguments);
-    };
-  }
-
-  if (process.noDeprecation === true) {
-    return fn;
-  }
-
-  var warned = false;
-  function deprecated() {
-    if (!warned) {
-      if (process.throwDeprecation) {
-        throw new Error(msg);
-      } else if (process.traceDeprecation) {
-        console.trace(msg);
-      } else {
-        console.error(msg);
-      }
-      warned = true;
-    }
-    return fn.apply(this, arguments);
-  }
-
-  return deprecated;
-};
-
-
-var debugs = {};
-var debugEnviron;
-exports.debuglog = function(set) {
-  if (isUndefined(debugEnviron))
-    debugEnviron = process.env.NODE_DEBUG || '';
-  set = set.toUpperCase();
-  if (!debugs[set]) {
-    if (new RegExp('\\b' + set + '\\b', 'i').test(debugEnviron)) {
-      var pid = process.pid;
-      debugs[set] = function() {
-        var msg = exports.format.apply(exports, arguments);
-        console.error('%s %d: %s', set, pid, msg);
-      };
-    } else {
-      debugs[set] = function() {};
-    }
-  }
-  return debugs[set];
-};
-
-
-/**
- * Echos the value of a value. Trys to print the value out
- * in the best way possible given the different types.
- *
- * @param {Object} obj The object to print out.
- * @param {Object} opts Optional options object that alters the output.
- */
-/* legacy: obj, showHidden, depth, colors*/
-function inspect(obj, opts) {
-  // default options
-  var ctx = {
-    seen: [],
-    stylize: stylizeNoColor
-  };
-  // legacy...
-  if (arguments.length >= 3) ctx.depth = arguments[2];
-  if (arguments.length >= 4) ctx.colors = arguments[3];
-  if (isBoolean(opts)) {
-    // legacy...
-    ctx.showHidden = opts;
-  } else if (opts) {
-    // got an "options" object
-    exports._extend(ctx, opts);
-  }
-  // set default options
-  if (isUndefined(ctx.showHidden)) ctx.showHidden = false;
-  if (isUndefined(ctx.depth)) ctx.depth = 2;
-  if (isUndefined(ctx.colors)) ctx.colors = false;
-  if (isUndefined(ctx.customInspect)) ctx.customInspect = true;
-  if (ctx.colors) ctx.stylize = stylizeWithColor;
-  return formatValue(ctx, obj, ctx.depth);
-}
-exports.inspect = inspect;
-
-
-// http://en.wikipedia.org/wiki/ANSI_escape_code#graphics
-inspect.colors = {
-  'bold' : [1, 22],
-  'italic' : [3, 23],
-  'underline' : [4, 24],
-  'inverse' : [7, 27],
-  'white' : [37, 39],
-  'grey' : [90, 39],
-  'black' : [30, 39],
-  'blue' : [34, 39],
-  'cyan' : [36, 39],
-  'green' : [32, 39],
-  'magenta' : [35, 39],
-  'red' : [31, 39],
-  'yellow' : [33, 39]
-};
-
-// Don't use 'blue' not visible on cmd.exe
-inspect.styles = {
-  'special': 'cyan',
-  'number': 'yellow',
-  'boolean': 'yellow',
-  'undefined': 'grey',
-  'null': 'bold',
-  'string': 'green',
-  'date': 'magenta',
-  // "name": intentionally not styling
-  'regexp': 'red'
-};
-
-
-function stylizeWithColor(str, styleType) {
-  var style = inspect.styles[styleType];
-
-  if (style) {
-    return '\u001b[' + inspect.colors[style][0] + 'm' + str +
-           '\u001b[' + inspect.colors[style][1] + 'm';
-  } else {
-    return str;
-  }
-}
-
-
-function stylizeNoColor(str, styleType) {
-  return str;
-}
-
-
-function arrayToHash(array) {
-  var hash = {};
-
-  array.forEach(function(val, idx) {
-    hash[val] = true;
-  });
-
-  return hash;
-}
-
-
-function formatValue(ctx, value, recurseTimes) {
-  // Provide a hook for user-specified inspect functions.
-  // Check that value is an object with an inspect function on it
-  if (ctx.customInspect &&
-      value &&
-      isFunction(value.inspect) &&
-      // Filter out the util module, it's inspect function is special
-      value.inspect !== exports.inspect &&
-      // Also filter out any prototype objects using the circular check.
-      !(value.constructor && value.constructor.prototype === value)) {
-    var ret = value.inspect(recurseTimes, ctx);
-    if (!isString(ret)) {
-      ret = formatValue(ctx, ret, recurseTimes);
-    }
-    return ret;
-  }
-
-  // Primitive types cannot have properties
-  var primitive = formatPrimitive(ctx, value);
-  if (primitive) {
-    return primitive;
-  }
-
-  // Look up the keys of the object.
-  var keys = Object.keys(value);
-  var visibleKeys = arrayToHash(keys);
-
-  if (ctx.showHidden) {
-    keys = Object.getOwnPropertyNames(value);
-  }
-
-  // IE doesn't make error fields non-enumerable
-  // http://msdn.microsoft.com/en-us/library/ie/dww52sbt(v=vs.94).aspx
-  if (isError(value)
-      && (keys.indexOf('message') >= 0 || keys.indexOf('description') >= 0)) {
-    return formatError(value);
-  }
-
-  // Some type of object without properties can be shortcutted.
-  if (keys.length === 0) {
-    if (isFunction(value)) {
-      var name = value.name ? ': ' + value.name : '';
-      return ctx.stylize('[Function' + name + ']', 'special');
-    }
-    if (isRegExp(value)) {
-      return ctx.stylize(RegExp.prototype.toString.call(value), 'regexp');
-    }
-    if (isDate(value)) {
-      return ctx.stylize(Date.prototype.toString.call(value), 'date');
-    }
-    if (isError(value)) {
-      return formatError(value);
-    }
-  }
-
-  var base = '', array = false, braces = ['{', '}'];
-
-  // Make Array say that they are Array
-  if (isArray(value)) {
-    array = true;
-    braces = ['[', ']'];
-  }
-
-  // Make functions say that they are functions
-  if (isFunction(value)) {
-    var n = value.name ? ': ' + value.name : '';
-    base = ' [Function' + n + ']';
-  }
-
-  // Make RegExps say that they are RegExps
-  if (isRegExp(value)) {
-    base = ' ' + RegExp.prototype.toString.call(value);
-  }
-
-  // Make dates with properties first say the date
-  if (isDate(value)) {
-    base = ' ' + Date.prototype.toUTCString.call(value);
-  }
-
-  // Make error with message first say the error
-  if (isError(value)) {
-    base = ' ' + formatError(value);
-  }
-
-  if (keys.length === 0 && (!array || value.length == 0)) {
-    return braces[0] + base + braces[1];
-  }
-
-  if (recurseTimes < 0) {
-    if (isRegExp(value)) {
-      return ctx.stylize(RegExp.prototype.toString.call(value), 'regexp');
-    } else {
-      return ctx.stylize('[Object]', 'special');
-    }
-  }
-
-  ctx.seen.push(value);
-
-  var output;
-  if (array) {
-    output = formatArray(ctx, value, recurseTimes, visibleKeys, keys);
-  } else {
-    output = keys.map(function(key) {
-      return formatProperty(ctx, value, recurseTimes, visibleKeys, key, array);
-    });
-  }
-
-  ctx.seen.pop();
-
-  return reduceToSingleString(output, base, braces);
-}
-
-
-function formatPrimitive(ctx, value) {
-  if (isUndefined(value))
-    return ctx.stylize('undefined', 'undefined');
-  if (isString(value)) {
-    var simple = '\'' + JSON.stringify(value).replace(/^"|"$/g, '')
-                                             .replace(/'/g, "\\'")
-                                             .replace(/\\"/g, '"') + '\'';
-    return ctx.stylize(simple, 'string');
-  }
-  if (isNumber(value))
-    return ctx.stylize('' + value, 'number');
-  if (isBoolean(value))
-    return ctx.stylize('' + value, 'boolean');
-  // For some reason typeof null is "object", so special case here.
-  if (isNull(value))
-    return ctx.stylize('null', 'null');
-}
-
-
-function formatError(value) {
-  return '[' + Error.prototype.toString.call(value) + ']';
-}
-
-
-function formatArray(ctx, value, recurseTimes, visibleKeys, keys) {
-  var output = [];
-  for (var i = 0, l = value.length; i < l; ++i) {
-    if (hasOwnProperty(value, String(i))) {
-      output.push(formatProperty(ctx, value, recurseTimes, visibleKeys,
-          String(i), true));
-    } else {
-      output.push('');
-    }
-  }
-  keys.forEach(function(key) {
-    if (!key.match(/^\d+$/)) {
-      output.push(formatProperty(ctx, value, recurseTimes, visibleKeys,
-          key, true));
-    }
-  });
-  return output;
-}
-
-
-function formatProperty(ctx, value, recurseTimes, visibleKeys, key, array) {
-  var name, str, desc;
-  desc = Object.getOwnPropertyDescriptor(value, key) || { value: value[key] };
-  if (desc.get) {
-    if (desc.set) {
-      str = ctx.stylize('[Getter/Setter]', 'special');
-    } else {
-      str = ctx.stylize('[Getter]', 'special');
-    }
-  } else {
-    if (desc.set) {
-      str = ctx.stylize('[Setter]', 'special');
-    }
-  }
-  if (!hasOwnProperty(visibleKeys, key)) {
-    name = '[' + key + ']';
-  }
-  if (!str) {
-    if (ctx.seen.indexOf(desc.value) < 0) {
-      if (isNull(recurseTimes)) {
-        str = formatValue(ctx, desc.value, null);
-      } else {
-        str = formatValue(ctx, desc.value, recurseTimes - 1);
-      }
-      if (str.indexOf('\n') > -1) {
-        if (array) {
-          str = str.split('\n').map(function(line) {
-            return '  ' + line;
-          }).join('\n').substr(2);
-        } else {
-          str = '\n' + str.split('\n').map(function(line) {
-            return '   ' + line;
-          }).join('\n');
-        }
-      }
-    } else {
-      str = ctx.stylize('[Circular]', 'special');
-    }
-  }
-  if (isUndefined(name)) {
-    if (array && key.match(/^\d+$/)) {
-      return str;
-    }
-    name = JSON.stringify('' + key);
-    if (name.match(/^"([a-zA-Z_][a-zA-Z_0-9]*)"$/)) {
-      name = name.substr(1, name.length - 2);
-      name = ctx.stylize(name, 'name');
-    } else {
-      name = name.replace(/'/g, "\\'")
-                 .replace(/\\"/g, '"')
-                 .replace(/(^"|"$)/g, "'");
-      name = ctx.stylize(name, 'string');
-    }
-  }
-
-  return name + ': ' + str;
-}
-
-
-function reduceToSingleString(output, base, braces) {
-  var numLinesEst = 0;
-  var length = output.reduce(function(prev, cur) {
-    numLinesEst++;
-    if (cur.indexOf('\n') >= 0) numLinesEst++;
-    return prev + cur.replace(/\u001b\[\d\d?m/g, '').length + 1;
-  }, 0);
-
-  if (length > 60) {
-    return braces[0] +
-           (base === '' ? '' : base + '\n ') +
-           ' ' +
-           output.join(',\n  ') +
-           ' ' +
-           braces[1];
-  }
-
-  return braces[0] + base + ' ' + output.join(', ') + ' ' + braces[1];
-}
-
-
-// NOTE: These type checking functions intentionally don't use `instanceof`
-// because it is fragile and can be easily faked with `Object.create()`.
-function isArray(ar) {
-  return Array.isArray(ar);
-}
-exports.isArray = isArray;
-
-function isBoolean(arg) {
-  return typeof arg === 'boolean';
-}
-exports.isBoolean = isBoolean;
-
-function isNull(arg) {
-  return arg === null;
-}
-exports.isNull = isNull;
-
-function isNullOrUndefined(arg) {
-  return arg == null;
-}
-exports.isNullOrUndefined = isNullOrUndefined;
-
-function isNumber(arg) {
-  return typeof arg === 'number';
-}
-exports.isNumber = isNumber;
-
-function isString(arg) {
-  return typeof arg === 'string';
-}
-exports.isString = isString;
-
-function isSymbol(arg) {
-  return typeof arg === 'symbol';
-}
-exports.isSymbol = isSymbol;
-
-function isUndefined(arg) {
-  return arg === void 0;
-}
-exports.isUndefined = isUndefined;
-
-function isRegExp(re) {
-  return isObject(re) && objectToString(re) === '[object RegExp]';
-}
-exports.isRegExp = isRegExp;
-
-function isObject(arg) {
-  return typeof arg === 'object' && arg !== null;
-}
-exports.isObject = isObject;
-
-function isDate(d) {
-  return isObject(d) && objectToString(d) === '[object Date]';
-}
-exports.isDate = isDate;
-
-function isError(e) {
-  return isObject(e) &&
-      (objectToString(e) === '[object Error]' || e instanceof Error);
-}
-exports.isError = isError;
-
-function isFunction(arg) {
-  return typeof arg === 'function';
-}
-exports.isFunction = isFunction;
-
-function isPrimitive(arg) {
-  return arg === null ||
-         typeof arg === 'boolean' ||
-         typeof arg === 'number' ||
-         typeof arg === 'string' ||
-         typeof arg === 'symbol' ||  // ES6 symbol
-         typeof arg === 'undefined';
-}
-exports.isPrimitive = isPrimitive;
-
-exports.isBuffer = require('./support/isBuffer');
-
-function objectToString(o) {
-  return Object.prototype.toString.call(o);
-}
-
-
-function pad(n) {
-  return n < 10 ? '0' + n.toString(10) : n.toString(10);
-}
-
-
-var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep',
-              'Oct', 'Nov', 'Dec'];
-
-// 26 Feb 16:19:34
-function timestamp() {
-  var d = new Date();
-  var time = [pad(d.getHours()),
-              pad(d.getMinutes()),
-              pad(d.getSeconds())].join(':');
-  return [d.getDate(), months[d.getMonth()], time].join(' ');
-}
-
-
-// log is just a thin wrapper to console.log that prepends a timestamp
-exports.log = function() {
-  console.log('%s - %s', timestamp(), exports.format.apply(exports, arguments));
-};
-
-
-/**
- * Inherit the prototype methods from one constructor into another.
- *
- * The Function.prototype.inherits from lang.js rewritten as a standalone
- * function (not on Function.prototype). NOTE: If this file is to be loaded
- * during bootstrapping this function needs to be rewritten using some native
- * functions as prototype setup using normal JavaScript does not work as
- * expected during bootstrapping (see mirror.js in r114903).
- *
- * @param {function} ctor Constructor function which needs to inherit the
- *     prototype.
- * @param {function} superCtor Constructor function to inherit prototype from.
- */
-exports.inherits = require('inherits');
-
-exports._extend = function(origin, add) {
-  // Don't do anything if add isn't an object
-  if (!add || !isObject(add)) return origin;
-
-  var keys = Object.keys(add);
-  var i = keys.length;
-  while (i--) {
-    origin[keys[i]] = add[keys[i]];
-  }
-  return origin;
-};
-
-function hasOwnProperty(obj, prop) {
-  return Object.prototype.hasOwnProperty.call(obj, prop);
-}
-
-}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":284,"_process":276,"inherits":273}],286:[function(require,module,exports){
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
